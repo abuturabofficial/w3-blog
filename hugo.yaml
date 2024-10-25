@@ -1,0 +1,4 @@
+baseURL: https://blog.cyberfront.me
+languageCode: en-us
+title: CyberFront
+theme: ["PaperMod"]
