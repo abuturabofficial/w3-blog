@@ -1,0 +1,10 @@
+# IDE configurations
+.idea
+.vscode
+
+# Misc
+.obsidian
+.trash
+
+# Hugo
+/public
