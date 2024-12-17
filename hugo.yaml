@@ -31,22 +31,22 @@ languages:
       main:
         - name: About
           url: about
-          weight: 5
+          weight: 2
         - name: Search
           url: search/
-          weight: 9
+          weight: 1
         - name: Archive
           url: archives
-          weight: 12
+          weight: 6
         - name: Tags
           url: tags
-          weight: 10
+          weight: 5
         - name: Notes WiKi
           url: https://notes.cyberfront.me/
-          weight: 5
+          weight: 4
         - name: Privacy Policy
           url: privacy
-          weight: 10
+          weight: 3
 
 outputs:
   home:
