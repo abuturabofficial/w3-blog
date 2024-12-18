@@ -48,7 +48,7 @@ languages:
         #   url: tags
         #   weight: 5
         - name: Notes WiKi
-          url: https://notes.cyberfront.me/
+          url: https://wiki.cyberfront.me/
           weight: 4
         - name: Privacy Policy
           url: privacy
@@ -100,7 +100,7 @@ params:
       - name: CTFs
         url: ctf
       - name: Notes Wiki
-        url: https://notes.cyberfront.me
+        url: https://wiki.cyberfront.me
       - name: Tags
         url: tags
       - name: About
