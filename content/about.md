@@ -26,7 +26,7 @@ Ready to stay ahead of the curve? 🤓 Subscribe to following RSS Feeds:
 ## 📧 **Let’s Collaborate!**  
 Have questions, ideas for collaboration, or just want to connect? Feel free to reach out to me at **[cyberfrontofficial@proton.me](mailto:cyberfrontofficial@proton.me)**. I’m always open to meaningful discussions and partnerships.  
 
-🔑 **GPG Public Key:**  
+🔑 **PGP Public Key:**  
 - [Download Here](/misc/publickey.asc)  
 - Or Retrieve from [OPENPGP.ORG](https://keys.openpgp.org/vks/v1/by-fingerprint/B2A1748F33BAE85E5A9C49C741EBAB900757D730)  
 
