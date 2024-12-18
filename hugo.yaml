@@ -101,10 +101,10 @@ params:
         url: ctf
       - name: Notes Wiki
         url: https://wiki.cyberfront.me
-      - name: Tags
-        url: tags
       - name: About
         url: about
+      - name: Tags
+        url: tags
 
   homeInfoParams:
     Title: "CyberFront"
