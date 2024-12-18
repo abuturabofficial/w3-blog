@@ -4,7 +4,7 @@ baseURL: "https://blog.cyberfront.me/"
 title: CyberFront
 # copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
 pagination.pagerSize: 5
-theme: PaperMod
+theme: ["hugo-admonitions", "PaperMod"]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
