@@ -29,24 +29,30 @@ languages:
       series: series
     menu:
       main:
-        - name: About
-          url: about
-          weight: 2
+        # - name: About
+        #   url: about
+        #   weight: 2
         - name: Search
           url: search/
           weight: 1
+        - name: Blogs
+          url: blog
+          weight: 2
+        - name: CTFs
+          url: ctf
+          weight: 3
         - name: Archive
           url: archives
-          weight: 6
-        - name: Tags
-          url: tags
           weight: 5
+        # - name: Tags
+        #   url: tags
+        #   weight: 5
         - name: Notes WiKi
           url: https://notes.cyberfront.me/
           weight: 4
         - name: Privacy Policy
           url: privacy
-          weight: 3
+          weight: 6
 
 outputs:
   home:
@@ -93,10 +99,12 @@ params:
         url: blog
       - name: CTFs
         url: ctf
-      - name: Search
-        url: search
       - name: Notes Wiki
         url: https://notes.cyberfront.me
+      - name: Tags
+        url: tags
+      - name: About
+        url: about
 
   homeInfoParams:
     Title: "CyberFront"
