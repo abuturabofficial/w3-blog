@@ -230,5 +230,6 @@ It will show if I'm using `nextDNS`or not, also my device name and protocol used
 
 So, I'm successfully able to route my traffic through Cloudflare network using Warp Protocol and still using my custom upstream DNS provider (nextDNS).
 
+## Final Thoughts
 > [!CONCLUSION]
 > I hope you're now connected to your **Cloudflare Warp tunnel** successfully. If you need further clarification or help at any step you can comment down below. **Warp on!**
