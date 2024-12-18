@@ -16,8 +16,8 @@ It signifies the long-lost battle of digital privacy[^5]. We gave up our privacy
 
 Is privacy totally lost, or is this blog title merely a clickbait? I won't claim it's a complete clickbait, but rather a wake-up call for those who perceive their governments, internet providers, and other e-service providers as entities that won't harm them at all. We can't revert to the pre-internet era, given our extensive involvement and reliance on online connectivity, encompassing banking, schooling, shopping, and social interactions. However, we can make a conscious effort to minimize our online footprint and, whenever possible, refrain from contributing to the colossal data-collection machinery.
 
+> [!TIP]
 > How do I reduce my digital footprint? It is a topic of some other blog, but in the references section on the bottom, I will share some useful links[^3] to help kick-start your Internet Privacy journey.
-{: .prompt-tip}
 
 ## Web 2.0: A Privacy Nightmare!
 
@@ -33,8 +33,8 @@ One alarming consequence of pervasive data collection is its detrimental effect 
 
 Consider the deliberate design choices: when you open YouTube, the default landing page is the Home page rather than your subscription feed. This design tactic encourages prolonged usage by suggesting videos based on individual usage patterns. Similarly, the recommended videos section on the side of video playback further extends your stay on the platform.
 
+> [!DANGER]
 > Have you ever questioned why your Facebook newsfeed seems endless, despite having only a handful of friends? Or why the YouTube Home Page seems infinite? The continuous scrolling on TikTok, Reels, YT Shorts, and other platforms might make you wonder, why? Additionally, games persistently prompt you with new rewards or artificially limited-time offers on in-game assets.
-{: .prompt-danger}
 
 Moreover, the rise of short-form content on platforms like TikTok, Reels, Shorts, etc., is impacting our attention spans[^22]. These platforms, based on your usage patterns, curate and serve you more short-form content, contributing to a continuous cycle of data collection. Users unwittingly find themselves caught in an endless loop of feedback and response.
 
@@ -44,21 +44,21 @@ For instance, the addictive nature of endlessly scrolling through bite-sized vid
 
 In essence, the design of these platforms, fueled by data-driven insights, not only influences what we see but also molds our consumption habits, subtly steering us towards content that aligns with their data-collection objectives.
 
+> [!INFO]
 > Some researchers[^23] argue against the idea of decreasing attention span, link it to the increasing work load and the adaptation of multitasking in this digital era.
-{: .prompt-info}
 
 ## Communication Privacy
 
 Even our communication privacy is largely at risk due to widespread use of WhatsApp, traditional SMS, iMessage, etc. Although WhatsApp, iMessage[^9] and few others proprietary messaging platforms claim to offer End-to-End Encryption (E2EE), where the sender and receiver are the only ones that can read each other messages. But due to their closed nature, we can't independently verify their claims. Are we comfortable to give those platform access to our chats with our loved ones? Are we willing to see ads based on our chats with our friends and family? I think nobody in their right mind will ever allow this.
 
+> [!WARNING]
 > Using unencrypted methods like plain SMS, and carrier calls, are far worse than using WhatsApp or other E2EE proprietary instant messengers.
-{: .prompt-warning}
 
+> [!INFO]
 > WhatsApp itself doesn't run any ads, but they do share metadata with their parent company, Meta (formerly Facebook). You will see some flowery language about it, like data sharing for enhanced user experience and improving the infrastructure etc… 
-{: .prompt-info}
 
+> [!TIP]
 > iMessage cloud backups will only use E2EE, when you enable “Advanced Data Protection for iCloud[^8]”.
-{: .prompt-tip}
 
 ### Telegram: It's not as private as you think!
 
@@ -82,8 +82,8 @@ As these email providers only offer E2EE when sender and receiver, both are usin
 
 Tuta E2EE method allows them to encrypt metadata like subject field, but ProtonMail due to S/MIME and PGP compatibility doesn't encrypt your email subject field. Both providers do provide password-protected emails for non Proton/Tuta email exchanges, but sharing those passwords with the receiver safely would need some other E2EE service.
 
+> [!TIP]
 > Tuta[^20] provides E2EE based on [AES-128](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) and [RSA-2048](https://en.wikipedia.org/wiki/RSA_(cryptosystem)). In contrast, ProtonMail[^21] uses [OpenGPG](https://www.openpgp.org/) and also supports compatibility with other email providers that use [PGP](https://en.wikipedia.org/wiki/GNU_Privacy_Guard) and [S/MIME](https://en.wikipedia.org/wiki/S/MIME).
-{: .prompt-tip}
 
 ## Privacy, Security, and Anonymity
 
@@ -103,15 +103,15 @@ When we hear the word open source, we tend to associate it with a high amount of
 - Someone might try to sabotage a free software by introducing an [intentional flaw](https://www.zdnet.com/article/greg-kroah-hartman-bans-university-of-minnesota-from-linux-development-for-deliberately-buggy-patches/).
 - All in all, you should be careful not when using a proprietary software (even more, IMHO) but also for free software. Don't just trust the developer or maintainer, see for yourself, or look out what other people who have used/using this software have to say about it.
 
+> [!WARNING]
 > I'm not trying to demerit the open source in any sense, the only thing I want is people should remain careful in all scenarios instead of just relying on promises of not turning evil.
-{: .prompt-warning}
 
 ## Growing Governments' Intervention
 
 The current landscape of online privacy and security is facing challenges due to increased surveillance[^13] and governmental opposition[^14][^17][^18] towards data encryption and privacy. Notably, governments, including the EU and UK, have made recent attempts[^15][^16] to compromise privacy under the guise of counterterrorism, crime prevention, and child protection. While the EU's GDPR is renowned for safeguarding individual privacy, there are concerns about a shift in approach with initiatives like the Chat Control Bill.
 
+> [!INFO]
 > There are so many examples when governments tried to weaken the End-to-End Encryption (EE2E), overall privacy and security for the masses. If I start listing all, the whole blog post will be needed only for those references.
-{: .prompt-info}
 
 These legislative efforts aim to implement unproven methods to scan end-to-end encrypted communications and data without infringing on individuals' right to privacy. <mark style="background: #BBFABBA6;">Currently, security and privacy advocates have successfully resisted the erosion of privacy rights, but the duration of their success in preventing the compromise of E2EE remains uncertain</mark>.
 

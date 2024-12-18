@@ -119,8 +119,8 @@ Let’s look at the `root` dir:
 fls -o 360448 disk.flag.img 1995
 ```
 
+> [!TIP]
 > We need to make smart decisions about which directory to look at first, to avoid wasting time. Please read about Linux directory structure to know more about which directory contains what.
-{: .prompt-tip}
 
 ![fls root dir](/ctf/2023-09-28-Sleuthkit-Apprentice-Walkthrough-6.png)
 
