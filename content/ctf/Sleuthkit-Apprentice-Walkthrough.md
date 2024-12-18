@@ -7,6 +7,7 @@ cover:
     image: "/ctf/2023-09-28-Sleuthkit-Apprentice-Walkthrough.png"
     alt: "Logo of PicoCTF"
     caption: "PicoCTF"
+summary: Sleuthkit Apprentice Challenge is about doing forensic analysis of disk images and finding the useful and juicy information about the target.
 ---
 
 Sleuthkit Apprentice Challenge is about doing forensic analysis of disk images and finding the useful and juicy information about the target.

@@ -13,12 +13,9 @@ My Fedora journey started with their Workstation edition. Their vanilla Gnome ex
 
 But the story doesn't start from Fedora, it rather goes way back in time, when I was first introduced to Linux via Ubuntu. And I find it a breeze for my potato laptop at that time. My Linux Journey is quite complex. Take a look:
 
-<img src="/blog/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-1.png" alt="Bitwarden Logo" style="display: block; margin: 0 auto;" />
-
-_My circle of Life_
+{{< figure src="/blog/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-1.png" attr="My Circle of Life" align="center">}}
 
 > I honestly don't exactly even remember how much I have hopped to and from different distros, I haven't added vanilla Debian which I have used for a week. Neither, I have added immutable distros like **SilverBlue** and **OpenSUSE Aeon** which I have used for months combined. At the end of the day, use whatever distro you want and make it yours. Most of the Distros are fundamentally similar, and you can ideally do anything and everything on each and every distro.
-{: .prompt-warning}
 
 **So let's jump back to the start, where it all began:**
 

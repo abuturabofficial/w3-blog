@@ -118,18 +118,21 @@ params:
       - This place is all about learning, experimenting and growing together.
 
   socialIcons:
-    - name: github
-      title: View Sources on Github
+    - name: "github"
+      title: "View Sources on Github"
       url: "https://github.com/abuturabofficial"
-    - name: mastodon
-      title: Find me on Fediverse
+    - name: "mastodon"
+      title: "Find me on Fediverse"
       url: "https://mastodon.social/@abuturab"
-    - name: LinkedIn
-      title: Let's connect on LinkedIn
+    - name: "linkedin"
+      title: "Let's connect on LinkedIn"
     - url: "https://www.linkedin.com/in/abuturabofficial/"
-    - name: X
-      title: Follow me on X/Twitter
+    - name: "x"
+      title: "Follow me on X/Twitter"
       url: "https://x.com/abuturabofcl"
+    - name: "email"
+      title: "ProtonMail (Find my PGP Public Key in the About Section)"
+      url: "mailto:cyberfront@proton.me"
 
   editPost:
     URL: "https://github.com/abuturabofficial/w3-blog/content"
