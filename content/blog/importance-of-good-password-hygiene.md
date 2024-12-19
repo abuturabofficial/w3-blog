@@ -1,6 +1,6 @@
 ---
 author: "AbuTurab"
-title: "Importance of Good Password Hygiene"
+title: "The Importance of Strong Password Hygiene"
 date: 2022-06-07
 tags: ["Blogs", "Password Managers", "Security"]
 cover:

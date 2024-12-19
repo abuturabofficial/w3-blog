@@ -1,6 +1,6 @@
 ---
 author: Abuturab
-title: "Digital Privacy and Web 2.0: A Horror Story"
+title: "Digital Privacy in Web 2.0: A Modern Horror Story"
 date: 2023-12-05 10:27:00 +0500
 tags: ["Blogs", "Privacy", "Digital Freedom"]
 cover:
