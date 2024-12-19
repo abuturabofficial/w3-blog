@@ -1,5 +1,4 @@
 ---
-date: '2024-12-19T11:49:20+05:00'
 draft: false
 title: 'Setting Up Giscus: A Simple Guide for Hugo PaperMode Theme'
 date: 2024-12-19T11:49:20+05:00
