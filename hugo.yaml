@@ -81,6 +81,8 @@ params:
   ShowToc: true
   comments: true
   images: ["images/papermod-cover.png"]
+  label:
+    icon: "/apple-touch-icon.png"
 
   profileMode:
     enabled: true
