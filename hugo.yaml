@@ -137,7 +137,7 @@ params:
     - url: "https://www.linkedin.com/in/abuturabofficial/"
 
   editPost:
-    URL: "https://github.com/abuturabofficial/w3-blog/content"
+    URL: "https://github.com/abuturabofficial/w3-blog/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
