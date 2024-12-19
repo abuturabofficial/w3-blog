@@ -1,7 +1,7 @@
 ---
 date: '2024-12-18T12:58:09+05:00'
 draft: false
-title: 'How to Setup and Fix General Issues with Cloudflare Warp on Linux'
+title: 'Cloudflare Warp on Linux: Setup and Troubleshooting Guide'
 date: 2024-12-18T12:58:09+05:00
 author: "AbuTurab"
 cover:
