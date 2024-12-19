@@ -1,6 +1,6 @@
 ---
 author: "AbuTurab"
-title: Tango with Tux, Dancing on the Edge with Fedora
+title: "Tango with Tux: My Linux Journey and Fedora Adventures"
 date: 2023-11-20 10:00:00 +0500
 tags: ["Blogs", "Linux"]
 cover:

@@ -1,8 +1,7 @@
 ---
 author: AbuTurab
-title: Password Managers and their Role in Online Safety and Security
+title: "Password Managers: Essential Tools for Online Security"
 date: 2022-06-11
-media_subpath: /assets/posts
 tags: ["Blogs", "Password Managers", "Security"]
 cover:
     image: "/blog/passwordmanager.jpeg"
@@ -13,7 +12,7 @@ cover:
 
 A computer program which acts as a wallet for storing, managing passwords as well as offer the feature to generate strong and complicated passwords for applications and services.
 
-### 1.2 What Problem they solve?
+### 1.1 What Problem they solve?
 
 As a human being, we have a tendency to forget things. Due to this reason, people lean towards using bad passwords, or use a single password for every service or application they use. Password Managers not only resolve this issue, but over that, they offer multiple other features as well, which will be discussed later on.
 
