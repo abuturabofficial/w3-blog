@@ -4,7 +4,7 @@ title: 'Setting Up Giscus: A Simple Guide for Hugo PaperMode Theme'
 date: 2024-12-19T11:49:20+05:00
 author: "AbuTurab"
 cover:
-    image: "/blog/giscus-and-hugo.png"
+    image: "/blog/giscus-and-hugo/giscus-and-hugo.png"
     alt: "Giscus and Hugo Logos are shown"
     caption: "Giscus meets Hugo"
 tags: ["Blogs", "Hugo", "Giscus"]
@@ -44,23 +44,23 @@ Replace `<username>` with GH username and `<your-repo-name>` with your respectiv
 
 Click on the `Change repository visibility` and make it `public` after accepting all the terms.
 
-{{< figure src="/blog/giscus-and-hugo-1.png" align="center">}}
+{{< figure src="/blog/giscus-and-hugo/giscus-and-hugo-1.png" align="center">}}
 
 ## 1.2 Installing the Giscus App on Your GitHub Account
 
 To add **Giscus app** to your GH account follow [this link](https://github.com/apps/giscus). And click `Install`. 
 
 Then a popup will appear like below, and you can select any of the two options, but I will advise for security reasons to choose `Only select repositories`.
-{{< figure src="/blog/giscus-and-hugo-2.png" align="center">}}
+{{< figure src="/blog/giscus-and-hugo/giscus-and-hugo-2.png" align="center">}}
 
 And select your desired GH repo, where you have stored your Hugo website files. And you're done.
 
-![](/blog/giscus-and-hugo-3.webp#center)
+![](/blog/giscus-and-hugo/giscus-and-hugo-3.webp#center)
 
 > [!TIP]
 > Don't stress too much about what permissions to give to Giscus right away. You can change that setting later from **[here](https://github.com/settings/installations)**, and click `Configure`.
 >
-> {{< figure src="/blog/giscus-and-hugo-2.webp" align="center">}}
+> {{< figure src="/blog/giscus-and-hugo/giscus-and-hugo-2.webp" align="center">}}
 
 ## 1.3 Enabling the GH Discussions Feature in Your Repository
 
@@ -72,7 +72,7 @@ https://github.com/<username>/<your-repo-name>/settings/#features
 
 And click `Set up Discussions` and they will be enabled. GitHub will show a sample announcement Discussion, you can safely ignore it, or customize it to your liking.
 
-![](/blog/giscus-and-hugo-3.png#center)
+![](/blog/giscus-and-hugo/giscus-and-hugo-3.png#center)
 
 ---
 
@@ -84,7 +84,7 @@ All the [configuration options](https://giscus.app/) depend on what you want to 
 
 <div class="video-container">
   <video controls>
-    <source src="/blog/giscus-and-hugo-4.mp4" type="video/mp4">
+    <source src="/blog/giscus-and-hugo/giscus-and-hugo-4.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -140,6 +140,6 @@ This will enable comments on site wide basis including `about.md`, `privacy.md` 
 
 # References
 ---
-1. [Giscus](https://giscus.app) - A commenting system powered by GitHub Discussions.
-2. [Hugo Comments Docs](https://gohugo.io/content-management/comments/) - Official Hugo documentation for enabling comments.
-3. [PaperMod Docs](https://github.com/adityatelange/hugo-PaperMod/wiki/Features#comments) - Guide to enable comments in the Hugo PaperMod theme.
+1. [Giscus](https://giscus.app) — A commenting system powered by GitHub Discussions.
+2. [Hugo Comments Docs](https://gohugo.io/content-management/comments/) — Official Hugo documentation for enabling comments.
+3. [PaperMod Docs](https://github.com/adityatelange/hugo-PaperMod/wiki/Features#comments) — Guide to enable comments in the Hugo PaperMod theme.

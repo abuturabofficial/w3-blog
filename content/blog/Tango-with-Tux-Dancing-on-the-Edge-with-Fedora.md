@@ -4,7 +4,7 @@ title: "Tango with Tux: My Linux Journey and Fedora Adventures"
 date: 2023-11-20 10:00:00 +0500
 tags: ["Blogs", "Linux"]
 cover:
-    image: "/blog/fedora.jpeg"
+    image: "/blog/tango-with-tux-dancing-on-the-edge-with-fedora/fedora.jpeg"
     alt: "Fedora Logo"
     caption: "Fedora"
 ---
@@ -13,7 +13,7 @@ My Fedora journey started with their Workstation edition. Their vanilla Gnome ex
 
 But the story doesn't start from Fedora, it rather goes way back in time, when I was first introduced to Linux via Ubuntu. And I find it a breeze for my potato laptop at that time. My Linux Journey is quite complex. Take a look:
 
-{{< figure src="/blog/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-1.png" attr="My Circle of Life" align="center">}}
+{{< figure src="/blog/tango-with-tux-dancing-on-the-edge-with-fedora/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-1.png" attr="My Circle of Life" align="center">}}
 
 > [!DISCLAIMER]
 > I honestly don't exactly even remember how much I have hopped to and from different distros, I haven't added vanilla Debian which I have used for a week. Neither, I have added immutable distros like **SilverBlue** and **OpenSUSE Aeon** which I have used for months combined. At the end of the day, use whatever distro you want and make it yours. Most of the Distros are fundamentally similar, and you can ideally do anything and everything on each and every distro.
@@ -32,7 +32,7 @@ Apart from being **closed-source** on the server side, the biggest reason I and 
 - My counterargument will be, you can trust the well-known proprietary app, instead of a random person packaging what not, for you without being any oversight.
 - In comparison, you can look at the flatpak's manifest file to see exactly what permissions are set and from where they're getting their source file for the said software.
 
-![Ubuntu Desktop](/blog/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-3.jpeg)
+![Ubuntu Desktop](/blog/tango-with-tux-dancing-on-the-edge-with-fedora/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-3.jpeg)
 
 ## **Linux Mint: A Refreshing Taste of Simplicity**
 
@@ -41,7 +41,7 @@ I then, moved to **Linux Mint[^2]**. It was quite a good experience. I learned a
 I personally like the rock solid nature of Linux Mint. I might migrate in the future when full Wayland support will be there. Apart from Wayland, there are very few things I miss on Cinnamon which aren't available else where (Due to the limitation or exclusivity of the DE).
 
 
-<img src="/blog/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora.png" alt="Linux Mint Main Screen with their logo" style="display: block; margin: 0 auto;" />
+<img src="/blog/tango-with-tux-dancing-on-the-edge-with-fedora/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora.png" alt="Linux Mint Main Screen with their logo" style="display: block; margin: 0 auto;" />
 
 ## **Arch Linux: Embracing (Trying) the DIY Spirit**
 
@@ -54,7 +54,7 @@ For me, almost every other distro, just never breaks (some Ubuntu exceptions, th
 > [!TIP]
 > Later on, I discovered about Arch Mailing lists. One can subscribe to **Arch-announce[^8]** list to know about upcoming breaking changes where manual intervention after update is necessary otherwise your system may bork down. For every inspiring or current user, it is a must to check before proceeding with updates, especially any major ones.
 
-![Arch Linux](/blog/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-5.jpeg)
+![Arch Linux](/blog/tango-with-tux-dancing-on-the-edge-with-fedora/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-5.jpeg)
 
 ## **openSUSE: Where Stability Meets Innovation**
 
@@ -69,7 +69,7 @@ I jumped ships to OpenSUSE quite early in my Linux journey. The Linux packaging 
 
 The third reason to leave OpenSUSE was, `zypper`. It's slow compared to other available package managers (look who's talking; Cough, cough! DNF 🙂). Not too slow (especially now when I'm using DNF), but it was evident as I was coming from Arch, where not only syncing/refreshing repos takes few seconds, but downloading update are speedier too.
 
-![OpenSUSE](/blog/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-4.jpeg)
+![OpenSUSE](/blog/tango-with-tux-dancing-on-the-edge-with-fedora/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-4.jpeg)
 
 ## **Fedora Workstation: The Bleeding Edge of Linux**
 
@@ -81,7 +81,7 @@ Then I fell in love with Fedora's semi-rolling release model. Unlike Ubuntu/Mint
 
 Now I have used Fedora Workstation, longer than any other distro (almost more than a year straight), It feels like a home. After the recent Red Hat's drama[^9], I tried to jump ships to openSUSE, and then even Ubuntu (sorry again folks), but I failed. I felt lost there. I know navigating through Fedora Workstation to the extent that I feel confident enough to manage it for my needs.
 
-![My Fedora Workstation Desktop](/blog/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-2.jpeg)
+![My Fedora Workstation Desktop](/blog/tango-with-tux-dancing-on-the-edge-with-fedora/2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-2.jpeg)
 
 ## **Immutable Distros: A Paradigm Shift in System Management**
 
