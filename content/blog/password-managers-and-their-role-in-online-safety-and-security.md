@@ -4,7 +4,7 @@ title: "Password Managers: Essential Tools for Online Security"
 date: 2022-06-11
 tags: ["Blogs", "Password Managers", "Security"]
 cover:
-    image: "/blog/passwordmanager.jpeg"
+    image: "/blog/password-managers-and-their-role-in-online-safety-and-security/passwordmanager.jpeg"
     alt: "Security written on the computer screen"
 ---
 
@@ -44,19 +44,19 @@ Following are some proprietary Password Managers, we won’t discuss them in det
 
 LastPass offers freemium services, with limited access to the features for their free tier users, but offer great deal of services to the premium members. It is a bit costly compared to what we have in free as well in the form of Padloc or Bitwarden. A [critical vulnerability](https://www.zdnet.com/article/lastpass-bug-leaks-credentials-from-previous-site/) was reported in 2019. According to [Forbes](https://www.forbes.com/sites/thomasbrewster/2019/04/10/what-happened-when-the-dea-demanded-passwords-from-lastpass/?sh=7b25ed387ebe), Drug Enforcement Administration(DEA) demand to access a criminal password record was rejected by LastPass due to zero knowledge encryption in place for customers.
 
-<img src="/blog/lastpass.png" alt="LastPass Logo" width="225" height="225" style="display: block; margin: 0 auto;" />
+<img src="/blog/password-managers-and-their-role-in-online-safety-and-security/lastpass.png" alt="LastPass Logo" width="225" height="225" style="display: block; margin: 0 auto;" />
 
 ### 3.2 1Password
 
 1Password do use some FOSS software for their services, but their app itself is proprietary. They have only premium version with limited trial period. Their premium version is also a bit costly. A plus point for them is their positive attitude and support about Open Source.
 
-<img src="/blog/1password.jpeg" alt="1Password Logo" width="225" height="225" style="display: block; margin: 0 auto;" />
+<img src="/blog/password-managers-and-their-role-in-online-safety-and-security/1password.jpeg" alt="1Password Logo" width="225" height="225" style="display: block; margin: 0 auto;" />
 
 ### 3.3 Dashlane
 
 Dashlane offers a limited free version with app support for all major OSes. The negative for me is lack of Linux client. The premium version is also a bit costlier than other proprietary premium offerings discussed above. It also doesn't offer password sync for free tier users.
 
-<img src="/blog/dashlane.png" alt="Dashlane Logo" width="225" height="225" style="display: block; margin: 0 auto;" />
+<img src="/blog/password-managers-and-their-role-in-online-safety-and-security/dashlane.png" alt="Dashlane Logo" width="225" height="225" style="display: block; margin: 0 auto;" />
 
 ## **4. FOSS Password Managers**
 
@@ -66,19 +66,19 @@ Following are some Open Source offerings:
 
 It is primarily designed for Windows, but KeePassX can run on Linux as well. It is an offline Password Manager that can also be run from a USB stick. Some unofficial clients are also available for almost every Operating System. If you like minimalist Program with GNU philosophy of doing one thing great, you can consider this option.
 
-<img src="/blog/keepass.jpeg" alt="KeePass Logo" width="225" height="225" style="display: block; margin: 0 auto;" />
+<img src="/blog/password-managers-and-their-role-in-online-safety-and-security/keepass.jpeg" alt="KeePass Logo" width="225" height="225" style="display: block; margin: 0 auto;" />
 
 ### 4.2 Padloc
 
 Padloc is relatively a new entry in the Password Managers realm. It offers clients for all, almost every OS. It offers cloud-based services. Furthermore, it as a freemium model. Depending on your needs, you can choose either of them. Its free offering includes the ability to save up to 50 passwords to sync up-to 2 devices, but the premium version offers unlimited password storage with 1 GB encrypted file storage and synchronization across multiple devices.
 
-<img src="/blog/padlock.png" alt="Padloc Logo" width="225" height="225" style="display: block; margin: 0 auto;" />
+<img src="/blog/password-managers-and-their-role-in-online-safety-and-security/padlock.png" alt="Padloc Logo" width="225" height="225" style="display: block; margin: 0 auto;" />
 
 ### 4.3 Bitwarden
 
 Bitwarden is my favorite with plethora of features. Its free version offers almost everything, except TOTP and encrypted file sharing, and security reports etc. But the amazing thing is, its premium version is also dirt-cheap for $10 per year. We discuss Bitwarden in details in the later part of the blog.
 
-<img src="/blog/bitwarden.png" alt="Bitwarden Logo" width="225" height="225" style="display: block; margin: 0 auto;" />
+<img src="/blog/password-managers-and-their-role-in-online-safety-and-security/bitwarden.png" alt="Bitwarden Logo" width="225" height="225" style="display: block; margin: 0 auto;" />
 
 
 ### 4.4 Some honorable mentions

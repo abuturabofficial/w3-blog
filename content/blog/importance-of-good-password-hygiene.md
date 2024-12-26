@@ -4,7 +4,7 @@ title: "The Importance of Strong Password Hygiene"
 date: 2022-06-07
 tags: ["Blogs", "Password Managers", "Security"]
 cover:
-    image: "/blog/2022-06-07-importance-of-good-password-hygiene.jpeg"
+    image: "/blog/importance-of-good-password-hygiene/2022-06-07-importance-of-good-password-hygiene.jpeg"
     alt: "An old man doing thumbs up with both of his hands"
 ---
 
@@ -26,7 +26,7 @@ Before moving towards the topic of making our passwords strong, first let’s di
 
 A 12 character password consisting only of digits can be hacked in less than 25 seconds.
 
-![25 Seconds to Break a Password](/blog/25sec.png)
+![25 Seconds to Break a Password](/blog/importance-of-good-password-hygiene/25sec.png)
 
 ## **How to check your Password Strength?**
 
@@ -75,7 +75,7 @@ A passphrase would be like: **Monkey-Laptop-Car-Driving**
 
 It would take a computer approximately 3 octillion years to crack this memorable passphrase.
 
-![Strong Breaks in Years of computing](/blog/years_sec.png)
+![Strong Breaks in Years of computing](/blog/importance-of-good-password-hygiene/years_sec.png)
 
 ## **Tips for Keeping your Passwords & Passphrases Safe**
 
@@ -103,11 +103,11 @@ To generate passphrases & passwords online:
 
 ### For password generation, use an online tool like this:
 
-![Passphrase creation online](/blog/passphrase.png)
+![Passphrase creation online](/blog/importance-of-good-password-hygiene/passphrase.png)
 
 ### For Passphrases, use a tool like this:
 
-![Passwordsgenerator.net](/blog/password.png)
+![Passwordsgenerator.net](/blog/importance-of-good-password-hygiene/password.png)
 
 ## **Closing Thoughts**
 
