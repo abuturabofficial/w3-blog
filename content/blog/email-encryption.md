@@ -4,7 +4,7 @@ title: 'Protect Your Inbox: Email Encryption for Gmail, Outlook & Other Platform
 date: '2024-12-26T11:05:01+05:00'
 author: "AbuTurab"
 cover:
-    image: "/blog/email-encryption/email-encryption-cover.jpg"
+    image: "/blog/email-encryption/email-encryption-cover.webp"
     alt: "<alt text>"
     caption: "[Designed by Freepik](http://www.freepik.com)"
 tags: ["Blogs", "Email Privacy", "Privacy", "Linux", "Windows", "Android", "macOS"]
@@ -18,7 +18,7 @@ If you go to [Gmail Website](https://mail.google.com), and look for the connecti
 > [!NOTIFY]
 > According to the [sources](https://blog.google/products/gmail/g-suite-gains-traction-in-the-enterprise-g-suites-gmail-and-consumer-gmail-to-more-closely-align/), Google stopped scanning email content for Ads personalization back in 2017 for non-enterprise users too. But they will still use your email meta-data and other services (Google and 3<sup>rd</sup> party) activities for the ads shown in the Gmail.
 
-![](/blog/email-encryption/email-encryption.png#center)
+![](/blog/email-encryption/email-encryption.webp#center)
 
 # Email Protocol and the Missing Layer of Privacy
 
@@ -53,19 +53,19 @@ I will recommend the **[Thunderbird](https://www.thunderbird.net/en-US/thunderbi
 
 First install the OpenKeychain app:
 - When you first open the app it will look like this:
-  ![](/blog/email-encryption/email-encryption-1.png#center)
+  ![](/blog/email-encryption/email-encryption-1.webp#center)
 - Click on the **CREATE MY KEY**
 - Enter your desired name
-  ![](/blog/email-encryption/email-encryption-2.png#center)
+  ![](/blog/email-encryption/email-encryption-2.webp#center)
 - Click `next` and fill your `email`
-  ![](/blog/email-encryption/email-encryption-3.png#center)
+  ![](/blog/email-encryption/email-encryption-3.webp#center)
 - Click `next`, and your filled info will be there.
 - The option `Publish on Keyservers` will upload your public key to known servers, so others can easily find your public key.
 - Some email clients by-default check those servers for the public keys of the emails when encryption is used.
-  ![](/blog/email-encryption/email-encryption-4.png#center)
+  ![](/blog/email-encryption/email-encryption-4.webp#center)
 - By clicking on the three-dot menu in the top-right corner, you can customize the `key algorithm` used. I will recommend to stick with defaults for now.
 - Click on the `CREATE KEY`. Your PGP key pair is ready to be used.
-  ![](/blog/email-encryption/email-encryption-5.png#center)
+  ![](/blog/email-encryption/email-encryption-5.webp#center)
 
 When you want to send message to some email address like [My Email](mailto:cyberfrontofficial@proton.me), you can add their public key ([My PGP Public Key](/misc/publickey.asc)) by click on the `+` and then select `Import from File`.
 
@@ -75,18 +75,18 @@ Install the Thunderbird app.
 - Sign-in to your Google/Outlook account.
 - Go to settings
 - Click on the account, you want to enable the encryption for
-  ![](/blog/email-encryption/email-encryption-6.png#center)
+  ![](/blog/email-encryption/email-encryption-6.webp#center)
 - Click on the `End-to-end encryption` button
-  ![](/blog/email-encryption/email-encryption-7.png#center)
+  ![](/blog/email-encryption/email-encryption-7.webp#center)
 - Click on `Enable OpenPGP support`
 - You can select the key for your account by clicking on `Configure end-to-end key`. It will show all the keys saved in the `OpenKeychain` app.
-  ![](/blog/email-encryption/email-encryption-8.png#center)
+  ![](/blog/email-encryption/email-encryption-8.webp#center)
 
 > [!INFO]
 > By default, your Subject of the emails is not encrypted. You can toggle that setting `Encrypt message subjects` on, but do remember some Email providers might not support it, your subject will appear gibberish to them, despite decrypting the rest of the email.
 
 Now share your public key to world by clicking on the key stored in your `OpenKeychain` app. You can simply copy the app by clicking the `copy icon` or share it via `share icon`.
-  ![](/blog/email-encryption/email-encryption-9.png#center)
+  ![](/blog/email-encryption/email-encryption-9.webp#center)
   
 > [!TIP]
 > You can/should back up your `PGP Key Pair`, by clicking on the `three-dot menu`, a back-up key will appear, which you have to remember to import back your key pair.
@@ -97,10 +97,10 @@ Let's test the encryption.
 You need to import the `Public PGP Key` of the receiver, and then go-to `Thunderbird` app, click the `pencil icon` to write a new email.
 
 A padlock will appear, you can enable or disable the encryption by clicking the padlock (A green padlock icon means, encryption is enabled).
-  ![](/blog/email-encryption/email-encryption-10.png#center)
+  ![](/blog/email-encryption/email-encryption-10.webp#center)
 
 This is how Gmail/Outlook web versions will look like for E2EE email. The body of the email isn't visible at all on the PC version of Gmail.
-  ![](/blog/email-encryption/email-encryption-11.png#center)
+  ![](/blog/email-encryption/email-encryption-11.webp#center)
 
 While on the mobile version, it looks like this:
   <div class="video-container">
@@ -111,7 +111,7 @@ While on the mobile version, it looks like this:
   </div>
 
 While on the `Thunderbird` app encrypted message will look like this (after decryption of-course):
-  ![](/blog/email-encryption/email-encryption-12.png#center)
+  ![](/blog/email-encryption/email-encryption-12.webp#center)
 
 
 ## Linux: How to use PGP Keys with Thunderbird
@@ -146,20 +146,20 @@ sBbArKtWvvDMh1Lw2pW8hhF9/bn+xI363bW2HdqUBw==
 ```
 
 Go-to Thunderbird settings and then account settings, click on `End-to-End Encryption` button
-  ![](/blog/email-encryption/email-encryption-13.png#center)
+  ![](/blog/email-encryption/email-encryption-13.webp#center)
 
 Now click on the `OpenPGP Key Manager`:
-  ![](/blog/email-encryption/email-encryption-14.png#center)
+  ![](/blog/email-encryption/email-encryption-14.webp#center)
 
 With `OpenPGP Key Manager`, you can import your both public and private/secret keys separately by click on `file` button up-top.
 
-![](/blog/email-encryption/email-encryption-15.png#center)
+![](/blog/email-encryption/email-encryption-15.webp#center)
 
 After importing both keys, you are set for E2EE use. (You will again need to add the PGP Public Key of the receiver to encrypt the message)
 
 Click new message: If you enter an email address for which you have added the PGP Public Key of theirs, it will show you a prompt to enable E2EE.
 
-![](/blog/email-encryption/email-encryption-16.png#center)
+![](/blog/email-encryption/email-encryption-16.webp#center)
 
 > [!TIP]
 > As we are using Thunderbird's own PGP Key Manager, the method of enabling E2EE on Windows and macOS will be the same when using [Thunderbird Client](https://www.thunderbird.net/en-US/thunderbird/all/).

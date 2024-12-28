@@ -4,7 +4,7 @@ title: "Digital Privacy in Web 2.0: A Modern Horror Story"
 date: 2023-12-05 10:27:00 +0500
 tags: ["Blogs", "Privacy", "Digital Freedom"]
 cover:
-    image: "/blog/digital-privacy-a-horror-story/2023-12-05-digital-privacy-a-horror-story.jpeg"
+    image: "/blog/digital-privacy-a-horror-story/2023-12-05-digital-privacy-a-horror-story.webp"
     alt: "Rows of gibberish text are falling from above"
 comments: true
 ---

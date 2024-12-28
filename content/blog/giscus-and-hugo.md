@@ -4,7 +4,7 @@ title: 'Setting Up Giscus: A Simple Guide for Hugo PaperMode Theme'
 date: 2024-12-19T11:49:20+05:00
 author: "AbuTurab"
 cover:
-    image: "/blog/giscus-and-hugo/giscus-and-hugo.png"
+    image: "/blog/giscus-and-hugo/giscus-and-hugo.webp"
     alt: "Giscus and Hugo Logos are shown"
     caption: "Giscus meets Hugo"
 tags: ["Blogs", "Hugo", "Giscus"]
@@ -44,7 +44,7 @@ Replace `<username>` with GH username and `<your-repo-name>` with your respectiv
 
 Click on the `Change repository visibility` and make it `public` after accepting all the terms.
 
-{{< figure src="/blog/giscus-and-hugo/giscus-and-hugo-1.png" align="center">}}
+{{< figure src="/blog/giscus-and-hugo/giscus-and-hugo-1.webp" align="center">}}
 
 ## 1.2 Installing the Giscus App on Your GitHub Account
 

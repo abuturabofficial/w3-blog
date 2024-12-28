@@ -4,7 +4,7 @@ draft: false
 title: 'Cloudflare Warp on Linux: Setup and Troubleshooting Guide'
 author: "AbuTurab"
 cover:
-    image: "/blog/cloudflare-warp-on-linux/cloudflare-warp-cover.png"
+    image: "/blog/cloudflare-warp-on-linux/cloudflare-warp-cover.webp"
     alt: "<alt text>"
     caption: "<text>"
 tags: ["Blogs", "Linux", "Security"]
@@ -145,7 +145,7 @@ curl https://www.cloudflare.com/cdn-cgi/trace/
 
 Look for `warp=on`
 
-{{< figure src="/blog/cloudflare-warp-on-linux/cloudflare-warp-on-linux-2.png" align="center">}}
+{{< figure src="/blog/cloudflare-warp-on-linux/cloudflare-warp-on-linux-2.webp" align="center">}}
 
 
 ## General Issues and Fixes
@@ -182,13 +182,13 @@ Now restart the `systemd-resolved` service again. Check `warp-cli status`, you m
 
 - I personally use `nextDNS` as my upstream DNS resolver, my `resolved.conf` file looks like this:
 
-{{< figure src="/blog/cloudflare-warp-on-linux/cloudflare-warp-on-linux-3.png" align="center">}}
+{{< figure src="/blog/cloudflare-warp-on-linux/cloudflare-warp-on-linux-3.webp" align="center">}}
 
 So for me, all the above fixes don't work. As `warp-cli` by default tries to connect with `warp` mode which is in normal terms, tries to proxy the **DNS queries** too along with tunneling your normal traffic through Cloudflare Network.
 
 I get the following error:
 
-{{< figure src="/blog/cloudflare-warp-on-linux/cloudflare-warp-on-linux.png" align="center">}}
+{{< figure src="/blog/cloudflare-warp-on-linux/cloudflare-warp-on-linux.webp" align="center">}}
 
 - To fix this, we need to change the default mode to `tunnel_only`
 
@@ -198,7 +198,7 @@ Here are the different modes available for `warp-cli` client:
 warp-cli mode --help
 ```
 
-{{< figure src="/blog/cloudflare-warp-on-linux/cloudflare-warp-on-linux-1.png" align="center">}}
+{{< figure src="/blog/cloudflare-warp-on-linux/cloudflare-warp-on-linux-1.webp" align="center">}}
 
 As the `tunnel_only` mode does not proxy the DNS, this is the mode we need to use alongside our custom DNS for upstream resolution.
 
@@ -225,7 +225,7 @@ curl -L https://test.nextdns.io/
 
 It will show if I'm using `nextDNS`or not, also my device name and protocol used.
 
-{{< figure src="/blog/cloudflare-warp-on-linux/cloudflare-warp-on-linux-4.png" align="center">}}
+{{< figure src="/blog/cloudflare-warp-on-linux/cloudflare-warp-on-linux-4.webp" align="center">}}
 
 So, I'm successfully able to route my traffic through Cloudflare network using Warp Protocol and still using my custom upstream DNS provider (nextDNS).
 
