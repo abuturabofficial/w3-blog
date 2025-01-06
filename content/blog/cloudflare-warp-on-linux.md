@@ -112,6 +112,14 @@ sudo transactional-update pkg install cloudflare-warp
 
 If you have carefully followed the installation instructions, you will have the `warp-cli` in your path. It simply means you would be able to execute `warp-cli` command from your terminal.
 
+Sometimes Warp Systemd service doesn't start automatically while installing, so:
+
+```bash
+sudo systemctl enable --now warp-svc.service
+```
+
+This will enable and start the systemd service, you will normally able to use `warp-cli` command.
+
 > [!INFO] Here is the **[Official Guide](https://developers.cloudflare.com/warp-client/get-started/linux/)** for `warp-cli` usage and initial setup.
 
 > [!WARNING]
