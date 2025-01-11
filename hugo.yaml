@@ -159,6 +159,12 @@ menu:
           params:
               icon: mail
 
+        - identifier: rss
+          name: RSS Feed
+          url: /index.xml
+          params:
+              icon: rss
+
 related:
     includeNewer: true
     threshold: 60

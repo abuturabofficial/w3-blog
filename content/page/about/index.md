@@ -19,7 +19,7 @@ toc: false
 license: false
 ---
 
-## Founder/Owner
+## 🌟 Founder/Owner 🌟
 
 Hi, I’m **Sajid Mahmood** aka **AbuTurab**—a self-taught tech enthusiast exploring Windows, Linux, cloud technologies, and cybersecurity. I share insights on system administration, security practices, and tools to optimize and secure systems.
 
