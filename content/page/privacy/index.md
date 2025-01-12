@@ -1,6 +1,5 @@
 ---
 title: 'Privacy Policy'
-description: Hugo, the world's fastest framework for building websites
 date: '2023-11-19'
 aliases:
   - privacy
