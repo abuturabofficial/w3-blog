@@ -5,6 +5,7 @@ tags: ["PicoCTF"]
 categories: ["ctf"]
 date: 2023-09-28 10:28:00 +0500
 image: "2023-09-28-Sleuthkit-Apprentice-Walkthrough.png"
+keywords: ["capture the flag challenges", "solving picoctf", "solving sleuthkit apprentice walkthrough", "sleuthkit apprentice walkthrough"]
 description: "Sleuthkit Apprentice Challenge is about doing forensic analysis of disk images and finding the useful and juicy information about the target."
 ---
 
