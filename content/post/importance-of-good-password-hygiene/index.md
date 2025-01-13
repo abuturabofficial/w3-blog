@@ -5,6 +5,7 @@ date: 2022-06-07
 tags: ["Password Managers", "Security"]
 categories: ["Blog"]
 description: "Weak and repeated passwords are major cause of online data breaches. We will cover the importance and techniques for strong password use."
+keywords: ["strong passwords practices", "using good password", "why strong passoword", "best password practices"]
 image: "2022-06-07-importance-of-good-password-hygiene.webp"
 ---
 
