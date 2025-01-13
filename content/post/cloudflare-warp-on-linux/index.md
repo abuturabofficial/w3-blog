@@ -29,7 +29,7 @@ There are two major popular types of Linux distros, we will see, how to install 
 > [!TIP] 
 > You can directly follow the official installation instructions [here](https://pkg.cloudflareclient.com/) and can skip the installation steps. If you have installed and [registered it](#using-warp-client) already then simply go to **[this section](#general-issues-and-fixes)** for the issues and fixes.
 
-### 1. Traditional Linux Distributions
+### Traditional Linux Distributions
 
 These are your normie distros like Ubuntu, Linux Mint, Arch Linux etc., where **system files, user, and system configuration files** can be created/deleted and modified freely. It allows you to install packages via normal Package managers like `apt`, `pacman`, `yum`, `zypper`, `dnf` etc. If you aren't already familiar with the concept of immutable/atomic Linux distros, you're most probably not using the one.
 
@@ -79,7 +79,7 @@ sudo zypper install cloudflare-warp #For OpenSUSE
 sudo dnf install cloudflare-warp #For Fedora or its based distros
 ```
 
-### 2. Immutable/Atomic Linux Distributions
+### Immutable/Atomic Linux Distributions
 
 The steps for adding the repo to your sources is similar as above for **Debian/Ubuntu**, **RHEL** based distros. The only difference will be in the installation of the client, as on immutable distros we don't have access to the normal package manager.
 
