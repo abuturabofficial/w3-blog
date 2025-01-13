@@ -89,7 +89,7 @@ When your system becomes unresponsive and doesn't react at all, do this:
   - <kbd>i</kbd> to kill the processes
   - <kbd>b</kbd> to reboot
 
-That's how you can get back your locked/frozen system to life again, without using <kbd>Hardware RESET</kbd> button.
+That's how you can get back your locked/frozen system to life again, without using <button>Hardware RESET</button> button.
 
 ---
 
