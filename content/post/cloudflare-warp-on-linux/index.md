@@ -120,7 +120,8 @@ sudo systemctl enable --now warp-svc.service
 
 This will enable and start the systemd service, you will normally able to use `warp-cli` command.
 
-> [!INFO] Here is the **[Official Guide](https://developers.cloudflare.com/warp-client/get-started/linux/)** for `warp-cli` usage and initial setup.
+> [!INFO]
+> Here is the **[Official Guide](https://developers.cloudflare.com/warp-client/get-started/linux/)** for `warp-cli` usage and initial setup.
 
 > [!WARNING]
 > On Atomic/Immutable distros, you will need to reboot your PC, to get Warp client working. On normal distros, if the `warp-cli` isn't available right away, simply close then reopen the terminal.
