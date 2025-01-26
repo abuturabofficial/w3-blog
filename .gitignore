@@ -10,4 +10,4 @@
 /public
 /isableFastRender
 .hugo_build.lock
-resources/_gen
+/resources
