@@ -24,15 +24,15 @@ $admonition-colors: (
 );
 
 // Define theme variables for light and dark modes
-[data-theme="light"] {
-  --admonition-bg: #ffffff;
+[data-scheme="light"] {
+  --admonition-bg: #fafafa;
   --admonition-text: #000000;
   --code-bg: #f5f5f5;
   --code-text: #24292e;
   --blockquote-border: #e0e0e0;
 }
 
-[data-theme="dark_dimmed"] {
+[data-scheme="dark"] {
   --admonition-bg: #272822;
   --admonition-text: #e6e6e6;
   --code-bg: #313244;
