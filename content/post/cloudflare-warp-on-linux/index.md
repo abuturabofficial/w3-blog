@@ -8,7 +8,7 @@ tags: ["Linux", "Security", "VPN"]
 categories: ["Blog"]
 description: To setup cloudflare warp on linux and fix issues due to systemd-resolved on linux. How to setup and install Warp on Immutable Distros like SilverBlue, OpenSuse Aeon etc.
 image: "cloudflare-warp-cover.webp"
-lastmod: "2025-01-01"
+lastmod: "2025-01-26T17:10:00+05:00"
 ---
 
 **Cloudflare Warp** is a software solution that routes your internet traffic through Cloudflare's secure network using the Warp protocol. By using Cloudflare’s public IP instead of your ISP’s, it helps protect your data and shield you from certain types of cyberattacks.
@@ -236,6 +236,18 @@ It will show if I'm using `nextDNS`or not, also my device name and protocol used
 {{< figure src="cloudflare-warp-on-linux-4.webp" align="center">}}
 
 So, I'm successfully able to route my traffic through Cloudflare network using Warp Protocol and still using my custom upstream DNS provider (nextDNS).
+
+## Bypass Censorship
+
+By-default, Cloudflare Warp uses `wireguard` protocol, but your ISP (Internet Service Provider) or Government might block the protocol used by wireguard for censorship or other reasons.
+
+Please try cloudflare's new developed `MASQUE` protocol which might let you connect to the internet in the oppressive regimes
+
+```console
+warp-cli tunnel protocol set MASQUE
+```
+
+> [!CAUTION] Please use TOR Onion services for extreme privacy and anonymity, especially those who are Journalists/Whistleblowers.
 
 ## Final Thoughts
 > [!CONCLUSION]
