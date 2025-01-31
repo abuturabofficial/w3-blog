@@ -11,7 +11,7 @@ aliases:
 lastmod: '2025-01-01'
 menu:
     main: 
-        weight: 3
+        weight: 4
         params:
             icon: user
 comments: false
