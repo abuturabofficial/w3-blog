@@ -2,14 +2,22 @@
 draft: false
 title: 'My Certifications'
 linkTitle: 'Certifications'
+alias:
+    - certification
+    - my-certification
+    - certifications
+    - qualification
+    - qualifications
+    - my-qualifications
+    - my-qualification
 imageNameKey:
 date: '2025-01-31T14:39:55+05:00'
 description:
 author: "AbuTurab"
-image:
+image: 'certified-cover.webp'
 tags: 
 categories:
-keywords: ["My qualification", "My ceritificate", "certificates"]
+keywords: ["My qualifications", "My ceritificate", "certificates"]
 menu:
     main: 
         weight: 5
@@ -18,12 +26,12 @@ menu:
 comments: false
 toc: true
 license: false
-lastmod: '2025-01-31T19:28:34+05:00'
+lastmod: '2025-02-01T11:56:08+05:00'
 ---
 
 The following are my certifications for various technology-related specializations and courses.
 
-[Here](https://wiki.cyberfront.me) is my WIKI website, where I share my notes taken during these courses.
+[Here](https://wiki.cyberfront.me) is my WIKI website, where I share my notes taken during these specializations/courses.
 
 <style>
 .responsive-iframe {
@@ -49,9 +57,11 @@ The following are the courses I have taken in this category.
 
 ### Computer Science Theory
 
+[This course](https://www.khanacademy.org/computing/computer-science) is offered on **Khan Academy**.
+
 >[!INFO] Khan Academy offers no certificate of completion.
 
-[Here are my notes](https://wiki.cyberfront.me/computer-science/computer-science-theory/)…
+[Click Here](https://wiki.cyberfront.me/computer-science/computer-science-theory/) for my notes…
 
 ---
 
@@ -59,7 +69,19 @@ The following are the courses I have taken in this category.
 
 I have taken following courses in the **IT Fundamentals** section.
 
+### IT Fundamentals for Cybersecurity Specialization
+
+This [specialization course](https://www.coursera.org/specializations/it-fundamentals-cybersecurity?) is offered by **IBM** on Coursera.
+
+It is also a part of [IBM Cybersecurity Analyst Specialization](#ibm-cybersecurity-analyst-professional-certificate)
+
+<div class="responsive-iframe">
+    <iframe src="/it-fundamentals/ibm-it-fundamentals-for-cybersecurity/IT-Fundamentals-for-Cybersecurity.pdf"></iframe>
+</div>
+
 ### Google IT Support Professional Certificate
+
+[This specialization](https://www.coursera.org/professional-certificates/google-it-support) course is taught by **Google Education** scholars on Coursera.
 
 > [!NOTE]
 > [Click here](https://wiki.cyberfront.me/it-fundamentals/google-it-support/) for my notes taken during the tenure of this specialization.
@@ -77,6 +99,8 @@ Here are individual certificates for each of the courses in the specialization:
 5. [IT Security: Defense against the Digital Dark Arts](/it-fundamentals/google-it-support/05-it-security-defense-against-the-digital-dark-arts.pdf)
 
 ### IBM IT Support Professional Certificate
+
+**IBM** offers [this specialization](https://www.coursera.org/professional-certificates/ibm-technical-support) course on Coursera.
 
 >[!NOTE]
 > [Click here](https://wiki.cyberfront.me/it-fundamentals/ibm-it-support/) for my notes of this specialization.
@@ -105,6 +129,8 @@ I have taken below courses in this section.
 
 ### IBM Cybersecurity Analyst Professional Certificate
 
+**IBM** offer [this specialization](https://www.coursera.org/professional-certificates/ibm-cybersecurity-analyst) course on Coursera.
+
 >[!NOTE] 
 > [Click here](https://wiki.cyberfront.me/cybersecurity-and-networks/ibm-cybersecurity-analyst/) for my notes of this specialization.
 
@@ -125,7 +151,7 @@ Here are individual certificates for each course of this specialization.
 
 ### UOM Cybersecurity Specialization
 
-This course is offered by University of Maryland.
+[This specialization](https://www.coursera.org/specializations/cyber-security) course is offered by **University of Maryland, College Park** on Coursera.
 
 > [!INFO]
 > Due to advance nature of the courses, I wasn't able to continue beyond first course of the specialization. So, rest of them, are at hold right now.
@@ -140,15 +166,17 @@ Here are the certificates for the completed courses:
 
 I have taken following courses in this section:
 
-### IBM Information Technology (IT) and Cloud Fundamentals
+### IBM Information Technology (IT) and Cloud Fundamentals Specialization
 
-This specialization can be taken independently as well as a part of [IBM IT Support](#ibm-it-support-professional-certificate) specialization.
+[This specialization](https://www.coursera.org/specializations/it-cloud-fundamentals) can be taken independently as well as a part of [IBM IT Support](#ibm-it-support-professional-certificate) specialization.
 
 <div class="responsive-iframe">
     <iframe src="/devops-and-cloud/ibm-it-and-cloud-fundamentals/00-Information-Technology-and-Cloud-Fundamentals-Specialization.pdf"></iframe>
 </div>
 
-### IBM DevOps, Cloud, and Agile Foundations
+### IBM DevOps, Cloud, and Agile Foundations Specialization
+
+This specialization is [available here](https://www.coursera.org/specializations/devops-cloud-and-agile-foundations) offered by **IBM** on Coursera.
 
 This isn't the separate specialization (though it can be completed as such), rather when you complete listed courses included in the main [IBM DevOps and Software Engineering](#ibm-devops-and-software-engineering-professional-certificate) specialization, you get this certificate of completion. You can also only take listed courses for this specialization to get the certificate.
 
@@ -160,7 +188,7 @@ This isn't the separate specialization (though it can be completed as such), rat
 
 > [!Goal] This course is in progress right now.
 
-This course is offered by IBM on Coursera.
+[This specialization](https://www.coursera.org/professional-certificates/devops-and-software-engineering) course is offered by **IBM** on Coursera.
 
 Following are my individual certificates for courses included in this specialization.
 
