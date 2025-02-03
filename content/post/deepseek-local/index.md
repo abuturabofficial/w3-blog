@@ -12,7 +12,7 @@ keywords:
 lastmod: ''
 ---
 
-DeepSeek is a Chinese AI company that has recently rattled the cages in the international LLM business due to its state-of-the-art performance with minimal running costs. Its latest `R1` model performs on par with, or even better than, OpenAI's `o1` model in some cases.
+DeepSeek is a Chinese AI company that has recently rattled the cages in the international LLM business due to its state-of-the-art performance with minimal running costs. Its latest `R1` model performs on par with, or even better than, OpenAI's `o1` model in some scenarios.
 
 ## Why Run DeepSeek Locally?
 
