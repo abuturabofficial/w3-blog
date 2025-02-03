@@ -6,10 +6,10 @@ date: '2025-02-03T11:49:00+05:00'
 description: "Running LLM models locally, ensures that only you are  the in-charge of your data. In this tutorial we will learn, how to run deepseek models locally on your PC."
 author: "AbuTurab"
 image: 'deepseek-local-cover.webp'
-tags: 
-categories:
-keywords:
-lastmod: ''
+tags: ['LLMs','AI', 'Selfhosted']
+categories: ['Blog']
+keywords: ['Running LLMs locally', 'Self hosting a large language model', 'How to securely run deepseek ai', 'Selfhosted llms and your privacy']
+lastmod: '2025-02-03T16:41:06+05:00'
 ---
 
 DeepSeek is a Chinese AI company that has recently rattled the cages in the international LLM business due to its state-of-the-art performance with minimal running costs. Its latest `R1` model performs on par with, or even better than, OpenAI's `o1` model in some scenarios.
@@ -228,4 +228,4 @@ That's all for now. Feel free to explore different LLMs and enjoy the benefits o
 - [OLLAMA Available Models](https://ollama.com/search) --- Choose which model you like to install on your ollama instance.
 - [How to install Open WebUI](https://github.com/open-webui/open-webui?tab=readme-ov-file#how-to-install-) --- Official Installation instructions via PiP and Docker.
 - [Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install) --- MiniConda installation docs.
-- [you NEED to run DeepSeek locally - Linux Guide](https://www.youtube.com/watch?v=ptRkk_jzvZw) --- TechHut video about OLLAMA and Open-WebUI installation (He uses docker methods for Open-WebUI).
+- [you NEED to run DeepSeek locally - Linux Guide](https://www.youtube.com/watch?v=ptRkk_jzvZw) --- TechHut video about OLLAMA and Open-WebUI installation (He uses docker installation method for Open-WebUI).
