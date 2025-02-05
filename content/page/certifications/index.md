@@ -29,7 +29,7 @@ menu:
 comments: false
 toc: true
 license: false
-lastmod: '2025-02-01T11:56:08+05:00'
+lastmod: '2025-02-05T19:13:16+05:00'
 ---
 
 The following are my certifications for various technology-related specializations and courses.
