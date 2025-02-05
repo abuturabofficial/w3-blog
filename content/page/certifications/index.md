@@ -117,11 +117,11 @@ It is also a part of [IBM Cybersecurity Analyst Specialization](#ibm-cybersecuri
 
 Here are individual certificates for each of the courses in the specialization:
 
-3. [Technical Support Fundamentals](/it-and-sysadmin/google-it-support/01-technical-support-fundamentals.pdf)
-4. [The Bits and Bytes of Computer Networking](/it-and-sysadmin/google-it-support/02-the-bits-and-bytes-of-computer-networking.pdf)
-5. [Operating Systems and You: Becoming a Power User](/it-and-sysadmin/google-it-support/03-operating-systems-and-you-becoming-a-power-user.pdf)
-6. [System Administration and IT Infrastructure Services](/it-and-sysadmin/google-it-support/04-system-administration-and-it-infrastructure-services.pdf)
-7. [IT Security: Defense against the Digital Dark Arts](/it-and-sysadmin/google-it-support/05-it-security-defense-against-the-digital-dark-arts.pdf)
+1. [Technical Support Fundamentals](/it-and-sysadmin/google-it-support/01-technical-support-fundamentals.pdf)
+2. [The Bits and Bytes of Computer Networking](/it-and-sysadmin/google-it-support/02-the-bits-and-bytes-of-computer-networking.pdf)
+3. [Operating Systems and You: Becoming a Power User](/it-and-sysadmin/google-it-support/03-operating-systems-and-you-becoming-a-power-user.pdf)
+4. [System Administration and IT Infrastructure Services](/it-and-sysadmin/google-it-support/04-system-administration-and-it-infrastructure-services.pdf)
+5. [IT Security: Defense against the Digital Dark Arts](/it-and-sysadmin/google-it-support/05-it-security-defense-against-the-digital-dark-arts.pdf)
 
 ### IBM IT Support Professional Certificate
 
@@ -136,15 +136,15 @@ Here are individual certificates for each of the courses in the specialization:
 
 Here are individual certificates for each of the courses in the specialization:
 
-8. [Introduction to Technical Support](/it-and-sysadmin/ibm-it-support/01-introduction-to-technical-support.pdf)
-9. [Introduction to Hardware and Operating Systems](/it-and-sysadmin/ibm-it-support/02-introduction-to-hardware-and-operating-systems.pdf)
-10. [Introduction to Software, Programming, and Databases](/it-and-sysadmin/ibm-it-support/03-introduction-to-software-programming-and-databases.pdf)
-11. [Introduction to Networking and Storage](/it-and-sysadmin/ibm-it-support/04-introduction-to-networking-and-storage.pdf)
-12. [Introduction to Cybersecurity Essentials](/it-and-sysadmin/ibm-it-support/05-introduction-to-cybersecurity-essentials.pdf)
-13. [Introduction to Cloud Computing](/it-and-sysadmin/ibm-it-support/06-introduction-to-cloud-computing.pdf)
-14. [Practice Exam for CompTIA ITF+ Certification](/it-and-sysadmin/ibm-it-support/07-practice-exam-for-comptia-itf-certification.pdf)
-15. [Technical Support (IT) Case Studies and Capstone](/it-and-sysadmin/ibm-it-support/08-technical-support-case-studies-and-capstone.pdf)
-16. [Technical Support (IT) Case Studies and Capstone](/it-and-sysadmin/ibm-it-support/09-tech-support-career-guide-and-interview-preparation.pdf)
+1. [Introduction to Technical Support](/it-and-sysadmin/ibm-it-support/01-introduction-to-technical-support.pdf)
+2. [Introduction to Hardware and Operating Systems](/it-and-sysadmin/ibm-it-support/02-introduction-to-hardware-and-operating-systems.pdf)
+3. [Introduction to Software, Programming, and Databases](/it-and-sysadmin/ibm-it-support/03-introduction-to-software-programming-and-databases.pdf)
+4. [Introduction to Networking and Storage](/it-and-sysadmin/ibm-it-support/04-introduction-to-networking-and-storage.pdf)
+5. [Introduction to Cybersecurity Essentials](/it-and-sysadmin/ibm-it-support/05-introduction-to-cybersecurity-essentials.pdf)
+6. [Introduction to Cloud Computing](/it-and-sysadmin/ibm-it-support/06-introduction-to-cloud-computing.pdf)
+7. [Practice Exam for CompTIA ITF+ Certification](/it-and-sysadmin/ibm-it-support/07-practice-exam-for-comptia-itf-certification.pdf)
+8. [Technical Support (IT) Case Studies and Capstone](/it-and-sysadmin/ibm-it-support/08-technical-support-case-studies-and-capstone.pdf)
+9. [Technical Support (IT) Case Studies and Capstone](/it-and-sysadmin/ibm-it-support/09-tech-support-career-guide-and-interview-preparation.pdf)
 
 ---
 
@@ -165,14 +165,14 @@ I have taken below courses in this section.
 
 Here are individual certificates for each course of this specialization.
 
-17. [Introduction to Cybersecurity Tools and Cyberattacks](/cybersecurity-and-networks/ibm-cybersecurity-analyst/01-Introduction-to-CyberSec-Tools-and-Cyber-Attacks.pdf)
-18. [Cybersecurity Roles, Processes and Operating System Security](/cybersecurity-and-networks/ibm-cybersecurity-analyst/02-Cybersecurity-Roles-Processes-and-Operating-System-Security.pdf)
-19. [Cybersecurity Compliance Frameworks and System Administration](/cybersecurity-and-networks/ibm-cybersecurity-analyst/03-Cybersecurity-Compliance-Framework-and-System-Administration.pdf)
-20. [Network Security and Database Vulnerabilities](/cybersecurity-and-networks/ibm-cybersecurity-analyst/04-Network-Security-and-Database-Vulnerabilities.pdf)
-21. [Penetration Testing, Incident Response and Forensics](/cybersecurity-and-networks/ibm-cybersecurity-analyst/05-Penetration-Testing-Incident-Response-and-Forensics.pdf)
-22. [Cyber Threat Intelligence](/cybersecurity-and-networks/ibm-cybersecurity-analyst/06-Cyber-Threat-Intelligence.pdf)
-23. [Cybersecurity Capstone: Breach Response Case Studies](/cybersecurity-and-networks/ibm-cybersecurity-analyst/07-Cybersecurity-Capstone-Breach-Response-Case-Studies.pdf)
-24. [Cybersecurity Assessment: CompTIA Security+ & CYSA+](/cybersecurity-and-networks/ibm-cybersecurity-analyst/08-IBM-Cybersecurity-Analyst-Assessment.pdf)
+1. [Introduction to Cybersecurity Tools and Cyberattacks](/cybersecurity-and-networks/ibm-cybersecurity-analyst/01-Introduction-to-CyberSec-Tools-and-Cyber-Attacks.pdf)
+2. [Cybersecurity Roles, Processes and Operating System Security](/cybersecurity-and-networks/ibm-cybersecurity-analyst/02-Cybersecurity-Roles-Processes-and-Operating-System-Security.pdf)
+3. [Cybersecurity Compliance Frameworks and System Administration](/cybersecurity-and-networks/ibm-cybersecurity-analyst/03-Cybersecurity-Compliance-Framework-and-System-Administration.pdf)
+4. [Network Security and Database Vulnerabilities](/cybersecurity-and-networks/ibm-cybersecurity-analyst/04-Network-Security-and-Database-Vulnerabilities.pdf)
+5. [Penetration Testing, Incident Response and Forensics](/cybersecurity-and-networks/ibm-cybersecurity-analyst/05-Penetration-Testing-Incident-Response-and-Forensics.pdf)
+6. [Cyber Threat Intelligence](/cybersecurity-and-networks/ibm-cybersecurity-analyst/06-Cyber-Threat-Intelligence.pdf)
+7. [Cybersecurity Capstone: Breach Response Case Studies](/cybersecurity-and-networks/ibm-cybersecurity-analyst/07-Cybersecurity-Capstone-Breach-Response-Case-Studies.pdf)
+8. [Cybersecurity Assessment: CompTIA Security+ & CYSA+](/cybersecurity-and-networks/ibm-cybersecurity-analyst/08-IBM-Cybersecurity-Analyst-Assessment.pdf)
 
 ### UOM Cybersecurity Specialization
 
@@ -183,7 +183,7 @@ Here are individual certificates for each course of this specialization.
 
 Here are the certificates for the completed courses:
 
-25. [Usable Security](/cybersecurity-and-networks/uom-cybersecurity-specialization/01-usable-security.pdf)
+1. [Usable Security](/cybersecurity-and-networks/uom-cybersecurity-specialization/01-usable-security.pdf)
 
 ---
 
@@ -217,9 +217,9 @@ This isn't the separate specialization (though it can be completed as such), rat
 
 Following are my individual certificates for courses included in this specialization.
 
-26. [Introduction to DevOps](/devops-and-cloud/ibm-devops-and-se/01-Introduction-to-DevOps.pdf)
-27. [Introduction to Cloud Computing](/devops-and-cloud/ibm-devops-and-se/02-Introduction-to-Cloud-Computing.pdf)
-28. [Introduction to Agile Development and Scrum](/devops-and-cloud/ibm-devops-and-se/03-Introduction-to-Agile-Development-and-Scrum.pdf)
-29. [Introduction to Software Engineering](/devops-and-cloud/ibm-devops-and-se/04-Introduction-to-Software-Engineering.pdf)
-30. [Hands-on Introduction to Linux Commands and Shell Scripting](/devops-and-cloud/ibm-devops-and-se/05-Hands-on-Introduction-to-Linux-Commands-and-Shell-Scripting.pdf)
-31. [Getting Started with Git and GitHub](/devops-and-cloud/ibm-devops-and-se/06-Getting-Started-with--and-GitHub.pdf)
+1. [Introduction to DevOps](/devops-and-cloud/ibm-devops-and-se/01-Introduction-to-DevOps.pdf)
+2. [Introduction to Cloud Computing](/devops-and-cloud/ibm-devops-and-se/02-Introduction-to-Cloud-Computing.pdf)
+3. [Introduction to Agile Development and Scrum](/devops-and-cloud/ibm-devops-and-se/03-Introduction-to-Agile-Development-and-Scrum.pdf)
+4. [Introduction to Software Engineering](/devops-and-cloud/ibm-devops-and-se/04-Introduction-to-Software-Engineering.pdf)
+5. [Hands-on Introduction to Linux Commands and Shell Scripting](/devops-and-cloud/ibm-devops-and-se/05-Hands-on-Introduction-to-Linux-Commands-and-Shell-Scripting.pdf)
+6. [Getting Started with Git and GitHub](/devops-and-cloud/ibm-devops-and-se/06-Getting-Started-with--and-GitHub.pdf)
