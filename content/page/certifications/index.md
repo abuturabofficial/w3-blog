@@ -75,7 +75,12 @@ The following are the courses I have taken in this category.
 
 Here are my individual course certificates for this specialization:
 
+<details>
+<summary>Click Here...</summary>
+
 3. [Introduction to Git and GitHub](/cs-and-programming/Google-IT-Automation-with-Python-Professional-Certificate/introduction-to-git-and-github.pdf)
+
+</details>
 
 ### Python for Everybody Specialization
 
@@ -83,16 +88,21 @@ Here are my individual course certificates for this specialization:
 
 [This specialization](https://www.coursera.org/specializations/python?) is offered by **University of Michigan** on **Coursera**.
 
-Here are my individual certificates for each course in this specialization:
+Below are my individual certificates for each of the course in the specialization.
+
+<details>
+<summary>Click Here...</summary>
 
 1. [Programming for Everybody (Getting Started with Python)](/cs-and-programming/Python-for-Everybody-Specialization/01-Programming-for-Everybody.pdf)
 2. [Python Data Structures](/cs-and-programming/Python-for-Everybody-Specialization/02-Python-Data-Structures.pdf)
+
+</details>
 
 ---
 
 ## Information Technology and System Administration
 
-I have taken following courses in the **IT Fundamentals** section.
+I have taken following courses in the **IT and SysAdmin** section.
 
 ### IT Fundamentals for Cybersecurity Specialization
 
@@ -115,13 +125,18 @@ It is also a part of [IBM Cybersecurity Analyst Specialization](#ibm-cybersecuri
     <iframe src="/it-and-sysadmin/google-it-support/00-google-it-support.pdf"></iframe>
 </div>
 
-Here are individual certificates for each of the courses in the specialization:
+Individual Certificates for each of the specialization course are listed below:
+
+<details>
+<summary>Click Here...</summary>
 
 1. [Technical Support Fundamentals](/it-and-sysadmin/google-it-support/01-technical-support-fundamentals.pdf)
 2. [The Bits and Bytes of Computer Networking](/it-and-sysadmin/google-it-support/02-the-bits-and-bytes-of-computer-networking.pdf)
 3. [Operating Systems and You: Becoming a Power User](/it-and-sysadmin/google-it-support/03-operating-systems-and-you-becoming-a-power-user.pdf)
 4. [System Administration and IT Infrastructure Services](/it-and-sysadmin/google-it-support/04-system-administration-and-it-infrastructure-services.pdf)
 5. [IT Security: Defense against the Digital Dark Arts](/it-and-sysadmin/google-it-support/05-it-security-defense-against-the-digital-dark-arts.pdf)
+
+</details>
 
 ### IBM IT Support Professional Certificate
 
@@ -134,7 +149,10 @@ Here are individual certificates for each of the courses in the specialization:
     <iframe src="/it-and-sysadmin/ibm-it-support/00-ibm-it-support.pdf"></iframe>
 </div>
 
-Here are individual certificates for each of the courses in the specialization:
+Here are the individual certificates for each of the course in the specialization:
+
+<details>
+<summary>Click Here...</summary>
 
 1. [Introduction to Technical Support](/it-and-sysadmin/ibm-it-support/01-introduction-to-technical-support.pdf)
 2. [Introduction to Hardware and Operating Systems](/it-and-sysadmin/ibm-it-support/02-introduction-to-hardware-and-operating-systems.pdf)
@@ -146,6 +164,8 @@ Here are individual certificates for each of the courses in the specialization:
 8. [Technical Support (IT) Case Studies and Capstone](/it-and-sysadmin/ibm-it-support/08-technical-support-case-studies-and-capstone.pdf)
 9. [Technical Support (IT) Case Studies and Capstone](/it-and-sysadmin/ibm-it-support/09-tech-support-career-guide-and-interview-preparation.pdf)
 
+</details>
+
 ---
 
 ## Cybersecurity and Networks
@@ -156,14 +176,14 @@ I have taken below courses in this section.
 
 **IBM** offer [this specialization](https://www.coursera.org/professional-certificates/ibm-cybersecurity-analyst) course on Coursera.
 
->[!NOTE] 
-> [Click here](https://wiki.cyberfront.me/cybersecurity-and-networks/ibm-cybersecurity-analyst/) for my notes of this specialization.
-
 <div class="responsive-iframe">
     <iframe src="/cybersecurity-and-networks/ibm-cybersecurity-analyst/00-ibm-cybsecurity-analyst.pdf"></iframe>
 </div>
 
 Here are individual certificates for each course of this specialization.
+
+<details>
+<summary>Click Here...</summary>
 
 1. [Introduction to Cybersecurity Tools and Cyberattacks](/cybersecurity-and-networks/ibm-cybersecurity-analyst/01-Introduction-to-CyberSec-Tools-and-Cyber-Attacks.pdf)
 2. [Cybersecurity Roles, Processes and Operating System Security](/cybersecurity-and-networks/ibm-cybersecurity-analyst/02-Cybersecurity-Roles-Processes-and-Operating-System-Security.pdf)
@@ -174,6 +194,8 @@ Here are individual certificates for each course of this specialization.
 7. [Cybersecurity Capstone: Breach Response Case Studies](/cybersecurity-and-networks/ibm-cybersecurity-analyst/07-Cybersecurity-Capstone-Breach-Response-Case-Studies.pdf)
 8. [Cybersecurity Assessment: CompTIA Security+ & CYSA+](/cybersecurity-and-networks/ibm-cybersecurity-analyst/08-IBM-Cybersecurity-Analyst-Assessment.pdf)
 
+</details>
+
 ### UOM Cybersecurity Specialization
 
 [This specialization](https://www.coursera.org/specializations/cyber-security) course is offered by **University of Maryland, College Park** on Coursera.
@@ -183,7 +205,12 @@ Here are individual certificates for each course of this specialization.
 
 Here are the certificates for the completed courses:
 
+<details>
+<summary>Click Here...</summary>
+
 1. [Usable Security](/cybersecurity-and-networks/uom-cybersecurity-specialization/01-usable-security.pdf)
+
+</details>
 
 ---
 
@@ -217,9 +244,14 @@ This isn't the separate specialization (though it can be completed as such), rat
 
 Following are my individual certificates for courses included in this specialization.
 
+<details>
+<summary>Click Here...</summary>
+
 1. [Introduction to DevOps](/devops-and-cloud/ibm-devops-and-se/01-Introduction-to-DevOps.pdf)
 2. [Introduction to Cloud Computing](/devops-and-cloud/ibm-devops-and-se/02-Introduction-to-Cloud-Computing.pdf)
 3. [Introduction to Agile Development and Scrum](/devops-and-cloud/ibm-devops-and-se/03-Introduction-to-Agile-Development-and-Scrum.pdf)
 4. [Introduction to Software Engineering](/devops-and-cloud/ibm-devops-and-se/04-Introduction-to-Software-Engineering.pdf)
 5. [Hands-on Introduction to Linux Commands and Shell Scripting](/devops-and-cloud/ibm-devops-and-se/05-Hands-on-Introduction-to-Linux-Commands-and-Shell-Scripting.pdf)
 6. [Getting Started with Git and GitHub](/devops-and-cloud/ibm-devops-and-se/06-Getting-Started-with--and-GitHub.pdf)
+
+</details>
