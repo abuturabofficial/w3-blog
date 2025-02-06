@@ -29,7 +29,7 @@ menu:
 comments: false
 toc: true
 license: false
-lastmod: '2025-02-05T19:13:16+05:00'
+lastmod: '2025-02-06T15:31:56+05:00'
 ---
 
 The following are my certifications for various technology-related specializations and courses.
@@ -65,7 +65,7 @@ The following are the courses I have taken in this category.
 
 >[!INFO] Khan Academy offers no certificate of completion.
 
-[Click Here](https://wiki.cyberfront.me/computer-science/computer-science-theory/) for my notes…
+[Click Here](https://wiki.cyberfront.me/cs-and-programming/computer-science-theory/) for my notes…
 
 ### Google IT Automation with Python Professional Certificate
 
@@ -118,9 +118,6 @@ It is also a part of [IBM Cybersecurity Analyst Specialization](#ibm-cybersecuri
 
 [This specialization](https://www.coursera.org/professional-certificates/google-it-support) course is taught by **Google Education** scholars on Coursera.
 
-> [!NOTE]
-> [Click here](https://wiki.cyberfront.me/it-and-sysadmin/google-it-support/) for my notes taken during the tenure of this specialization.
-
 <div class="responsive-iframe">
     <iframe src="/it-and-sysadmin/google-it-support/00-google-it-support.pdf"></iframe>
 </div>
@@ -141,9 +138,6 @@ Individual Certificates for each of the specialization course are listed below:
 ### IBM IT Support Professional Certificate
 
 **IBM** offers [this specialization](https://www.coursera.org/professional-certificates/ibm-technical-support) course on Coursera.
-
->[!NOTE]
-> [Click here](https://wiki.cyberfront.me/it-and-sysadmin/ibm-it-support/) for my notes of this specialization.
 
 <div class="responsive-iframe">
     <iframe src="/it-and-sysadmin/ibm-it-support/00-ibm-it-support.pdf"></iframe>
