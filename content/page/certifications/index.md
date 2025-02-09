@@ -2,7 +2,7 @@
 draft: false
 title: 'My Certifications'
 linkTitle: 'Certifications'
-alias:
+aliases:
     - certification
     - certificate
     - certificates
@@ -69,8 +69,6 @@ The following are the courses I have taken in this category.
 
 ### Google IT Automation with Python Professional Certificate
 
-> [!Goal] This specialization is in progress right now.
-
 [This specialization](https://www.coursera.org/professional-certificates/google-it-automation) is offered by **Google Career Certificates** on **Coursera**.
 
 Here are my individual course certificates for this specialization:
@@ -83,8 +81,6 @@ Here are my individual course certificates for this specialization:
 </details>
 
 ### Python for Everybody Specialization
-
-> [!Goal] This specialization is in progress right now.
 
 [This specialization](https://www.coursera.org/specializations/python?) is offered by **University of Michigan** on **Coursera**.
 
@@ -231,8 +227,6 @@ This isn't the separate specialization (though it can be completed as such), rat
 </div>
 
 ### IBM DevOps and Software Engineering Professional Certificate
-
-> [!Goal] This specialization is in progress right now.
 
 [This specialization](https://www.coursera.org/professional-certificates/devops-and-software-engineering) course is offered by **IBM** on Coursera.
 
