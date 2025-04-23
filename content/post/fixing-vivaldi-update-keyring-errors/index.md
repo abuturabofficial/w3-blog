@@ -68,7 +68,7 @@ Components: main
 ```
 
 To fix the **Missing Signed-By** error, modify it like this:
-```yaml
+```yaml {hl_lines=5}
 Types: deb
 URIs: https://repo.vivaldi.com/stable/deb/
 Suites: stable
