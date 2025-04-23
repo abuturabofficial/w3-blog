@@ -14,7 +14,7 @@ lastmod: '2025-04-23T17:56:20+05:00'
 
 ## Overview of WARP Client Packaging on Linux
 
-The official supported releases for Cloudflare Warp client on Linux are:
+The official supported releases for Cloudflare Warp client for Ubuntu/Debian based systems are:
 
 ### Ubuntu: The Supported Releases
 
