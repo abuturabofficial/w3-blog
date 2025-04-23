@@ -60,7 +60,7 @@ Ubuntu is in the process of transitioning from `.list` files to `.sources` files
 After adding the GPG keyring (as described earlier), we can now fix the `vivaldi.sources` file.
 
 Before doing anything, `vivaldi.sources` file looks like this:
-```terminal
+```yaml
 Types: deb
 URIs: https://repo.vivaldi.com/stable/deb/
 Suites: stable
@@ -68,7 +68,7 @@ Components: main
 ```
 
 To fix the **Missing Signed-By** error, modify it like this:
-```terminal
+```yaml
 Types: deb
 URIs: https://repo.vivaldi.com/stable/deb/
 Suites: stable
