@@ -12,7 +12,7 @@ keywords: ['Vivalid GPG Signing Error', 'apt signing errors', 'vivaldi missing s
 lastmod: ''
 ---
 
-When you manually download the `.deb` package from [Vivaldi's website](https://vivaldi.com/download/), and manually install it. The installation process will also add the Vivaldi repo to the apt-sources list in the `/etc/apt/sources.list.d/` directory.
+When you download the `.deb` package from [Vivaldi's website](https://vivaldi.com/download/), and manually install it. The installation process will also add the Vivaldi repo to the apt-sources list in the `/etc/apt/sources.list.d/` directory.
 
 Sometimes this repo doesn't normally populate the GPG keying for the Vivaldi Browser repository, and you will get errors like below, whenever you do a system update like this:
 ```terminal
