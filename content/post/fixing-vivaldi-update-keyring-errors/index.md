@@ -86,5 +86,5 @@ The singing error should be fixed now.
 ---
 ## References
 
-- Cover <a href="https://www.freepik.com/free-vector/computer-repair-illustration_17714407.htm#fromView=search&page=1&position=3&uuid=8c5adb0f-fa3d-4d58-9de8-744e5bb3d3d5&query=gpg+errors">Image by macrovector on Freepik</a>
 - [Pub key missing](https://forum.vivaldi.net/topic/82801/pub-key-missing) --- Vivaldi Forum discussion about the Issue
+- Cover <a href="https://www.freepik.com/free-vector/computer-repair-illustration_17714407.htm#fromView=search&page=1&position=3&uuid=8c5adb0f-fa3d-4d58-9de8-744e5bb3d3d5&query=gpg+errors">Image by macrovector on Freepik</a>
