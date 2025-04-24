@@ -1,8 +1,8 @@
 baseurl: https://cyberfront.me/
 languageCode: en-us
 theme: ["hugo-admonitions", "hugo-theme-stack"]
-title: CyberFront
-copyright: AbuTurab
+title: Sajid Mahmood
+copyright: CyberFront
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -18,8 +18,8 @@ hasCJKLanguage: false
 languages:
     en:
         languageName: English
-        title: CyberFront
-        weight: 1
+        title: Sajid Mahmood
+        weight: 800
 
 pagination:
     pagerSize: 10
@@ -47,12 +47,12 @@ params:
         lastUpdated: Jan 02, 2006 15:04 PKT
 
     sidebar:
-        emoji: 🌐
-        subtitle: "Tech Adventures Unfolding: SysAdmin, Cybersecurity, Self-Hosting, and Privacy Insights."
+        emoji: 🇵🇰
+        subtitle: "Stay Sharp. Stay Techy."
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/avatar.webp
 
     article:
         math: false
