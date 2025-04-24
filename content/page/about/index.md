@@ -8,7 +8,7 @@ aliases:
   - about-me
   - contact-us
   - contact-me
-lastmod: '2025-01-01'
+lastmod: '2025-04-24T22:38:01+0500'
 menu:
     main: 
         weight: 4
@@ -21,7 +21,7 @@ license: false
 
 ## 🌟 Founder/Owner 🌟
 
-Hi, I’m **Sajid Mahmood** aka **AbuTurab**—a self-taught tech enthusiast exploring Windows, Linux, cloud technologies, and cybersecurity. I share insights on system administration, security practices, and tools to optimize and secure systems.
+Hi, I’m **Sajid Mahmood** — a self-taught tech enthusiast exploring Windows, Linux, cloud technologies, and cybersecurity. I share insights on system administration, security practices, and tools to optimize and secure systems.
 
 This space reflects my learning journey, where I document and simplify complex concepts for others. Let’s learn, explore, and grow together in the world of tech!
 
