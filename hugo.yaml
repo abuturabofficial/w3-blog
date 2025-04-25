@@ -94,16 +94,16 @@ params:
     opengraph:
         twitter:
             # Your Twitter username
-            site:
+            site: abuturabofcl
 
             # Available values: summary, summary_large_image
             card: summary_large_image
 
     defaultImage:
         opengraph:
-            enabled: false
+            enabled: true
             local: false
-            src:
+            src: img/opengraph.webp
 
     colorScheme:
         # Display toggle
