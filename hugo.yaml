@@ -102,7 +102,7 @@ params:
     defaultImage:
         opengraph:
             enabled: true
-            local: false
+            local: true
             src: img/opengraph.webp
 
     colorScheme:
