@@ -1,7 +1,7 @@
 baseurl: https://cyberfront.me/
 languageCode: en-us
 theme: ["hugo-admonitions", "hugo-theme-stack"]
-title: Sajid Mahmood
+title: CyberFront
 copyright: CyberFront
 
 # Theme i18n support
