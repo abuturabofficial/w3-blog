@@ -1,6 +1,6 @@
 ---
 draft: false
-title: 'Bypassing Missing Release File Errors When Installing Cloudflare WARP on NEWER Ubuntu/Debian Systems'
+title: 'Bypassing "Missing Release File Errors" When Installing Cloudflare WARP on NEWER Ubuntu/Debian Systems'
 imageNameKey: 'cloudflare-warp-install-on-ubuntu-debian'
 date: '2025-04-23T11:41:16+05:00'
 description: 'To install Cloudflare Warp on Ubuntu/Debian based NEWER systems which are not officially supported yet, you can modify cloudflare-client.sources file. This modification will let you install Warp Client on NEWER non-supported releases.'
