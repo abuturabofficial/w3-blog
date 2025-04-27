@@ -9,7 +9,7 @@ image: 'escaping-the-algorithmic-loop-cover.webp'
 tags: ['Digital Freedom']
 categories: ['Blog']
 keywords: ['Escaping the machines', 'The machine trap: Seeking your attention', 'Unfollow the machine: escaping the algorithmic loop', 'Use RSS to get back your online control', 'Fleeing the brain-rot online', 'how to de-clutter your digital life', 'stop spooning yourself with non-sense']
-lastmod: ''
+lastmod: '2025-04-27T08:56:08+0500'
 ---
 
 It happens to the best of us, we open TikTok, Reels, YouTube Shorts, just to pass time for 5/10 minutes, but end up spending hours on brain-rot doom scroll race for most of the free time on our hands. Constant nudging of 30 seconds of low effort flashy content activates our brain's reward center, and we keep on craving more dopamine in the form of staying more on these digital platforms.
