@@ -1,11 +1,11 @@
 ---
-draft: true
+draft: false
 title: 'Unfollow the Machine: Escaping the Algorithmic Loop'
 imageNameKey: 'escaping-the-algorithmic-loop'
 date: '2025-04-26T09:08:53+05:00'
-description: 'The best way to break the algorithmic brain-rot content chain is to create friction and to use RSS Feed to get only what you want, not what the algorithm wants you to feed.'
+description: "The best way to break the algorithmic brain-rot content chain is to create friction and to use RSS Feed to get only what you want (ideally from diverse sources), not what the algorithm wants you to feed. Social Media's algorithms just feed our preconceived ideas and thoughts, they don't encourage source diversity or fact check."
 author: "AbuTurab"
-image: 'escaping-the-algorithmic-loop-cover.png'
+image: 'escaping-the-algorithmic-loop-cover.webp'
 tags: ['Digital Freedom']
 categories: ['Blog']
 keywords: ['Escaping the machines', 'The machine trap: Seeking your attention', 'Unfollow the machine: escaping the algorithmic loop', 'Use RSS to get back your online control', 'Fleeing the brain-rot online', 'how to de-clutter your digital life', 'stop spooning yourself with non-sense']
@@ -30,20 +30,60 @@ In this day and age, the most precious and important thing every human being has
 
 The attention generates digital footprints which can be sold to the advertisers for profit. To maximize the profit, they need to get more of our attention. So, they deploy more "Dark Sci-Fi" methods to keep us engaged on their platforms.
 
-The people who give in to the algorithms, will soon find themselves in the echo chamber, where they don't hear the opposite opinions at all. That's definitely intentional on the algorithm's part, as they are designed to feed the narrative you are most likely to engaged with.
+The people who give in to the algorithms, will soon find themselves in the echo chamber, where they don't hear the opposite opinions at all. That's undoubtedly intentional on the algorithm's part, as they are designed to feed the narrative you are most likely to engaged with.
 
 {{< figure
-  src="escaping-the-algorithmic-loop.png"
-  link="https://www.pexels.com/photo/woman-holding-pills-9761339/"
-  caption="Photo by Ron Lach"
+  src="escaping-the-algorithmic-loop.webp"
+  caption="[Photo by Ron Lach](https://www.pexels.com/photo/woman-holding-pills-9761339/)"
   class="ma0 w-75"
 >}}
 
 Once you're trapped, not only you've paid the price with your data but also through your social and business circles. In the real life, when you will meet someone, and talk about some topic. You will most likely feel discontent while listening to other person's thoughts which don't align with your reasoning. In the process, you may lose not only the prospective good friends but also good clients.
 
-### The Echo Chamber
+## The Echo Chamber!
 
-Being
+Being surrounded by like-minded people and feed, you start living in the echo chamber, where opposing views doesn't get past your feed. You start believing in the things which aren't true, but due to constant spoon-feeding by the algorithm of the similar content, you start believing in the obnoxious theories.
+
+You immediately refute the ideas which aren't fitting with your world-view. When you're presented with the neutral opinions and thoughts, you consider them distasteful. The people who live in the echo chambers of their own, start losing the sense of real world and what's actually happening there.
+
+## The Solution: Declutter Your Digital Realm
+
+The most fundamental technique to escape the machine trap is, not to get-in in the first place. If you successfully overcome the urge to use Social Media, you will never get trapped. But I know, that's not very practical in the modern world. So, let's get to some practical tips and techniques.
+
+### Clean Your Home Screen
+
+On your phone, keep your home screen tidy from the temptations. Only keep apps which are the most essential ones for you. That way, no brain signals will be generated to open social media apps when you first open your phone by looking at the apps present on your home screen.
+
+![](escaping-the-algorithmic-loop-1.webp)
+
+### Create a Friction
+
+Creating a friction in the use of the most time-consuming apps is necessary to combat the machine trap effectively. If you open social media apps too frequently on your phone, just uninstall them, and use them via your phone's web-browser.
+
+
+### Follow the Unfollow Rule
+
+Don't follow every social media creator mindlessly. You won't miss anything. Follow creators who produce some valuable content, which either feed your mind or soul. Go to every Social Media app (including YouTube), and do some sweeping.
+
+- Unsubscribe/unfollow creators you haven't watched for a while.
+- Also, unfollow creators who feed you only dopamine, not value.
+- Keep your subscriptions diverse to avoid the echo-chamber.
+
+It's OK to watch some mindless content just for fun from time to time, but keep your guards up, so that you won't fall victim to the algorithmic loop.
+
+## The Solution: RSS Feeds
+
+RSS feeds using some RSS aggregator apps (Feeder, Newsflash etc.) allow you to break free from the algorithmic trap, by only getting the content from the sources you subscribe to.
+
+- YouTube offers RSS feed for every channel, you can go to the specific channel click `share` and `copy` the channel link. Paste that link in the RSS Aggregator app, it will most likely pull the channel RSS feed itself.
+- Almost every major news site, offers RSS subscriptions. Your RSS aggregator will populate that RSS feed link when put the website address, or you can use [Get RSS Feed URL](https://chromewebstore.google.com/detail/get-rss-feed-url/kfghpdldaipanmkhfpdcjglncmilendn) Chrome extension to extract RSS feed links from the websites you visit.
+- Keep your sources at minimum. Keep them diverse, to avoid self-inflicted echo-chamber.
+
+{{< figure
+  src="escaping-the-algorithmic-loop-2.webp"
+  caption="Feeder (RSS Aggregator for Android)"
+  class="ma0 w-75"
+>}}
 
 ---
 ## References
