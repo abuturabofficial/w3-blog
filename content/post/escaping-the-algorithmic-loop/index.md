@@ -22,7 +22,7 @@ The same is true for all the social media platforms which are in the arms race o
 
 Though in the intro, I went over this, but still some people will be like, I don't get sunk. I just spend some of my free time to refresh my mind and then get back to the real-life. I'm not addicted to social media or doom-scrolling dystopia. So, WHY SHOULD I CARE?
 
-If you are not addicted, then congratulations, you are one in millions who have defeated the attention economy. You are immune to millions and millions of dollars of research aimed at getting into our heads. You can stop reading here and get back to your life, if nobody around you likes of your friends and family has caught themselves into the machine trap. But if your family and friends don't have iron curtains around their heads like you, you will definitely learn a thing or two in this blog to help them, get out of the attention trap.
+If you are not addicted, then congratulations, you are one in millions who have defeated the attention economy. You are immune to millions and millions of dollars of research aimed at getting into our heads. You can stop reading here and get back to your life, if nobody around you, likes of your friends and family, has caught themselves in the machine trap. But if your family and friends don't have iron curtains around their heads like you, you will definitely learn a thing or two in this blog to help them, get out of the attention trap.
 
 ## The Machine Trap!
 
