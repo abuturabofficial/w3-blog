@@ -27,7 +27,7 @@ You can power off your system using the <button>Hardware RESET</button> button o
 ## Requirements
 
 - Have `root/sudo` access
-- Kernel compiled with `CONFIG_MAGIC_SYSRQ` kernel parameter (All mainstream distros has this feature built-in)
+- Kernel compiled with `CONFIG_MAGIC_SYSRQ` Kernel parameter (All mainstream distros have this feature built-in)
 - <kbd>SysRq</kbd> or <kbd>PrtSc</kbd> key on your <kbd>QWERTY</kbd> keyboard
 - On some systems/Laptops, you may need to hold <kbd>Fn</kbd> key during invoke process
 
