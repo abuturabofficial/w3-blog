@@ -32,6 +32,17 @@ license: false
 lastmod: '2025-02-06T15:31:56+05:00'
 ---
 
+## 🎓 **Educational Profiles** 🎓
+
+Following are my education profiles on different MOOC's platforms.
+
+- **Coursera Profile:** [View Profile](https://www.coursera.org/learner/abuturabofficial)
+- **TryHackMe:** [View Profile](https://tryhackme.com/p/abuturabofficial)
+- **Credly:** [View Profile](https://www.credly.com/users/abuturabofficial)
+- **Khan Academy:** [View Profile](https://www.khanacademy.org/profile/abuturabofficial/)
+
+## 🏅 **My Certificates** 🏅
+
 The following are my certifications for various technology-related specializations and courses.
 
 > [!TIP]
