@@ -46,7 +46,7 @@ Following are my education profiles on different MOOC's platforms.
 The following are my certifications for various technology-related specializations and courses.
 
 > [!TIP]
-> [Click here](https://wiki.cyberfront.me) to visit my notes website, where I share notes from the specializations and courses I have taken.
+> [Click here](https://wiki.sajidmahmood.com) to visit my notes website, where I share notes from the specializations and courses I have taken.
 
 <style>
 .responsive-iframe {
@@ -76,7 +76,7 @@ The following are the courses I have taken in this category.
 
 >[!INFO] Khan Academy offers no certificate of completion.
 
-[Click Here](https://wiki.cyberfront.me/cs-and-programming/computer-science-theory/) for my notes…
+[Click Here](https://wiki.sajidmahmood.com/cs-and-programming/computer-science-theory/) for my notes…
 
 ### Google IT Automation with Python Professional Certificate
 
