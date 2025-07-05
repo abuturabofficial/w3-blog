@@ -9,7 +9,7 @@ image: 'google-dorking-demystified-cover.png'
 tags: ['OSINT']
 categories: ['Blog']
 keywords: ['google dorking techniques', 'google power searching', 'google like a hacker' , 'beyond search box', 'google search like a pro', 'google dorking for good', 'advance google search for researcher and hackers', 'how to google like a power user', 'you are using google wrong', 'how to properly use power of google search']
-lastmod: '2025-07-05T15:31:12+0500'
+lastmod: '2025-07-05T20:25:40+0500'
 ---
 
 ## What is Google Dorking?
@@ -22,7 +22,7 @@ Almost every Search Engine including Brave Search, DuckDuckGo, Startpage etc. su
 
 ## Advance Search Operators
 
-Following advance search operators can be used on almost all major search engines[^google-dorks-1] [^google-dorks-2] [^google-dorks-3].
+Following advance search operators can be used on almost all major search engines[^google-dorks-1] [^google-dorks-2] [^google-dorks-3] [^google-dorks-4].
 
 > [!WARNING]
 > I haven't tested all advance operators on every Search Engine. Most common operators will work fine, but more advance or nuance one will only work on Google.
@@ -301,4 +301,5 @@ You will be directed to YouTube page with search results for term **systemd is e
 [^google-dorks-3]: Chima Mmeje, "62 Advanced Google Search Operators, Use Cases & Cheatsheet", (2025). [Blog post](https://moz.com/learn/seo/search-operators)
 [^thio-joe-youtube]: Thio Joe, "You're Using Google WRONG — Do This Instead", (2025). [Watch on YouTube](https://www.youtube.com/watch?v=M3bduu2GGVU)
 [^cover-photo]: Cover Photo by [Freepik](https://www.freepik.com/free-photo/portrait-hacker-with-mask_4473969.htm#fromView=search&page=1&position=26&uuid=1dcd8f82-595e-4d15-a3e7-896fdaf5d752&query=hacker+google+search).
-[^brave-search-bangs]: "What !bangs can I use in Brave Search?" - Brave Help Center. [See more](https://support.brave.app/hc/en-us/articles/4410152384781-What-bangs-can-I-use-in-Brave-Search)
+[^brave-search-bangs]: "What !bangs can I use in Brave Search?" — Brave Help Center. [See more!](https://support.brave.app/hc/en-us/articles/4410152384781-What-bangs-can-I-use-in-Brave-Search)
+[^google-dorks-4]: Sameeksha Medewar, "Download Google Dorks Cheat Sheet PDF for Quick References", 2025. [Read the blog!](https://hackr.io/blog/google-dorks-cheat-sheet)
