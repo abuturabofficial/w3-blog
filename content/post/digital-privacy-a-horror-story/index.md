@@ -136,8 +136,6 @@ To fortify your digital presence and protect your privacy[^10]:
 
 In this era of data-driven economies and legislative scrutiny, the duty lies on us to be proactive custodians of our digital privacy. Through informed choices and constant vigilance, we can construct a shield against the creeping threats to our personal space in the digital realm.
 
-## References
-
 [^1]: Dive into S. Goodson's insights on "The Impact of Social Media on Society" in Forbes' piece from March 5, 2012. [Explore More](https://www.forbes.com/sites/marketshare/2012/03/05/if-youre-not-paying-for-it-you-become-the-product/)
 [^2]: Unravel the complexities of the "Facebook–Cambridge Analytica data scandal" on Wikipedia. [Get the Scoop](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal)
 [^3]: Discover Privacy Guides' recommendations for "Privacy Respecting Alternatives for Common Services/Tools." [See Recommendations](https://www.privacyguides.org/en/tools/)
