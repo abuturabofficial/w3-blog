@@ -3,7 +3,7 @@ draft: false
 title: "Search Engine Hacking: The Hacker's Guide to Advance Google Search"
 imageNameKey: "google-dorking-demystified"
 date: '2025-07-04T07:25:18+05:00'
-description: "Advance search techniques help us find the hidden secrets about our targets. They save us time and provide pin point accuracy in our search results. Almost all major search engines support these advance search methods. They are useful for common people and hackers alike."
+description: "Advanced search techniques help us uncover hidden information about our targets. They save time and provide pinpoint accuracy in search results. Almost all major search engines support these advanced methods, making them useful for both ordinary users and hackers alike."
 author: "AbuTurab"
 image: 'google-dorking-demystified-cover.webp'
 tags: ['OSINT']
@@ -28,7 +28,7 @@ Following advance search operators can be used on almost all major search engine
 > I haven't tested all advance operators on every Search Engine. Most common operators will work fine, but more advance or nuance one will only work on Google.
 
 > [!TIP]
-> According to Google Search Help[^google-dorks-1], there should be no spaces between your search operator and search term. `site:wikipedia.com` is valid, while `site: wikipedia.com` is invalid way of using these operators.
+> According to Google Search Help[^google-dorks-1], there should be no spaces between your search operator and search term. `site:wikipedia.com` is valid, while `site: wikipedia.com` is an invalid way of using these operators.
 
 ### Switch to Verbatim Mode
 
@@ -38,15 +38,15 @@ To instruct Google to search only for specific terms given in the search box and
 
 ![](google-dorking-demystified-5.webp)
 
-Click on `Tools` button on the top of the search page, and switch `All results` to `Verbatim`.
+Click on <button>Tools</button> button on the top of a search page, and switch `All results` to `Verbatim`.
 
 While using advance search operators, keep it on **verbatim** mode to get more accurate and precise results.
 
 ### The `" "` operator
 
-This operator lets you search for the specific word inside the quotes, regardless of its spelling.
+The quotes operator lets you search for the specific word inside the quotes only, regardless of its spelling.
 
-If you add other words beside the quoted word, google search must include quoted word in the results beside other words.
+If you add other words beside the quoted word, google search must include quoted word in the results beside the other search terms.
 
 ```
 How to spell "mispell" in American English?
@@ -62,7 +62,7 @@ It's a bad example, as it may not return any results, but conveys the point well
 
 ![](google-dorking-demystified-4.webp)
 
-### The `+` and `-` operator
+### The `+` and `-` operators
 
 The `+` operator returns web pages containing the specified term either in the title or the body of the page.
 
@@ -78,9 +78,7 @@ To search the term **The Office**, we can exclude the web pages containing `Micr
 The Office -microsoft
 ```
 
-Using these operators, we can include or exclude specified words from title or body of the resultant webpages.
-
-
+Using these operators, we can include or exclude specified words from title or body of the corresponding webpages.
 
 ### The `site:` operator
 
@@ -121,6 +119,8 @@ If you want to search something specifically, inside the URLs of the particular 
 site:microsoft.com -inurl:https
 ```
 
+This will look for http pages on microsoft.com including its subdomains.
+
 ![](google-dorking-demystified-2.webp)
 
 The `allinurl` operator search for pages with multiple words in the URL.
@@ -129,6 +129,8 @@ The `allinurl` operator search for pages with multiple words in the URL.
 allinurl:microsoft copilot
 ```
 
+It will include results, which contain both microsoft and copilot in their URL.
+
 ### The `intitle:` and `allintitle` operators
 
 To show only the results which have a single specified word in the title of the page and rest of the words anywhere:
@@ -136,6 +138,8 @@ To show only the results which have a single specified word in the title of the 
 ```
 intitle:max hard disk capacity
 ```
+
+It will only look fo **max** in the page title, while rest of the terms anywhere on the webpages.
 
 To search for multiple terms in the title:
 
@@ -203,7 +207,7 @@ If you put `AROUND 0`, it means putting the left and right terms together withou
 > [!TIP]
 > For Yandex use `term1 /+n term2`, or `term1 /-n term2`
 
-### The `AND` and `OR`\`|` operators
+### The `AND` and `OR`/`|` operators
 
 If I search:
 
@@ -241,7 +245,7 @@ Search for results from before a specific date:
 Pakistan atomic program before:1998-05-28
 ```
 
-It will show all the results from before 2010.
+It will show all the results from before 28 may 1998.
 
 To get results after a specific year or date `before:yyyy-mm-dd`:
 
@@ -263,7 +267,7 @@ loc:karachi Taj Mahal Hotel
 
 ## Brave Search Operators
 
-[Brave Search](https://search.brave.com) support all the [above-mentioned](#advance-search-operators) search operators.
+[Brave Search](https://search.brave.com) support many of the [above-mentioned](#advance-search-operators) search operators.
 
 But it also supports some **extra operators**[^brave-search-help]. I tested these on Google Search, but most of them either don’t work at all or don’t function as smoothly as they do in Brave Search.
 
@@ -287,7 +291,7 @@ DuckDuckGo inbody:"search operator"
 
 ### The `inpage:` operator
 
-It output webpages containing the specified term either in the title or in the body of the page.
+It outputs webpages containing the specified term either in the title or in the body of the page.
 
 ```
 inpage:"DuckDuckGo search operators"
@@ -300,7 +304,7 @@ It will only show the results where all these words are either present in the ti
 If you want to search for pages in the language of your choice. The language code must be in the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), English as `en`, Urdu as `ur` and Arabic as `ar`.
 
 > [!ERROR]
-> This search operator truly depicts why **Brave Search Team** says, this functionality is experimental[^brave-search-help]. Occasionally it shows the results in the specified language, and another time it didn't work at all, and it provides all kinds of nonsense hits.
+> This search operator truly depicts why **Brave Search Team** says, this functionality is experimental[^brave-search-help]. Occasionally it shows the results in the specified language, and another time it didn't work at all, and it provides all kind of nonsense hits.
 
 ### The `loc:` or `location:` operator
 
@@ -308,9 +312,6 @@ It returns webpages from the specified country or region. The country code must 
 
 > [!ERROR]
 > The operator is poorly supported. And almost never works as originally intended.
-
-> [!TIP]
-> Bing.com supports `loc:` operator quite well.
 
 ### The `NOT` operator
 
@@ -343,7 +344,7 @@ You will be directed to YouTube page with search results for term **systemd is e
 
 ## DuckDuckGo Advance Search Syntax
 
-It supports many of the [advance search operators](#advance-search-operators). But DuckDuckGo[^duckduckgo-search-syntax] offers some unique search syntax of its own too.
+DDG supports many of the [advance search operators](#advance-search-operators). But it offers some unique search syntax[^duckduckgo-search-syntax] of its own too.
 
 ### The `filetype:` operator 
 
