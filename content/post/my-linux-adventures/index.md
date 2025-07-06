@@ -127,8 +127,6 @@ In the end, use the distro you like and customize it to your liking, and don't g
 
 > “So, here's to staying forever new, embracing the mistakes, and relishing the joy of discovery. Happy learning, fellow newbies!”
 
-## References
-
 [^1]: <https://ubuntu.com/download/desktop>
 [^2]: <https://linuxmint.com/>
 [^3]: <https://archlinux.org/download/>
