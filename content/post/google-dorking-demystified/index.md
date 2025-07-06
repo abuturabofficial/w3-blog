@@ -5,7 +5,7 @@ imageNameKey: "google-dorking-demystified"
 date: '2025-07-04T07:25:18+05:00'
 description:
 author: "AbuTurab"
-image: 'google-dorking-demystified-cover.png'
+image: 'google-dorking-demystified-cover.webp'
 tags: ['OSINT']
 categories: ['Blog']
 keywords: ['google dorking techniques', 'google power searching', 'google like a hacker' , 'beyond search box', 'google search like a pro', 'google dorking for good', 'advance google search for researcher and hackers', 'how to google like a power user', 'you are using google wrong', 'how to properly use power of google search']
@@ -27,13 +27,16 @@ Following advance search operators can be used on almost all major search engine
 > [!WARNING]
 > I haven't tested all advance operators on every Search Engine. Most common operators will work fine, but more advance or nuance one will only work on Google.
 
+> [!TIP]
+> According to Google Search Help[^google-dorks-1], there should be no spaces between your search operator and search term. `site:wikipedia.com` is valid, while `site: wikipedia.com` is invalid way of using these operators.
+
 ### Switch to Verbatim Mode
 
 If you search for a particular model of a laptop battery on Google search, it will not only include that model's battery but batteries for other models too.
 
 To instruct Google to search only for specific terms given in the search box and avoid showing unnecessary results switch to **verbatim mode**.
 
-![](google-dorking-demystified-5.png)
+![](google-dorking-demystified-5.webp)
 
 Click on `Tools` button on the top of the search page, and switch `All results` to `Verbatim`.
 
@@ -57,7 +60,7 @@ To get more specific results you quote the whole string, and the individual word
 
 It's a bad example, as it may not return any results, but conveys the point well. 
 
-![](google-dorking-demystified-4.png)
+![](google-dorking-demystified-4.webp)
 
 ### The `+` and `-` operator
 
@@ -94,9 +97,9 @@ To exclude a site from the results
 Why iPhones are Sh*t! -site:reddit.com
 ```
 
-`-site:` will exclude the website mentioned after it. To include a website in the search results, you can use `+` operator like this `+site:`, but it's definitely redundant.
+The `-site:` operator will exclude the website mentioned after it. To include a website in the search results, you can use `+` operator like this `+site:`, but it's definitely redundant.
 
-![](google-dorking-demystified.png)
+![](google-dorking-demystified.webp)
 
 To search on top-level domain only:
 
@@ -110,7 +113,7 @@ To get results from all the subdomains of a particular top-level domain:
 How to file tax returns? site:*.gov.pk
 ```
 
-### The `inurl:` operator
+### The `inurl:` and `allinurl:` operators
 
 If you want to search something specifically, inside the URLs of the particular website only. It can be paired with `site:` operator to only include/exclude inURL searches from that particular website.
 
@@ -118,7 +121,13 @@ If you want to search something specifically, inside the URLs of the particular 
 site:microsoft.com -inurl:https
 ```
 
-![](google-dorking-demystified-2.png)
+![](google-dorking-demystified-2.webp)
+
+The `allinurl` operator search for pages with multiple words in the URL.
+
+```
+allinurl:microsoft copilot
+```
 
 ### The `intitle:` and `allintitle` operators
 
@@ -128,7 +137,7 @@ To show only the results which have a single specified word in the title of the 
 intitle:max hard disk capacity
 ```
 
-To search for different terms in the title separately:
+To search for multiple terms in the title:
 
 ```
 allintitle:hard disk capacity minimum
@@ -170,7 +179,7 @@ OR
 OSINT technique ext:pdf
 ```
 
-![](google-dorking-demystified-3.png)
+![](google-dorking-demystified-3.webp)
 
 > [!ERROR]
 > Using `filetype:`/`ext:` operator with media file types like, **mp4, mp3, m4a, WebM** etc. wouldn't work, due to copyright issues.
@@ -187,11 +196,14 @@ This operator returns the results for the left and right terms to specified numb
 
 This will look for the results which include word **brain** and **first computer virus** within 20 words apart.
 
-![](google-dorking-demystified-7.png)
+![](google-dorking-demystified-7.webp)
 
 If you put `AROUND 0`, it means putting the left and right terms together without any word spacing.
 
-### The `AND` and `OR` operators
+> [!TIP]
+> For Yandex use `term1 /+n term2`, or `term1 /-n term2`
+
+### The `AND` and `OR`\`|` operators
 
 If I search:
 
@@ -205,9 +217,13 @@ But If I use `OR` operator between the two words, Google will show separate resu
 
 ```
 Cat OR Eggs
+
+OR
+
+Cat | Eggs
 ```
 
-![](google-dorking-demystified-6.png)
+![](google-dorking-demystified-6.webp)
 
 If you use `AND` operator:
 
@@ -217,6 +233,33 @@ Cat AND Eggs
 
 It pretty much shows the same results if you use both of these words together without any advance search operator.
 
+### The `before:` and `after:` operators
+
+Search for results from before a specific date:
+
+```
+Pakistan atomic program before:1998-05-28
+```
+
+It will show all the results from before 2010.
+
+To get results after a specific year or date `before:yyyy-mm-dd`:
+
+```
+Pakistan Privacy laws after:2022
+```
+
+### The `loc` operator
+
+Find results from a specified location.
+
+```
+loc:karachi Taj Mahal Hotel 
+```
+
+![](google-dorking-demystified-11.webp)
+
+> [!TIP] Order of search term is important. `loc:` should be in the start. Don't use verbatim mode for this either.
 
 ## Brave Search Operators
 
@@ -228,7 +271,7 @@ The support for search operators is currently experimental in the Brave Search[^
 
 > [!TIP]
 > While using quotes to include multiple words for an operator like `The Office inbody:"tv series"`, using `' '` will not work, and it shows an error. But if you use double quotes `" "`, the operator will apply properly.
-> ![](google-dorking-demystified-8.png)
+> ![](google-dorking-demystified-8.webp)
 
 ### The `inbody:` operator
 
@@ -240,7 +283,7 @@ Let's search:
 DuckDuckGo inbody:"search operator"
 ```
 
-![](google-dorking-demystified-9.png)
+![](google-dorking-demystified-9.webp)
 
 ### The `inpage:` operator
 
@@ -265,6 +308,9 @@ It returns webpages from the specified country or region. The country code must 
 
 > [!ERROR]
 > The operator is poorly supported. And almost never works as originally intended.
+
+> [!TIP]
+> Bing.com supports `loc:` operator quite well.
 
 ### The `NOT` operator
 
@@ -295,6 +341,50 @@ You can directly search on websites from your Brave search homepage using `!bang
 
 You will be directed to YouTube page with search results for term **systemd is evil!** 🙂.
 
+## DuckDuckGo Advance Search Syntax
+
+It supports many of the [advance search operators](#advance-search-operators). But DuckDuckGo[^duckduckgo-search-syntax] offers some unique search syntax of its own too.
+
+### The `filetype:` operator 
+
+It supports only `pdf`, `doc(x)`, `xlx(x)`, `ppt(x)`, `html` filetypes.
+
+> [!TIP]
+> Apparently only Google supports searching for the documents having **open document formats** like **ODF, ODT** etc. using `filetype:` operator.
+
+### The `~` operator
+
+The DDG help pages[^duckduckgo-search-syntax] read:
+
+> Example: `~"cats and dogs"`
+> 
+> Experimental syntax: more results that are semantically similar to "cats and dogs", like "cats & dogs" and "dogs and cats" in addition to "cats and dogs".
+
+Durign my test, I got similar hits for `~"cats and dogs"`, `+"cats and dogs"`, `"cats and dogs"` and `cats and dogs`.
+
+### The `\` and `!bang` operators
+
+Using this, DuckDuckGo will directly open the first result for the search term.
+
+```
+\python
+```
+
+DDG supports [bangs operators](https://duckduckgo.com/bangs) originally. Brave Search adopted their specification later.
+
+![](google-dorking-demystified-10.webp)
+
+```
+!g Hello World!
+```
+
+It will open the **Hello World!** search term directly on **Google Search**.
+
+### Safe Search
+
+Using `!safeon` or `!safeoff` beside their search terms, one can directly turn on/off the [safe search](https://duckduckgo.com/duckduckgo-help-pages/features/safe-search).
+
+
 [^google-dorks-1]: "Refine Google searches" — Google Search Help. [Learn more](https://support.google.com/websearch/answer/2466433?hl=en)
 [^brave-search-help]: "Search Operators" — Brave Search Help. [Read more](https://search.brave.com/help/operators)
 [^google-dorks-2]: Joshua Hardwick, "Google Search Operators: The Complete List (44 Advanced Operators)", (2024). [Read more](https://web.archive.org/web/20250530115310/https://ahrefs.com/blog/google-advanced-search-operators/)
@@ -303,3 +393,4 @@ You will be directed to YouTube page with search results for term **systemd is e
 [^cover-photo]: Cover Photo by [Freepik](https://www.freepik.com/free-photo/portrait-hacker-with-mask_4473969.htm#fromView=search&page=1&position=26&uuid=1dcd8f82-595e-4d15-a3e7-896fdaf5d752&query=hacker+google+search).
 [^brave-search-bangs]: "What !bangs can I use in Brave Search?" — Brave Help Center. [See more!](https://support.brave.app/hc/en-us/articles/4410152384781-What-bangs-can-I-use-in-Brave-Search)
 [^google-dorks-4]: Sameeksha Medewar, "Download Google Dorks Cheat Sheet PDF for Quick References", 2025. [Read the blog!](https://hackr.io/blog/google-dorks-cheat-sheet)
+[^duckduckgo-search-syntax]: "How to use advanced syntax on DuckDuckGo Search" — DDG Help Pages. [Learn more!](https://duckduckgo.com/duckduckgo-help-pages/results/syntax)
