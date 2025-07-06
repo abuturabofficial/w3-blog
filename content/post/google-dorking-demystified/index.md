@@ -3,13 +3,13 @@ draft: false
 title: "Search Engine Hacking: The Hacker's Guide to Advance Google Search"
 imageNameKey: "google-dorking-demystified"
 date: '2025-07-04T07:25:18+05:00'
-description:
+description: "Advance search techniques help us find the hidden secrets about our targets. They save us time and provide pin point accuracy in our search results. Almost all major search engines support these advance search methods. They are useful for common people and hackers alike."
 author: "AbuTurab"
 image: 'google-dorking-demystified-cover.webp'
 tags: ['OSINT']
 categories: ['Blog']
 keywords: ['google dorking techniques', 'google power searching', 'google like a hacker' , 'beyond search box', 'google search like a pro', 'google dorking for good', 'advance google search for researcher and hackers', 'how to google like a power user', 'you are using google wrong', 'how to properly use power of google search']
-lastmod: '2025-07-05T20:25:40+0500'
+lastmod: '2025-07-06T10:39:10+0500'
 ---
 
 ## What is Google Dorking?
