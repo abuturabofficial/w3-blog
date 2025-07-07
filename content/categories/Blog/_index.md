@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-description: "This is the index of all the blogs on cyberfront.me."
+description: "This is the index of all the blogs on sajidmahmood.com."
 slug: "blog"
 image: "blog-cat-cover.webp"
 style:
