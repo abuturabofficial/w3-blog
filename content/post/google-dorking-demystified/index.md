@@ -123,13 +123,13 @@ This will look for http pages on microsoft.com including its subdomains.
 
 ![](google-dorking-demystified-2.webp)
 
-The `allinurl` operator search for pages with multiple words in the URL.
+The `allinurl:` operator search for pages with multiple words in the URL.
 
 ```
 allinurl:microsoft copilot
 ```
 
-It will include results, which contain both microsoft and copilot in their URL.
+It will include results, which contain both Microsoft and copilot in their URL.
 
 ### The `intitle:` and `allintitle` operators
 
@@ -139,7 +139,7 @@ To show only the results which have a single specified word in the title of the 
 intitle:max hard disk capacity
 ```
 
-It will only look fo **max** in the page title, while rest of the terms anywhere on the webpages.
+It will only look for **max** in the page title, while rest of the terms anywhere on the webpages.
 
 To search for multiple terms in the title:
 
@@ -147,17 +147,17 @@ To search for multiple terms in the title:
 allintitle:hard disk capacity minimum
 ```
 
-The `allintitle` operator basically matches the terms like `OR` operator, if any of the mentioned terms have no results, they will still show if there are any results for the other mentioned terms.
+The `allintitle:` operator basically matches the terms like `OR` operator, if any of the mentioned terms have no results, they will still show if there are any results for the other mentioned terms.
 
 | Operator      | Matches in Title    | Matches Elsewhere    | Use Case                                                     |
 | ------------- | ------------------- | -------------------- | ------------------------------------------------------------ |
 | `intitle:`    | Single word only    | Other words anywhere | When you want at least one word in title and others anywhere |
 | `allintitle:` | All words specified | No                   | When you want all words to appear in the title               |
 
-If you want to search for pages whose titles contain all the searched words use `allintitle`. If you want pages whose title contains first word only and others anywhere in the search result use `intitle`.
+If you want to search for pages whose titles contain all the searched words use `allintitle:`. If you want pages whose title contains first word only and others anywhere in the search result use `intitle:`.
 
 > [!INFO]
-> There are `inanchor:` and `allinanchor:` operators which generally output the same results as `intitle` and `allintitle` combinations.
+> There are `inanchor:` and `allinanchor:` operators which generally output the same results as `intitle:` and `allintitle:` combinations.
 
 ### The `*` wildcard operator
 
@@ -348,7 +348,7 @@ DDG supports many of the [advance search operators](#advance-search-operators). 
 
 ### The `filetype:` operator 
 
-It supports only `pdf`, `doc(x)`, `xlx(x)`, `ppt(x)`, `html` filetypes.
+It supports only PDF`, `doc(x)`, `xlx(x)`, `ppt(x)`, HTML` filetypes.
 
 > [!TIP]
 > Apparently only Google supports searching for the documents having **open document formats** like **ODF, ODT** etc. using `filetype:` operator.
@@ -361,7 +361,7 @@ The DDG help pages[^duckduckgo-search-syntax] read:
 > 
 > Experimental syntax: more results that are semantically similar to "cats and dogs", like "cats & dogs" and "dogs and cats" in addition to "cats and dogs".
 
-Durign my test, I got similar hits for `~"cats and dogs"`, `+"cats and dogs"`, `"cats and dogs"` and `cats and dogs`.
+During my test, I got similar hits for `~"cats and dogs"`, `+"cats and dogs"`, `"cats and dogs"` and `cats and dogs`.
 
 ### The `\` and `!bang` operators
 
