@@ -78,7 +78,7 @@ First install the OpenKeychain app:
 
   ![](email-encryption-5.webp)
 
-When you want to send message to some email address like [My Email](mailto:cyberfrontofficial@proton.me), you can add their public key ([My PGP Public Key](/misc/publickey.asc)) by click on the `+` and then select `Import from File`.
+When you want to send message to some email address like [My Email](mailto:thesajid@proton.me), you can add their public key ([My PGP Public Key](/misc/publickey.thesajid@proton.me.asc)) by click on the `+` and then select `Import from File`.
 
 ### **Thunderbird**
 
