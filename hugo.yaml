@@ -158,7 +158,7 @@ menu:
 
         - identifier: email
           name: Email Address
-          url: mailto:cyberfrontofficial@proton.me
+          url: mailto:thesajid@proton.me
           params:
               icon: mail
 
