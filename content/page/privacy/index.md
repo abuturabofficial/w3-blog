@@ -7,7 +7,7 @@ aliases:
   - cookie-policy
   - cookies
   - cookie
-lastmod: '2024-12-20T16:05:01+05:00'
+lastmod: '2025-07-07T07:48:20+0500'
 menu:
     main: 
         weight: 10
@@ -18,12 +18,12 @@ toc: false
 license: false
 ---
 
-**Privacy Policy for cyberfront.me**  
+**Privacy Policy for sajidmahmood.com**  
 **Effective Date:** 2023-11-19
 
 ## 1. Introduction
 
-Welcome to [CyberFront](/). This Privacy Policy explains how we collect, use, and protect information when you visit our website.
+Welcome to [sajidmahmood.com](/). This Privacy Policy explains how we collect, use, and protect information when you visit our website.
 
 ## 2. Information We Collect  
 
@@ -73,6 +73,6 @@ We may update this Privacy Policy periodically. Any changes will be posted on th
 ## 9. Contact Us  
 
 For questions or concerns, contact us at:  
-- **Email:** [cyberfrontofficial@proton.me](mailto:cyberfrontofficial@proton.me)
+- **Email:** [thesajid@proton.me](mailto:thesajid@proton.me)
 
-- **GPG Public Key:** [Download](/misc/publickey.asc) or [Get it from OPENPGP.ORG](https://keys.openpgp.org/vks/v1/by-fingerprint/B2A1748F33BAE85E5A9C49C741EBAB900757D730)  
+- **GPG Public Key:** [Download](/misc/publickey.thesajid@proton.me.asc) or [Get it from OPENPGP.ORG](https://keys.openpgp.org/vks/v1/by-fingerprint/1561AB4B0D17ECA0A92D2C29B46E542E8DEB33B5)  

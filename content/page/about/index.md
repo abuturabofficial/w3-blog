@@ -8,7 +8,7 @@ aliases:
   - about-me
   - contact-us
   - contact-me
-lastmod: '2025-04-24T22:38:01+0500'
+lastmod: '2025-07-07T07:43:42+0500'
 menu:
     main: 
         weight: 4
@@ -45,10 +45,10 @@ Ready to stay ahead of the curve? 🤓 Subscribe to following RSS Feeds:
 - Capture The Flag Challenges: [Get CTFs Feed](/categories/ctf/index.xml)
 
 ## 📧 **Let’s Collaborate!**  
-Have questions, ideas for collaboration, or just want to connect? Feel free to reach out to me at **[cyberfrontofficial@proton.me](mailto:cyberfrontofficial@proton.me)**. I’m always open to meaningful discussions and partnerships.  
+Have questions, ideas for collaboration, or just want to connect? Feel free to reach out to me at **[thesajid@proton.me](mailto:thesajid@proton.me)**. I’m always open to meaningful discussions and partnerships.  
 
 🔑 **PGP Public Key:**  
-- [Download Here](/misc/publickey.asc)  
-- Or Retrieve from [OPENPGP.ORG](https://keys.openpgp.org/vks/v1/by-fingerprint/B2A1748F33BAE85E5A9C49C741EBAB900757D730)  
+- [Download Here](/misc/publickey.thesajid@proton.me.asc)  
+- Or Retrieve from [OPENPGP.ORG](https://keys.openpgp.org/vks/v1/by-fingerprint/1561AB4B0D17ECA0A92D2C29B46E542E8DEB33B5)  
 
 Let’s embark on this exciting journey together—one line of code, one innovation, and one secured step at a time. 🚀✨  
