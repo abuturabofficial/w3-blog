@@ -1,5 +1,7 @@
 ---
 author: "AbuTurab"
+aliases:
+    - /p/the-importance-of-strong-password-hygiene/
 title: "The Importance of Strong Password Hygiene"
 date: 2022-06-07
 tags: ["Password Managers", "Security"]

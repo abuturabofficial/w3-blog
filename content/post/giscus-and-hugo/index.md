@@ -3,6 +3,8 @@ draft: false
 title: 'Setting Up Giscus: A Simple Guide for Hugo PaperMode Theme'
 date: 2024-12-19T11:49:20+05:00
 author: "AbuTurab"
+aliases:
+    - /p/setting-up-giscus-a-simple-guide-for-hugo-papermode-theme/
 image: "giscus-and-hugo.webp"
 tags: ["Hugo", "Giscus"]
 categories: ["Blog"]

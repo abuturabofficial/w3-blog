@@ -1,5 +1,7 @@
 ---
 author: "AbuTurab"
+aliases:
+    - /p/tango-with-tux-my-linux-journey-and-fedora-adventures/
 title: "Tango with Tux: My Linux Journey and Fedora Adventures"
 description: "How my linux Journey started and how I went through using different Distros, DEs, and Window managers."
 date: 2023-11-20 10:00:00 +0500

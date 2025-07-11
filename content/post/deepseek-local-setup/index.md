@@ -5,6 +5,8 @@ imageNameKey: 'deepseek-local'
 date: '2025-02-03T11:49:00+05:00'
 description: "Running LLM models locally, ensures that only you are  the in-charge of your data. In this tutorial we will learn, how to run deepseek models locally on your PC."
 author: "AbuTurab"
+aliases:
+    - /p/deepseek-local-setup-take-control-of-your-data-and-privacy/
 image: 'deepseek-local-cover.webp'
 tags: ['LLMs','AI', 'Selfhosted']
 categories: ['Blog']

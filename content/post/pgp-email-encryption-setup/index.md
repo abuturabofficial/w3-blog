@@ -4,6 +4,8 @@ toc: show
 title: 'Protect Your Inbox: Email Encryption for Gmail, Outlook & Other Platforms'
 date: '2024-12-26T11:05:01+05:00'
 updateTime: '2025-01-01T11:05:01+05:00'
+aliases:
+    - /p/protect-your-inbox-email-encryption-for-gmail-outlook-other-platforms/
 author: "AbuTurab"
 tags: ["Email Privacy", "Privacy", "Linux", "Windows", "Android", "macOS"]
 categories: ["Blog"]

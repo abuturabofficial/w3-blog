@@ -5,6 +5,8 @@ imageNameKey: "linux-sysrq-key"
 date: '2025-01-13T09:47:13+05:00'
 description: "Sometimes when your Linux system freezes, the magic SysRq key is your only hope for rescue."
 author: "AbuTurab"
+aliases:
+    - /p/sysrq-the-secret-key-to-safely-shutting-down-a-frozen-linux-system/
 image: linux-sysrq-key-cover.webp
 tags: ["Linux", "Troubleshooting Guide"]
 categories: ["Blog"]

@@ -1,5 +1,7 @@
 ---
 author: "AbuTurab"
+aliases:
+    - /p/sleuthkit-apprentice-walkthrough/
 title: Sleuthkit Apprentice Walkthrough
 tags: ["PicoCTF"]
 categories: ["ctf"]
