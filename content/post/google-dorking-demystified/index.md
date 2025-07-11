@@ -5,6 +5,8 @@ imageNameKey: "google-dorking-demystified"
 date: '2025-07-04T07:25:18+05:00'
 description: "Advanced search techniques help us uncover hidden information about our targets. They save time and provide pinpoint accuracy in search results. Almost all major search engines support these advanced methods, making them useful for both ordinary users and hackers alike."
 author: "AbuTurab"
+aliases:
+    - /p/search-engine-hacking-the-hackers-guide-to-advance-google-search/
 image: 'google-dorking-demystified-cover.webp'
 tags: ['OSINT']
 categories: ['Blog']
