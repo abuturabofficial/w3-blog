@@ -8,6 +8,11 @@ aliases:
   - about-me
   - contact-us
   - contact-me
+  - contact
+  - contact me
+  - contact us
+  - about us
+  - about me
 lastmod: '2025-07-07T07:43:42+0500'
 menu:
     main: 
