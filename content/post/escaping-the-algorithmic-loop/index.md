@@ -5,6 +5,8 @@ imageNameKey: 'escaping-the-algorithmic-loop'
 date: '2025-04-26T09:08:53+05:00'
 description: "The best way to break the algorithmic brain-rot content chain is to create friction and to use RSS Feed to get only what you want (ideally from diverse sources), not what the algorithm wants you to feed. Social Media's algorithms just feed our preconceived ideas and thoughts, they don't encourage source diversity or fact check."
 author: "AbuTurab"
+aliases:
+    - /p/unfollow-the-machine-escaping-the-algorithmic-loop/
 image: 'escaping-the-algorithmic-loop-cover.webp'
 tags: ['Digital Freedom']
 categories: ['Blog']

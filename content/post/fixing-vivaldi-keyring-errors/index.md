@@ -5,6 +5,8 @@ imageNameKey: 'vivaldi-errors-on-linux'
 date: '2025-04-23T09:00:01+05:00'
 description: 'When Vivaldi Browser repo is added on Ubuntu/Debian based systems, you get "Missing Signed-By" errors while updating the system. This blog will fix that error for good.'
 author: "AbuTurab"
+aliases:
+    - /p/fix-missing-signed-by-error-for-vivaldi-browser-repo-on-debian/ubuntu-based-systems/
 image: 'vivaldi-errors-on-linux-cover.webp'
 tags: ['Linux', 'Security']
 categories: ['Blog']

@@ -1,5 +1,7 @@
 ---
 author: Abuturab
+aliases:
+    - /p/digital-privacy-in-web-2.0-a-modern-horror-story/
 title: "Digital Privacy in Web 2.0: A Modern Horror Story"
 description: "How, social media and internet in general have invaded our privacy. Even the Governments are breaching our privacy through surveillance. The laws are passed around the world to undermine the privacy to get more and more control over their people."
 keywords: ["digital privacy", "privacy in the age of social media", "dangers of social media", "privacy is dead"]
