@@ -25,7 +25,7 @@ pagination:
     pagerSize: 10
 
 permalinks:
-    post: /:filename/
+    post: /:contentbasename/
     page: /:slug/
 
 # params:
