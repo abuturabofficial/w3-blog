@@ -250,7 +250,8 @@ Please try cloudflare's new developed `MASQUE` protocol which might let you conn
 warp-cli tunnel protocol set MASQUE
 ```
 
-> [!CAUTION] Please use TOR Onion services for extreme privacy and anonymity, especially those who are Journalists/Whistleblowers.
+> [!CAUTION] ""
+> Please use TOR Onion services for extreme privacy and anonymity, especially those who are Journalists/Whistleblowers.
 
 ## Final Thoughts
 > [!CONCLUSION]
