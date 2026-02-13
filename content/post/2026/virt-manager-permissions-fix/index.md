@@ -1,6 +1,6 @@
 ---
 draft: false
-title: 'Fixing Virtual Machine Manager Authentication Promtps on Launch'
+title: "Fixing Virtual Machine Manager's Authentication Prompt on Launch"
 imageNameKey: 'virt-manager-permissions-fix'
 date: '2026-02-13T10:33:16+05:00'
 description: 'Whenever you open a new instance of virt-manager, it asks for root/sudo password. This blog fixes this issue once for all.'
@@ -51,3 +51,6 @@ sudo gpasswd -d $USER libvirt
 
 - `gpasswd` System utility to manage groups and their passwords
 - `-d`/`--delete` Remove the user from the named group
+
+> [!INFO]
+> These commands are available on almost every Linux distro, but I have tested them only on Fedora Workstation.
