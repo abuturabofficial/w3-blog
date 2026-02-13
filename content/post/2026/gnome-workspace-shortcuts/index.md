@@ -27,7 +27,7 @@ Open the `dconf Editor`, accept the risk associated with changing default settin
 Then navigate to:
 <button>org</button> > <button>gnome</button> ><button>desktop</button> > <button>wm</button> > <button>keybindings</button>
 
-Or click on `search` 🔎 icon, and putting this in search bar:
+Or click on `search` 🔎 icon, and put this in the search bar:
 
 ```text{linenos=false}
 /org/gnome/desktop/wm/keybindings/
@@ -38,7 +38,7 @@ Or click on `search` 🔎 icon, and putting this in search bar:
 1. Click on `switch-to-workspace-5` (not available via `gnome-control-center`)
 
 2. Turn off `Use default value`
-3. Add your `Custom value` for key binding, i.e. <button>Super + 5 </button>
+3. Add your `Custom value` for key binding, i.e. <kbd>Super</kbd> + <kbd>5</kbd>
 ```text{linenos=false}
 ['<Super><Shift>5']
 ```
@@ -47,7 +47,7 @@ Or click on `search` 🔎 icon, and putting this in search bar:
 
 Then go back to `/org/gnome/desktop/wm/keybindings/` and click on `move-to-workspace-5`.
 
-Using the previous steps, add this shortcut <button>Super + Shift + 5 </button> (To move focused app to workspace-5) to `Custom value` field.
+Using the previous steps, add this shortcut <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>5</kbd> (To move focused app to workspace-5) to `Custom value` field.
 
 ```text{linenos=false}
 ['<Super><Shift>5']
@@ -63,7 +63,7 @@ The more direct and easy method is using `gsettings` via terminal. This command 
 gsettings set  org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>6']"
 ```
 
-Then you can use <button>Super + 6 </button> to switch to workspace#6.
+Then you can use <kbd>Super</kbd> +<kbd>6</kbd> to switch to workspace#6.
 
 - If you also want a shortcut to send apps to workspace#6, run in the terminal
 
@@ -71,7 +71,7 @@ Then you can use <button>Super + 6 </button> to switch to workspace#6.
 gsettings set  org.gnome.desktop.wm.keybindings move-to-workspace-6 "['<Super><Shift>6']"
 ```
 
-Now you can use <button>Super + Shift + 6</button> key binding to move a focused app to workspace#6.
+Now you can use <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>6</kbd> key binding to move a focused app to workspace#6.
 
 > [!TIP]''
 > Repeat the same process for assigning shortcuts to more workspaces by substituting workspace numbers.
