@@ -3,13 +3,13 @@ draft: false
 title: 'RSYNC Made Easy: Copy and Sync Files Without Losing Data'
 imageNameKey: 'rsync-made-easy'
 date: '2026-02-16T10:52:53+05:00'
-description:
+description: 'RSYNC is an amazing tool to transfer large amounts of data between devices. It supports incremental data transfer. If transfer is interrupted, you can re-run the transfer, and it will be restarted from where it left off.'
 author: "AbuTurab"
 image: 'rsync-made-easy-cover.webp'
 tags: ['Linux', 'Tips & Tricks']
 categories: ['Blog']
-keywords:
-lastmod: ''
+keywords: ['How to use rsync', 'Rsync cheatsheet', 'how to transfer large amount of data efficiently', 'Linux tool to transfer incremental data between devices']
+lastmod: '2026-02-16T17:17:00+05:00'
 ---
 
 `rsync` is an amazing unidirectional sync and backup tool available for UNIX based systems. It can copy data:
