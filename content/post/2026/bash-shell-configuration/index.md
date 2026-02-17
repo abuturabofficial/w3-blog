@@ -9,7 +9,7 @@ image: 'bash-shell-configuration-cover.webp'
 tags: ['Linux', 'Tips & Tricks']
 categories: ['Blog']
 keywords: ['Linux terminal workflow improvements', 'Lets make terminal Work for us', 'Level yp your linux shell with power bashrc enhancements', 'Practical .bashrc tweaks to master the terminal']
-lastmod: '2026-02-17T17:15:00+05:00'
+lastmod: '2026-02-17T18:31:49+05:00'
 ---
 
 Bash is a default shell on all almost every major Linux distro. Let's see how we can make our life easier by modifying `bashrc`, while working in the terminal.
@@ -86,6 +86,7 @@ Bash is a default shell on all almost every major Linux distro. Let's see how we
 > #alias connect="warp-cli connect"
 > #alias disconnect="warp-cli disconnect"
 > #alias status="warp-cli status"
+> #alias restart="warp-cli disconnect && warp-cli connect"
 > ### Editor
 > #alias vim='nvim '
 > 
