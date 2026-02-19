@@ -255,8 +255,106 @@ I have run it from $HOME `~/`, and it worked like a charm.
 
 ## `ln -s` Symlinks
 
+The `ln` command is used to create a link between files. The `ln -s` method has the following limitations compared to `stow`:
+- Not beginner-friendly like `stow` advanced directory structure
+- The `ln` command cannot automatically take care of target parent directory creation.
+- The `ln -s` command by-default only accepts absolute paths `$HOME/Documents/git/mydots/profile/.profile` instead of relative paths `profile/.profile` except when using `-r` flag.
+- If you have a lot of dotfiles, it might become cumbersome to manage them via `ln -s`.
+
+It's a good idea of have each config file in its own `directory`, but not necessary for `ln -s` as it can symlink both files and directories.
+
+###  The `ln -s` in Action
+
+My directory structure looks like this:
+![](linux-dotfiles-management-13.webp)
+It shows a single directory for each single config file.
+
+Let's first link a file:
+```console{linenos=false}
+ln -s $(pwd)/profile/.profile ~/.profile
+```
+- Links the `.profile` to the `$HOME/.profile`
+- `$(pwd)` Captures and inserts the output of `pwd`, which stands for prink working directory
+![](linux-dotfiles-management-14.webp)
+- The `~/` is same as `$HOME/` or `/home/<username>/`
+- If you want, you can type the whole path `$HOME/Documents/git/mydots/profile/.profile`
+
+You can link the whole directory too:
+```console{linenos=false}
+ln -s $(pwd)/alacritty ~/.config
+```
+- The whole alacritty directory gets linked to `~/.config/alacritty`
+![](linux-dotfiles-management-15.webp)
+
+If the file already exists in the link location, you can override it:
+```console{linenos=false}
+ln -si $(pwd)/profile/.profile ~/.profile
+```
+- `-i`/`--interactive` prompt whether to remove the existing destination file.
+- Reply with `y` to replace the existing files with the symlink
+![](linux-dotfiles-management-17.webp)
+
+To remove existing file without any prompt:
+```console{linenos=false}
+ln -sf $(pwd)/profile/.profile ~/.profile
+```
+
+### Useful Commands
+
+To show what the `ln -s` command doing:
+```console{linenos=false}
+ln -sv $(pwd)/profile/.profile ~/.profile
+```
+- `-v`/`--verbose` Print name of each linked file
+
+Using relative paths instead of absolute paths:
+```console{linenos=false}
+ln -s -r profile/.profile ~/.profile
+```
+- `-r` Create links relative to link location
+- The `-r` is always used with `-s`.
+
+Backup the existing files:
+```console{linenos=false}
+ln -s -b $(pwd)/profile/.profile ~/.profile
+```
+- `-b` Backups the existing file with suffix `~`, name of the backup filename will be `.profile~`.
+- The `-b` doesn't except any argument
+
+If you want to change the backup suffix:
+```console{linenos=false}
+ln -s -b --suffix=.bak $(pwd)/profile/.profile ~/.profile
+```
+- `--suffix=SUFFIX`/`-S SUFFIX` mention your backup file name SUFFIX
+- New backup filename will be `.profile.bak`.
+
+> [!TIP]
+> You can write multiple commands in the combined form like this `ln -svrb`
+
+To delete any dangling (broken, not linking anywhere) links:
+```console{linenos=false}
+symlinks -d /path/to/dangling/link/file
+```
+
+To unlink:
+```console{linenos=false}
+rm /path/to/link/file
+OR
+unlink /path/to/link/file
+```
+
+To check if a file links anywhere:
+```console{linenos=false}
+ls -l /path/to/file
+```
+
+
+
+
 ## References
 
-- [Stow Manual](https://www.gnu.org/software/stow/manual/stow.html) --- The official detailed manual --- I have used `man stow`, which comes bundled with the `stow` package upon installation
+- `man stow` --- The manual I used
+- [Stow Manual](https://www.gnu.org/software/stow/manual/stow.html) --- The Official Detailed Manual
+- [ln -s](https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html) --- The `ln` Manual
 - [dotfiles](https://wiki.archlinux.org/title/Dotfiles) --- An ArchWiki Guide
 - [My dotfiles repo](https://github.com/abuturabofficial/dotfiles) --- A mess but still do its job
