@@ -18,6 +18,8 @@ The `gsettings` tool comes to our rescue. It's a built-in command-line tool to m
 
 ## Idle/Lock Settings
 
+> [!ERROR] Unintended Consequences, please see [this section](#sleep-settings).
+
 Let's enable Screen Idle after 60 seconds:
 ```console{linenos=false}
 gsettings set org.gnome.desktop.session idle-delay 60
