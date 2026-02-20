@@ -78,7 +78,7 @@ To disable automatic sleep on AC:
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
 ```
 
-To re-enable, just replace `'nothing'` with `'suspend`
+To re-enable, just replace `'nothing'` with `'suspend'`
 
 ### Suspend/Sleep Duration
 
