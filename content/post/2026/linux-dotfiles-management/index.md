@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: 'Managing dotfiles the Right Way: GNU Stow and ln -s'
 imageNameKey: 'linux-dotfiles-management'
 date: '2026-02-18T11:42:12+05:00'
@@ -9,7 +9,7 @@ image: 'linux-dotfiles-management.webp'
 tags: ['Linux', 'Tips & Tricks']
 categories: ['Blog']
 keywords: ['gnu stow vs ln -s, which is better for dotfiles', 'how manage dotfiles on linux', 'dealing with configuration files on linux', 'the unix way of managing dotfiles/configs', 'a guide to dotfiles management on linux']
-lastmod: ''
+lastmod: '2026-02-20T15:51:46+05:00'
 ---
 
 There are various methods and tools to manage your dotfiles on your Linux/Unix system. But we will discuss only two of them:
@@ -49,11 +49,11 @@ Initialize the empty git repository:
 git init
 ```
 
-Now `mydots` will be initialized as a git repository. You can use `git` version control your dotfiles.
+Now `mydots` will be initialized as a git repository. You can use `git`, to version control your dotfiles.
 
 #### Basic Directory Structure
 > [!TIP] ''
-> You can keep your dotfiles repo inside your `git`/`github` repos directory too, later I'll explain how to do that, instead of keeping your dotfiles in the $HOME directory. You don't even need to follow the standard Stow DIR structure either.
+> You can keep your dotfiles repo inside your `git`/`github` repos directory too, later I'll explain how to do that, instead of keeping your dotfiles in the $HOME directory.
 
 To save `alacritty` config inside the `mydots` directory, you need to make sure:
 - Name the parent directory as `alacritty`
@@ -64,10 +64,10 @@ mkdir -p alacritty/.config/alacritty
 ```
 - The `-p` flag makes sure no error if existing, make parent directories as needed.
 
-The `~/mydots/alacritty/.config/alacritty` dir will be created. My `mydots` directory was completely empty, so `-p` flag made all the directories in one go.
+The `~/mydots/alacritty/.config/alacritty` directory will be created. My `mydots` directory was completely empty, so `-p` flag made all the directories in one go.
 ![](linux-dotfiles-management-1.webp)
 
-Copy your `alacritty` config in from `$HOME/.config/alacritty` directory to `mydots` repo.
+Copy your `alacritty` config from `$HOME/.config/alacritty` directory to `mydots` repo.
 ```console{linenos=false}
 cp $HOME/.config/alacritty/alacritty.toml $HOME/mydots/alacritty/.config/alacritty/
 ```
@@ -81,9 +81,9 @@ stow alacritty
 It didn't work, isn't it!
 ![](linux-dotfiles-management-3.webp)
 
-1️⃣ It showed error, as the `alacritty.toml` already exits in the `$HOME/.config/alacritty/alacritty.toml`. 
+1.  It showed error, as the `alacritty.toml` already exits in the `$HOME/.config/alacritty/alacritty.toml`. 
 
-2️⃣ When we checked our `.config` directory, it shows the `alacritty.toml` as a normal file, not symlinked anywhere.
+2. When we checked our `.config` directory, it shows the `alacritty.toml` as a normal file, not symlinked anywhere.
 
 One option is to delete the `alacritty.toml` file as this:
 ```console{linenos=false}
@@ -95,10 +95,11 @@ But `stow` offers a way to tackle this:
 stow --adopt alacritty
 ```
 - The `--adopt` flag stows the already existing plane file which is not owned by any existing stow package
+- It replaces your ~/.config/alacritty` directory with the symlink to the stow directory.
 ![](linux-dotfiles-management-4.webp)
 
 > [!INFO] ''
-> When you reinstall, or `$HOME/.config/alacritty/` directory doesn't exist, running `stow alacritty` will take care of creating a `$HOME/.config/alacritty` directory and symlinking the `alacritty.toml` file.
+> When you reinstall, or `$HOME/.config/alacritty/` directory doesn't exist, running `stow alacritty` will take care of creating a `$HOME/.config/alacritty` directory and symlinking the `alacritty` config directory to the stow directory.
 
 Let's understand stowing with another example of a config file present in `$HOME` directory.
 
@@ -131,10 +132,10 @@ git commit -m 'add my dotfiles'
 ```
 - `status` To see untracked/modified files
 - `add .` Stage all the untracked/modified files for commit
-- `commit -m` Create a new commit containing current contents of the REPO
+- `commit -m` Create a new commit containing current **staged** contents of the REPO
 ![](linux-dotfiles-management-6.webp)
 
-You can now upload that REPO to your GitHub/GitLab.(Out of the scope of this blog)
+You can now upload `mydots` REPO to your GitHub/GitLab.(Out of the scope of this blog)
 
 #### Advanced Directory Structure
 
@@ -224,6 +225,12 @@ stow -D profile
 ```
 - `-D`/`--delete` Unstow the config and deletes the symlinked file
 
+To **unstow** the advanced structured config, even add a verbose flag:
+
+```console{linenos=false}
+stow --verbose=2 -D -t $HOME/.config alacritty
+```
+
 To stow/restow a config, used for pruning obsolete symlinks from the target tree:
 ```console{linenos=false}
 stow -R alacritty
@@ -277,13 +284,13 @@ ln -s $(pwd)/profile/.profile ~/.profile
 - `$(pwd)` Captures and inserts the output of `pwd`, which stands for prink working directory
 ![](linux-dotfiles-management-14.webp)
 - The `~/` is same as `$HOME/` or `/home/<username>/`
-- If you want, you can type the whole path `$HOME/Documents/git/mydots/profile/.profile`
+- If you want, you can type the whole path `$HOME/.profile` or `/home/<username>/.profile`
 
 You can link the whole directory too:
 ```console{linenos=false}
 ln -s $(pwd)/alacritty ~/.config
 ```
-- The whole alacritty directory gets linked to `~/.config/alacritty`
+- The whole `alacritty` directory gets linked to `~/.config/alacritty`
 ![](linux-dotfiles-management-15.webp)
 
 If the file already exists in the link location, you can override it:
@@ -298,6 +305,7 @@ To remove existing file without any prompt:
 ```console{linenos=false}
 ln -sf $(pwd)/profile/.profile ~/.profile
 ```
+- `-f`/`--force` Remove existing destination files
 
 ### Useful Commands
 
@@ -336,6 +344,11 @@ To delete any dangling (broken, not linking anywhere) links:
 symlinks -d /path/to/dangling/link/file
 ```
 
+To check if a file links anywhere:
+```console{linenos=false}
+ls -l /path/to/file
+```
+
 To unlink:
 ```console{linenos=false}
 rm /path/to/link/file
@@ -343,18 +356,15 @@ OR
 unlink /path/to/link/file
 ```
 
-To check if a file links anywhere:
-```console{linenos=false}
-ls -l /path/to/file
-```
-
-
-
+> [!TIP] Git Bare Repository
+> Another method of managing dotfiles using `git` via bare git repo. The pro is you don't need anything but only `git` itself. Check the [References Section](#references) for step-by-step guide.
 
 ## References
 
-- `man stow` --- The manual I used
+- `man stow` --- The Manual I used
+- `man ln` --- My Manual of Choice
 - [Stow Manual](https://www.gnu.org/software/stow/manual/stow.html) --- The Official Detailed Manual
-- [ln -s](https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html) --- The `ln` Manual
+- [ln Manual](https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html) --- The Official GNU `ln` Manual
 - [dotfiles](https://wiki.archlinux.org/title/Dotfiles) --- An ArchWiki Guide
 - [My dotfiles repo](https://github.com/abuturabofficial/dotfiles) --- A mess but still do its job
+- [The ArchWiki](https://wiki.archlinux.org/title/Dotfiles) --- The Git bare Repo Guide
