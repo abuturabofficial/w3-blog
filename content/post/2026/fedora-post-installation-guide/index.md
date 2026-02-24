@@ -1,15 +1,15 @@
 ---
-draft: true
+draft: false
 title: 'Fedora Workstation: Things to Do After Installation'
 imageNameKey: 'fedora-post-installation-guide'
 date: '2026-02-23T10:27:43+05:00'
-description: 'If you want to make your Fedora install feel faster in package installation and upgrades, with maximum codecs and hardware video acceleration support, this guide is for you.'
+description: 'If you want to make your Fedora install feel faster in package installation and upgrades, with maximum codecs and hardware video acceleration support, install some useful apps, and fix gtk3 theming issue, this guide is for you.'
 author: "AbuTurab"
 image: 'fedora-post-installation-guide-cover.webp'
 tags: ['Linux', 'Tips & Tricks']
 categories: ['Blog']
 keywords: ['fedora post installation guide', 'Necessary tweaks to make fedora better after installation', 'Fedora post installation maximum productivity guide']
-lastmod: ''
+lastmod: '2026-02-24T14:45:34+05:00'
 ---
 
 ## DNF5 Configuration `dnf.conf`
@@ -36,8 +36,9 @@ fastestmirror=true
 
 It will rate the mirror based on latency. But not all mirrors have up-to-date packages, you might see mirror errors during updates and installations.
 ![](fedora-post-installation-guide-2.webp)
+The `DNF5` can automatically handle mirrors based on their availability and speed. You don't generally need this option.
 
-## Beautiful Cursor
+## Beautiful Cursors
 
 ![](fedora-post-installation-guide-3.webp)
 
@@ -64,14 +65,14 @@ tar -xvf Bibata.tar.xz -C ~/.local/share/icons
 - `-x`/`--extract` Extract files from an archive
 - `-v`/`--verbose` Verbosely list files processed
 - `-f`/`--file=ARCHIVE` Use archive filename or device ARCHIVE
-- `-C``--directory=DIR` Change to **DIR** before performing any operations
+- `-C`/`--directory=DIR` Change to **DIR** before performing any operations
 
 Now just open `gnome-tweaks` app, go to `Appearance`. Under `Styles > Cursors`, change it to your liking:
 ![](fedora-post-installation-guide-4.webp)
 
 ## RPM Fusion: Free and Non-Free
 
-RPM Fusion repos are necessary to obtain pieces of software which are not available in the Official Repos due to licensing restrictions like multimedia codecs, GPU driver etc.
+RPM Fusion repos are necessary to obtain pieces of software which are not available in the Official Repos due to licensing restrictions like multimedia codecs, GPU drivers etc.
 
 Using `DNF`:
 ```console{linenos=false}
@@ -104,7 +105,7 @@ sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 
  ### Install Additional Codecs
 
-To play all kinds of multimedia in Browsers as well through multimedia players.
+To play all kinds of multimedia in Browsers as well as through multimedia players.
 ```console{linenos=false}
 sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 ```
@@ -131,7 +132,7 @@ This is needed since Fedora 37 and later. It mainly concerns the AMD hardware:
 sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
 ```
 
-If using i686 compact libraries (for steam or a likes)
+If using i686 compact libraries (for steam or a likes) for older 32-bit systems:
 ```console{linenos=false}
 sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686
 ```
@@ -140,7 +141,7 @@ sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686
 > For NVIDIA, Broadcom Network Drivers, DVD drivers, [checkout](https://rpmfusion.org/Howto/Multimedia) the official detailed guide.
 
 > [!INFO]
-> [Checkout](https://fedoraproject.org/wiki/Hardware_Video_Acceleration) Official Hardware Video Acceleration Guide for Fedora. Also, Firefox Hardware Acceleration [Guide](https://fedoraproject.org/wiki/Firefox_Hardware_acceleration).
+> [Checkout](https://fedoraproject.org/wiki/Hardware_Video_Acceleration) Official Hardware Video Acceleration Guide for Fedora. Also, Firefox Hardware Video Acceleration [Guide](https://fedoraproject.org/wiki/Firefox_Hardware_acceleration).
 
 ### Brave and Chromium: Hardware Video Acceleration
 
@@ -151,7 +152,7 @@ Add following config to `brave-flags.conf` file to `$HOME/.config/` directory:
 --ozone-platform=wayland
 --ozone-platform-hint=wayland
 --enable-features=TouchpadOverscrollHistoryNavigation
---load-extension=~/.local/share/omarchy/default/chromium/extensions/copy-url
+#extension=~/.local/share/omarchy/default/chromium/extensions/copy-url
 # Chromium crash workaround for Wayland color management on Hyprland - see https://github.com/hyprwm/Hyprland/issues/11957
 #--disable-features=WaylandWpColorManagerV1
 ```
@@ -163,7 +164,7 @@ For Chromium/Chrome browser save following config to `chromium-flags.conf` or `c
 --enable-features=TouchpadOverscrollHistoryNavigation
 --enable-features=AcceleratedVideoDecodeLinuxGL
 --enable-features=AcceleratedVideoDecodeLinuxZeroCopyGL
--enable-features=AcceleratedVideoDecodeLinuxGL,AcceleratedVideoEncoder
+--enable-features=AcceleratedVideoDecodeLinuxGL,AcceleratedVideoEncoder
 # Chromium crash workaround for Wayland color management on Hyprland - see https://github.com/hyprwm/Hyprland/issues/11957
 #--disable-features=WaylandWpColorManagerV1
 ```
@@ -195,16 +196,17 @@ The <kbd>Super</kbd> + <kbd>NUM</kbd> can be better use for quickly switching am
 I like clean GNOME experience with only my chosen few extensions. Let's remove default Fedora Workstation Extensions:
 
 ```
-sudo dnf remove gnome-shell-extension-window-list gnome-shell-extension-window-lis
+sudo dnf remove gnome-shell-extension-window-list gnome-shell-extension-window-list
 ```
 
 I had these two installed by default. To check whether there are more:
 ```
 dnf list --installed | grep gnome-shell-extension
 ```
+It will list all the installed packages and then using `grep` will only print packages with `gnome-shell-extension` pattern in their name.
 
 > [!INFO] ''
-> These default extensions can only be uninstalled via `DNF`, **Extension Manager** will have no uninstall option.
+> These default extensions can only be uninstalled via `DNF`, **Extension Manager** will have no uninstall option for them.
 
 ### GNOME: Extension Manager
 
@@ -228,7 +230,7 @@ Disable screensaver and auto suspend.
 My favorite and most used tool, a clipboard manager with text & images support.
 ![](fedora-post-installation-guide-6.webp)
 
-There many more extensions available. You can choose whatever you like. I'm personally a fan of default GNOME experience with necessary extensions only.
+There are many more extensions available. You can choose whatever you like. I'm personally a fan of default GNOME experience with necessary extensions only.
 
 ## System Backups: Btrfs Assistant
 
@@ -253,7 +255,7 @@ Improve your Fedora experience with useful apps. Following apps are recommended 
 
 ### Brave Browser
 
-[Add](https://brave.com/linux/#release) `brave-browser` and install:
+[Add](https://brave.com/linux/#release) `brave-browser` repository and install:
 ```console{linenos=false}
 sudo dnf install dnf-plugins-core
 
@@ -292,12 +294,12 @@ sudo dnf install code # or code-insiders
 ### Screenshots: Gradia and Flameshot
 
 [Gradia](https://github.com/AlexanderVanhee/Gradia) is a screenshot taking and annotation tool. It's available as flatpak:
-```
+```console{linenos=false}
 flatpak install be.alexandervanhee.gradia
 ```
 
 Add custom shortcut to via GNOME settings:
-```
+```console{linenos=false}
 flatpak run be.alexandervanhee.gradia --screenshot=INTERACTIVE
 ```
 It will take interactive screenshot via GNOME's built-in tool, then pipe that image to Gradia.
@@ -306,7 +308,7 @@ It will take interactive screenshot via GNOME's built-in tool, then pipe that im
 
 [Flameshot](https://github.com/flameshot-org/flameshot) is another great screenshot tool with annotation support.
 ```
-sudo dnf in flameshot
+sudo dnf install flameshot
 ```
 Due to Wayland limitations, it doesn't run without certain changes.
 
@@ -319,7 +321,7 @@ export QT_QPA_PLATFORM=wayland
 sh -c "QT_QPA_PLATFORM=xcb flameshot gui -r | wl-copy"
 ```
 
-Save this code to `flameshot-fix` file. Put this file inside `$HOME/local/bin/` directory. Make it executable:
+Save these lines to `flameshot-fix` file. Put this file inside `$HOME/local/bin/` directory. Make it executable:
 ```
 chmod +x flameshot-fix
 ```
@@ -343,7 +345,7 @@ Let's create a GNOME custom shortcut:
 
 ### Bitwarden
 
-It's a Password Manager of choice. Let's [install](https://bitwarden.com/download/#downloads-desktop) it:
+It's a free and open-source Password Manager of choice. Let's [install](https://bitwarden.com/download/#downloads-desktop) it:
 ```sh{linenos=false}
 latest=$(curl -s https://api.github.com/repos/bitwarden/clients/releases/latest \
          | grep "browser_download_url.*x86_64.rpm" \
@@ -371,7 +373,7 @@ flatpak install md.obsidian.Obsidian
 
 ### MegaSync Desktop
 
-Mega is cloud storage solution. [Install](https://mega.io/desktop#download) it via:
+Mega is cloud storage solution like Google Drive. [Install](https://mega.io/desktop#download) it via:
 ```sh{linenos=false}
 wget https://mega.nz/linux/repo/Fedora_42/x86_64/megasync-Fedora_42.x86_64.rpm && sudo dnf install "$PWD/megasync-Fedora_42.x86_64.rpm"
 ```
@@ -384,13 +386,13 @@ It's a File based Encryption tool. Let's [install](https://cryptomator.org/downl
 flatpak install org.cryptomator.Cryptomator
 ```
 
-### VPNs: Windscribe and ProtonVPN
+### VPNs: Windscribe, ProtonVPN and Cloudflare Warp
 
 To install windscribe:
 ```console{linenos=false}
 sudo dnf install windscribe
 ```
-[Windscribe](https://windscribe.com/) privacy respecting VPN provider. It also gives 10 GB free data per month.
+[Windscribe](https://windscribe.com/) is a privacy respecting VPN provider. It also gives 10 GB free VPN usage data per month.
 
 [ProtonVPN](https://protonvpn.com/support/official-linux-vpn-fedora) has more involved installation process.
 
@@ -418,6 +420,7 @@ It requires **AppIndicator and KStatusNotifierItem Support** extension installed
 
 To completely remove the ProtonVPN app, follow the [official guide](https://protonvpn.com/support/official-linux-vpn-fedora).
 
+Check [detailed guide](/cloudflare-warp-on-linux/) on installation and configuration of `cloudflare-warp` on Linux.
 
 
 ### Virtual Machine Manager
@@ -432,11 +435,11 @@ Let's install `virt-manager`:
 sudo dnf install virt-manager
 ```
 
-To fix passwords prompts on opening `Virtual Machine Manager`, [see this](/virt-manager-permissions-fix/).
+To fix passwords prompts on opening **Virtual Machine Manager**, [see this](/virt-manager-permissions-fix/).
 
 ### Distrobox
 
-[Distrobox](https://distrobox.it/) helps you run any Linux distribution inside your terminal. Fedora comes preconfigured with `podman` and `toolbox` which is what `distrobox` based on.
+[Distrobox](https://distrobox.it/) helps you run any Linux distribution inside your terminal. Fedora comes preconfigured with `podman` and `toolbox` which is what `distrobox` is based on.
 
 The `toolbox` only supports Fedora with pretty limited features, let's get rid of it:
 ```console{linenos=false}
@@ -459,6 +462,22 @@ flatpak install com.github.Bleuzen.FFaudioConverter com.github.tchx84.Flatseal o
 - `Kid3` Audio metadata Editor
 - `LocalSend` Sends and Receives file via Local Network
 - `Calibre` E-Book reader and metadata editor
+
+Install few useful programs for Fedora repos:
+```
+sudo dnf install neovim imagemagick tealdeer bat lsd yazi tmux fzf ripgrep fd-find seahorse
+```
+- `neovim` CLI text editor
+- `imagemagick` CLI based image display and manipulation program
+- `tealdeer` Show simplified usage of CLI commands with examples
+- `bat` Better `cat`
+- `lsd` Better `ls`
+- `yazi` Terminal based file manager with vim keybindings
+- `tmux` Terminal multiplexer
+- `fzf` A CLI fuzzy finder
+- `ripgrep` A better `grep`
+- `fd-find` A better `find`
+- `seahorse` GNOME encryption keys manager, a keyring manager
 
 ## Fix GTK3 Apps Theming
 
