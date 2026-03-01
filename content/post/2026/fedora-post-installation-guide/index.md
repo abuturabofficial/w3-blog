@@ -38,6 +38,33 @@ It will rate the mirror based on latency. But not all mirrors have up-to-date pa
 ![](fedora-post-installation-guide-2.webp)
 The `DNF5` can automatically handle mirrors based on their availability and speed. You don't generally need this option.
 
+## Upgrade
+
+### System
+
+Go to `Gnome-Software` and Click on `updates` tab. Then Click <kbd>Downloads</kbd> button.
+
+Or upgrade via `DNF`:
+```
+sudo dnf update
+```
+
+And **Restart** your system.
+
+## Firmware
+
+You can update your firmware (BIOS, Device Drivers) if your system supports it:
+```console{linenos=false}
+sudo fwupdmgr refresh --force
+sudo fwupdmgr get-devices # Lists devices with available updates.
+sudo fwupdmgr get-updates # Fetches list of available updates.
+sudo fwupdmgr update
+```
+
+You may need to restart to apply updates.
+> [!WARNING]
+> BIOS updates can brick your PC. Be careful with BIOS updates.
+
 ## Beautiful Cursors
 
 ![](fedora-post-installation-guide-3.webp)
