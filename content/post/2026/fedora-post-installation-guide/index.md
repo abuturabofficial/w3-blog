@@ -51,7 +51,7 @@ sudo dnf update
 
 And **Restart** your system.
 
-## Firmware
+### Firmware
 
 You can update your firmware (BIOS, Device Drivers) if your system supports it:
 ```console{linenos=false}
