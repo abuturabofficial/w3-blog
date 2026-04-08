@@ -36,6 +36,8 @@ lastmod: '2025-02-06T15:31:56+05:00'
 
 Following are my education profiles on different MOOC's platforms.
 
+> Check out my notes for all the courses I've taken: [Notes WIKI](https://wiki.sajidmahmood.com)
+
 - **Coursera Profile:** [View Profile](https://www.coursera.org/learner/abuturabofficial)
 - **TryHackMe:** [View Profile](https://tryhackme.com/p/abuturabofficial)
 - **Credly:** [View Profile](https://www.credly.com/users/abuturabofficial)
