@@ -47,9 +47,6 @@ Following are my education profiles on different MOOC's platforms.
 
 The following are my certifications for various technology-related specializations and courses.
 
-> [!TIP]
-> [Click here](https://wiki.sajidmahmood.com) to visit my notes website, where I share notes from the specializations and courses I have taken.
-
 <style>
 .responsive-iframe {
     position: relative;
