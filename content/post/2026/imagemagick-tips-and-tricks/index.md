@@ -28,6 +28,32 @@ magick image.png image.webp
 ```
 It will convert the `.png` to `.webp` image format, suitable for Web usage.
 
+The `.WEBP` images are standard on the web, due to their small size and lazy loading features. To get instant loading of images on the web, you can use `-quality` attribute.
+```term{linenos=false}
+magick -quality 70 image.png image.webp
+```
+
+To batch convert multiple `.PNGs` in the current working directory:
+```bash{linenos=false}
+for img in *.png; do magick "$img" -quality 70 "${img%.png}.webp"; done
+```
+
+Before running the scriptlet, you can see with `echo` command, what will happen when the scriptlet is run:
+```bash{linenos=false}
+for img in *.png; do 
+  echo magick "$img" -quality 70 "${img%.png}.webp"
+done
+```
+![](imagemagick-tips-and-tricks-1.webp)
+
+- `for img in *.png` Loop through each PNG file in the current directory, store the filename in a variable called `img`
+- `do` Start of the loop
+- `"$img"` Holds the current filename during each loop iteration, the double quotes `""` makes sure, space and other characters in the filenames are handled correctly.
+- `"${img%.png}.webp"` It replaces the `.png` in the **filename.png** with `.webp`, the operator `%` removes from the right (in our case replaces image extension names).
+- `done` Ends the loop and repeats for the next PNG file.
+- The semicolon `;` acts as a command terminator, `;` also separates the loop declaration from the `do`, it's a syntax requirement when `do` is written immediately after. New line can act as a command terminator too, when not writing the scriptlet on a single line.
+
+
 ## Combine Images
 
 You can combine two images either horizontally or vertically, by using.
@@ -47,7 +73,7 @@ Before running above command, you can add `echo` in the start to see how braces 
 ```term{linenos=false}
 echo magick image{1,2}.png -append combined.png
 ```
-![](imagemagick-tips-and-tricks-1.webp)
+![](imagemagick-tips-and-tricks-2.webp)
 
 ---
 ## References
