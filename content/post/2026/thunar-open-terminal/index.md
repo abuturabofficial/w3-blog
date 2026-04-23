@@ -7,7 +7,7 @@ description: "Open any terminal via Open Terminal Here, from right click context
 author: "AbuTurab"
 image: "thunar-open-terminal-cover.webp"
 tags: ["Linux", "Tips & Tricks"]
-categories: ["Blogs"]
+categories: ["Blog"]
 keywords: ['how to open terminal here in thunar file manager', 'open terminal here in thunar with alacritty', 'use kitty as open terminal here for thunar file manager', 'using custom terminal for open terminal here context menu of thunar file manager']
 lastmod: '2026-04-23T15:06:04+05:00'
 ---
