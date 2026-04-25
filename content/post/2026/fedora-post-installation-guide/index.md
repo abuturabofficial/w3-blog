@@ -9,7 +9,7 @@ image: 'fedora-post-installation-guide-cover.webp'
 tags: ['Linux', 'Tips & Tricks']
 categories: ['Blog']
 keywords: ['fedora post installation guide', 'Necessary tweaks to make fedora better after installation', 'Fedora post installation maximum productivity guide']
-lastmod: '2026-02-24T14:45:34+05:00'
+lastmod: '2026-04-25T11:05:12+05:00'
 ---
 
 ## DNF5 Configuration `dnf.conf`
@@ -317,6 +317,27 @@ Then update package cache and install the package:
 dnf check-update &&
 sudo dnf install code # or code-insiders
 ```
+
+### lnav
+
+The `lnav` is a curses-based tool for viewing and analyzing log files.
+```console{linenos=false}
+sudo dnf install lnav
+```
+
+### Thunar File Manager
+
+Unlike Nautilus, Thunar supports session restore on opening. To install Thunar and optional dependencies:
+```console{linenos=false}
+sudo dnf install thunar catfish thunar-volman tumbler thunar-archive-plugin thunar-media-tags-plugin thunar-sendto-clamtk
+```
+- `thunar` Main File Manager
+- `catfish` A file search tool (optional)
+- `thunar-volman` Automatic management of removable drives and media for Thunar (optional)
+- `tumbler` Preview images' thumbnails (optional)
+- `thunar-archive-plugin` Archive manager for Thunar (optional)
+- `thunar-media-tags-plugin` Adds special features for media files to the Thunar (optional)
+- `thunar-sendto-clamtk` Simple plugin to allow a right-click, context menu scans of files and folder inside Thunar (optional)
 
 ### Screenshots: Gradia and Flameshot
 
