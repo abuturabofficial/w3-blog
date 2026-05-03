@@ -18,7 +18,7 @@ The `gsettings` tool comes to our rescue. It's a built-in command-line tool to m
 
 ## Idle/Lock Settings
 
-> [!ERROR] Unintended Consequences, please see [this section](#sleep-settings).
+> [!WARNING] Unintended Consequences, please see [this section](#sleep-settings).
 
 Let's enable Screen Idle after 60 seconds:
 ```console{linenos=false}
@@ -47,7 +47,7 @@ gsettings set org.gnome.desktop.screensaver lock-delay 600
 ```
 
 To know set values:
-```
+```{linenos=false}
 gsettings get org.gnome.desktop.screensaver lock-delay 
 ```
 
@@ -83,21 +83,21 @@ To re-enable, just replace `'nothing'` with `'suspend'`
 ### Suspend/Sleep Duration
 
 To set a sleep delay on AC (in seconds):
-```
+```{linenos=false}
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 1800
 ```
 
 To check the set value on AC:
-```
+```{linenos=false}
 gsettings get org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout
 ```
 
 To set a sleep value on Battery (in seconds):
-```
+```{linenos=false}
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 1200
 ```
 
 To check the set value on Battery:
-```
+```{linenos=false}
 gsettings get org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout
 ```

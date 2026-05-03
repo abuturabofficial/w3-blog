@@ -19,7 +19,7 @@ If you go to [Gmail Website](https://mail.google.com), and look for the connecti
 
 **Connection is secure** only means, between you and Google servers, there is no one snooping on, on your emails. But Google can/will read your messages, either on Governments' requests or for advertising purposes. The same is the case with **Microsoft Outlook**.
 
-> [!NOTIFY]
+> [!NOTE] Notify
 > According to the [sources](https://blog.google/products/gmail/g-suite-gains-traction-in-the-enterprise-g-suites-gmail-and-consumer-gmail-to-more-closely-align/), Google stopped scanning email content for Ads personalization back in 2017 for non-enterprise users too. But they will still use your email meta-data and other services (Google and 3<sup>rd</sup> party) activities for the ads shown in the Gmail.
 
 ![](email-encryption.webp)
@@ -100,7 +100,7 @@ Install the Thunderbird app.
 
   ![](email-encryption-8.webp)
 
-> [!INFO]
+> [!NOTE] Info
 > By default, your Subject of the emails is not encrypted. You can toggle that setting `Encrypt message subjects` on, but do remember some Email providers might not support it, your subject will appear gibberish to them, despite decrypting the rest of the email.
 
 Now share your public key to world by clicking on the key stored in your `OpenKeychain` app. You can simply copy the app by clicking the `copy icon` or share it via `share icon`.

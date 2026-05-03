@@ -36,7 +36,7 @@ Here are some features common to most of the Password Managers, either they are 
 - Some Open Source Password Managers offer self-hosted solutions for your passwords, but how secure the self-hosted solutions will be, is also debatable depending upon the person’s skills and knowledge who is deploying that server.
 - Most of the Password Managers offer saving your credit/debit cards to the wallet and make your online shopping experience seamless.
     
-> [!INFO]
+> [!NOTE] Info
 > Note: Self-hosted Password storing solutions are out of the scope of this blog, we may discuss them later on when we’ll talk about advanced methods of Password storage.
 
 ## **Proprietary Password Managers**
@@ -99,8 +99,8 @@ Pros of using Free and Open Source Password Managers.
 -   No hidden trackers or back-doors.
 -   Free in terms of freedom as well as their premium features are also dirt-cheap compared to proprietary Password Managers.
     
-> [!DISCLAIMER]
-> Disclaimer: These pros only apply to those FOSS programs which are well-reputed and used by large number of people. But if you use some unknown software whose users are only you and the developer, realistically chances are, you’re at more risk than using a proprietary well-known counterpart.
+> [!WARNING] Disclaimer
+> These pros only apply to those FOSS programs which are well-reputed and used by large number of people. But if you use some unknown software whose users are only you and the developer, realistically chances are, you’re at more risk than using a proprietary well-known counterpart.
 
 ## **Bitwarden: A Short Intro**
 
@@ -131,8 +131,8 @@ Bitwarden offers a premium version with some added features, in dirt cheap price
 
 Website: <https://bitwarden.com/>
 
-> [!INFO]
->What is TOTP and its importance for online safety and security will be discussed in coming blog/video.
+> [!NOTE] Info
+> What is TOTP and its importance for online safety and security will be discussed in coming blog/video.
 
 ## **Closing Thoughts**
 

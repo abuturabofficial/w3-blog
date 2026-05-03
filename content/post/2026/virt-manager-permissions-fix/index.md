@@ -18,7 +18,7 @@ The virt-manager on all almost every Linux distro, asks for password when it's o
 
 To fix this, make a `libvirt` group and add yourself to it.
 
-```console
+```bash{linenos=false}
 sudo usermod -aG libvirt $USER
 ```
 
@@ -33,7 +33,7 @@ Logout and log back in:
 
 Run the following command in the terminal:
 
-```console
+```console{linenos=false}
 groups
 ```
 
@@ -45,12 +45,12 @@ You can see the newly created `libvirt` group:
 
 To remove yourself from the `libvirt` group:
 
-```console
+```bash{linenos=false}
 sudo gpasswd -d $USER libvirt
 ```
 
 - `gpasswd` System utility to manage groups and their passwords
 - `-d`/`--delete` Remove the user from the named group
 
-> [!INFO]
+> [!NOTE] Info
 > These commands are available on almost every Linux distro, but I have tested them only on Fedora Workstation.

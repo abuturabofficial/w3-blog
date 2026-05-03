@@ -52,7 +52,7 @@ There are some standard rules which make sure that our password is strong enough
 - Use two factor or multifactor authentication
 
 > [!TIP]
-> Tip: Don’t use <, > as they can cause problems in the web browsers.
+> Don’t use <, > as they can cause problems in the web browsers.
 
 ## **Passphrase**
 
@@ -91,7 +91,7 @@ For keeping your accounts free from hackers and information leakage, apply the t
 - Never tell your password/passphrase to anyone
 - Never write them down
     
-> [!INFO]
+> [!NOTE] INFO
 > How to safely store your passwords and passphrases is another topic which will be discussed in the coming blog/video.
 
 ### Use a Password and Passphrase Generators

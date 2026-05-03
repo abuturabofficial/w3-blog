@@ -55,8 +55,7 @@ rsync -rv SOURCE_DIR/ DEST_DIR/
 ```
 This will only copy the content inside the **SOURCE_DIR**.
 
-> [!INFO] ''
-> Using `DIR` or `DIR/` for destination gave the same results during my testing.
+> [!NOTE] Using `DIR` or `DIR/` for destination gave the same results during my testing.
 
 If you want to copy the whole `SOURCE_DIR` to Destination.
 
@@ -96,8 +95,7 @@ rsync -avh --progress --delete /run/media/Books/Books/ /home/abuturab/Documents/
 > ![](rsync-made-easy-2.webp)
 > Currently with `--dry-run`, it only shows, which files will be deleted.
 
-> [!DANGER] ''
-> The command `--delete` can be destructive if run on inappropriately mounted systems, so always run it first with `--dry-run` to ensure, no important data is being deleted.
+> [!CAUTION] The command `--delete` can be destructive if run on inappropriately mounted systems, so always run it first with `--dry-run` to ensure, no important data is being deleted.
 
 ### `--partial` Keep Partially Transferred Files
 
@@ -108,8 +106,7 @@ By default, `rsync` deletes the partially transferred file, if an interruption h
 By default, `rsync` uses **quick check** method that checks if the file size and last modification time match between the sender and receiver.
 
 If the data is critical, and you want to make sure, destination has exactly the bit-by-bit copy of the source, `--checksum`/`-c/` flag comes in handy. It uses 128-bit checksum for files, to make sure no even a single bit has lost during the transfer.
-> [!INFO] ''
-> Using `-c` will greatly reduce the transfer speeds due to computational needs of calculating checksum for each file during and after transfer.
+> [!NOTE] Using `-c` will greatly reduce the transfer speeds due to computational needs of calculating checksum for each file during and after transfer.
 
 ### `--update` When Destination has Newer Files
 
@@ -117,7 +114,7 @@ Sometimes, you want to keep the changes, you made to the files on the destinatio
 
 The flag `--update` checks if the destination file/s has a newer modification time than the source, then it will skip that file/s. You will retain the newer copies of file/s on the destination instead of replacing them with the source older file/s.
 
-> [!INFO] ''
+> [!NOTE] 
 > The flag `--delete`, look for any files that are not present on the source DIR and deletes them, while `--update` flag checks if destination file has last modification newer than the source and keeps it.
 > 
 > You can safely combine them both, as they serve different purpose.
@@ -128,7 +125,7 @@ The flag `--update` checks if the destination file/s has a newer modification ti
 - The synchronization is unidirectional. Syn happens only from Source to Destination, not other way.
 - Incremental copying is great, but scanning of files changed can take good amount of time, if you have thousands of files like me.
 
-> [!IDEA] ''
+> [!TIP] Idea
 > The `rsync` is a pretty powerful utility. It has a lot of other flags and features. You can also automate taking incremental backups of your System(TimeShift has GUI which uses rsync for backups). You can check out the [reference](#references) section for more details and guides.
 
 If you have anything to add, or I did something wrong/inefficiently, please feel free to comment down below!

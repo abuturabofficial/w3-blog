@@ -36,7 +36,7 @@ One alarming consequence of pervasive data collection is its detrimental effect 
 
 Consider the deliberate design choices: when you open YouTube, the default landing page is the Home page rather than your subscription feed. This design tactic encourages prolonged usage by suggesting videos based on individual usage patterns. Similarly, the recommended videos section on the side of video playback further extends your stay on the platform.
 
-> [!DANGER]
+> [!CAUTION] Danger
 > Have you ever questioned why your Facebook newsfeed seems endless, despite having only a handful of friends? Or why the YouTube Home Page seems infinite? The continuous scrolling on TikTok, Reels, YT Shorts, and other platforms might make you wonder, why? Additionally, games persistently prompt you with new rewards or artificially limited-time offers on in-game assets.
 
 Moreover, the rise of short-form content on platforms like TikTok, Reels, Shorts, etc., is impacting our attention spans[^22]. These platforms, based on your usage patterns, curate and serve you more short-form content, contributing to a continuous cycle of data collection. Users unwittingly find themselves caught in an endless loop of feedback and response.
@@ -47,7 +47,7 @@ For instance, the addictive nature of endlessly scrolling through bite-sized vid
 
 In essence, the design of these platforms, fueled by data-driven insights, not only influences what we see but also molds our consumption habits, subtly steering us towards content that aligns with their data-collection objectives.
 
-> [!INFO]
+> [!NOTE] Info
 > Some researchers[^23] argue against the idea of decreasing attention span, link it to the increasing work load and the adaptation of multitasking in this digital era.
 
 ## Communication Privacy
@@ -57,7 +57,7 @@ Even our communication privacy is largely at risk due to widespread use of Whats
 > [!WARNING]
 > Using unencrypted methods like plain SMS, and carrier calls, are far worse than using WhatsApp or other E2EE proprietary instant messengers.
 
-> [!INFO]
+> [!NOTE] Info
 > WhatsApp itself doesn't run any ads, but they do share metadata with their parent company, Meta (formerly Facebook). You will see some flowery language about it, like data sharing for enhanced user experience and improving the infrastructure etc… 
 
 > [!TIP]
@@ -113,7 +113,7 @@ When we hear the word open source, we tend to associate it with a high amount of
 
 The current landscape of online privacy and security is facing challenges due to increased surveillance[^13] and governmental opposition[^14][^17][^18] towards data encryption and privacy. Notably, governments, including the EU and UK, have made recent attempts[^15][^16] to compromise privacy under the guise of counterterrorism, crime prevention, and child protection. While the EU's GDPR is renowned for safeguarding individual privacy, there are concerns about a shift in approach with initiatives like the Chat Control Bill.
 
-> [!INFO]
+> [!NOTE] Info
 > There are so many examples when governments tried to weaken the End-to-End Encryption (EE2E), overall privacy and security for the masses. If I start listing all, the whole blog post will be needed only for those references.
 
 These legislative efforts aim to implement unproven methods to scan end-to-end encrypted communications and data without infringing on individuals' right to privacy. <mark style="background: #BBFABBA6;">Currently, security and privacy advocates have successfully resisted the erosion of privacy rights, but the duration of their success in preventing the compromise of E2EE remains uncertain</mark>.

@@ -41,7 +41,7 @@ Builds for older Ubuntu and Debian releases are also available.
 If you are on newer releases like Ubuntu 25.04 (Plucky Puffin) or soon to be released Debian 13 (Trixie), you're out of luck for the installation of Cloudflare Warp Client on your system.
 
 You follow the [official instructions](https://pkg.cloudflareclient.com) to add the respective Debian/Ubuntu repo to your system. But when you run the system update command to populate that repo package:
-```terminal
+```bash{linenos=false}
 sudo apt update
 ```
 
@@ -53,7 +53,7 @@ You are met with the following error:
 
 Let's look at the repo `cloudflare-client.sources` file in the `/etc/apt/source.list.d/` directory:
 
-```yaml
+```yaml{linenos=false}
 Types: deb
 URIs: https://pkg.cloudflareclient.com/
 Suites: plucky
@@ -63,7 +63,7 @@ Signed-By: /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
 
 Let's check the release codename for our Debian/Ubuntu based system:
 
-```terminal
+```bash{linenos=false}
 lsb_release -cs
 ```
 
@@ -85,13 +85,13 @@ Signed-By: /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
 
 After this, run the system update command:
 
-```terminal
+```bash{linenos=false}
 sudo apt update
 ```
 
 Now normally install the Cloudflare Warp client on your Debian/Ubuntu based system.
 
-```terminal
+```bash{linenos=false}
 sudo apt install cloudflare-warp
 ```
 

@@ -14,8 +14,7 @@ lastmod: '2026-04-15T10:51:25+05:00'
 
 ImageMagick is a free and open-source set of tools for displaying, converting, editing raster image (grid of pixels, resolution dependent) and vector image (mathematical curves and shapes, resolution independent) files. It's a Swiss army knife of image manipulation and editing via command-line interface.
 
-> [!INFO] ''
-> IM is an extremely advanced tool with numerous functions and features. This blog will be updated based on my usage and familiarity of IM over time.
+> [!NOTE] IM is an extremely advanced tool with numerous functions and features. This blog will be updated based on my usage and familiarity of IM over time.
 
 ## Conversion between Image Formats
 
@@ -103,7 +102,7 @@ magick *.png output.gif
 ```
 
 With `-loop`, you can set how many times, the GIF should loop through before stopping.
-```
+```{linenos=false}
 magick *.png -loop 5 output.gif
 ```
 

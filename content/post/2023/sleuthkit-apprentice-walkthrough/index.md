@@ -82,7 +82,7 @@ We will use `mmls` tool, to see the partition tables, and find the OFFSET value.
 mmls disk.flag.img
 ```
 
-![Using fls to List the Partition Content](023-09-28-Sleuthkit-Apprentice-Walkthrough-3.png)
+![Using fls to List the Partition Content](2023-09-28-Sleuthkit-Apprentice-Walkthrough-3.png)
 
 As in the screenshot `label#2` it looks like the largest partition, and it’s labeled as `0x83` for Linux, it’s a bit of a guess, but we can list its content by using the `Start` OFFSET value supplied into `fls` tool.
 

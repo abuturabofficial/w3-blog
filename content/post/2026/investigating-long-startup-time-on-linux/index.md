@@ -54,7 +54,7 @@ From your output, research online about every unit, and what they do. Are they r
 The only non-critical service I see is `plymouth-quit-wait.service`, which took over 20s. But it could be [deceptive](https://askubuntu.com/questions/1119167/slow-boot-issue-due-to-plymouth-quit-wait-service-ubuntu-18-04). But Sometimes It can cause the [hold up](https://access.redhat.com/discussions/5f92a475-e051-459c-a2d8-9563102e0a56) too.
 
 To confirm if it's holding up any service I run:
-```
+```{linenos=false}
 systemctl list-dependencies plymouth-quit-wait.service
 ```
 
@@ -70,13 +70,11 @@ If you want, you can mask this service, which makes it impossible for any servic
 sudo systemctl mask plymouth-quit-wait.service
 ```
 
-> [!Warning] ''
-> You might see graphical glitches, though I myself didn't experience any. There might be no significant if any boot-up improvement to observe.
+> [!WARNING] You might see graphical glitches, though I myself didn't experience any. There might be no significant if any boot-up improvement to observe.
 
 When I ran `systemd-analyze blame` command, and went through all the units. I could see `NetworkManager-wait-online.service` taking up about 5s to load. Let's confirm it:
 
-> [!TIP] ''
-> Press <kbd>/</kbd> and type anything to search through running units for `systemd-analyze blame` command.
+> [!TIP] Press <kbd>/</kbd> and type anything to search through running units for `systemd-analyze blame` command.
 
 ```console{linenos=false}
 systemd-analyze critical-chain NetworkManager-wait-online.service

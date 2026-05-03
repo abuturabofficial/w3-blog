@@ -12,12 +12,11 @@ keywords: ['linux terminal shortcuts', 'linux terminal hacks', 'bash shell tips 
 lastmod: '2026-02-21T17:09:34+05:00'
 ---
 
-> [!TIP] ''
-> If you are looking for `.bashrc` config customization tutorial, please read [Practical BASHRC Tweaks](/bash-shell-configuration/) guide.
+> [!TIP] If you are looking for `.bashrc` config customization tutorial, please see [Practical BASHRC Tweaks](/bash-shell-configuration/) guide.
 
 As a Linux user, working in the terminal should be a pleasure not a thorn. Let's discuss some useful tips and tricks for a terminal with bash shell (With default `bashrc`). These are the command or keyboard shortcuts which can be useful while working in the terminal.
 
-> [!NOTIFY] ALERT
+> [!WARNING] ALERT
 > There are two modes of Bash shell, `emacs` and `vi`, by-default it is set to `emacs` unless you change it. Most of the key binds mentioned here only work in the default `emacs` mode. To change the mode, `set -o vi/emacs`.
 
 ## See all the Terminal Shortcuts
@@ -50,8 +49,7 @@ It will close the Terminal window.
 
 Or the better is to press <kbd>Ctrl</kbd> + <kbd>D</kbd> shortcut to close the terminal.
 
-> [!INFO] ''
-> The keyboard shortcut to close or exit the terminal only works when no terminal processes are running. As running program like `top`, `less` etc., receives that command instead of the terminal.
+> [!NOTE] The keyboard shortcut to close or exit the terminal only works when no terminal processes are running. As running program like `top`, `less` etc., receives that command instead of the terminal.
 
 ## Reverse History Search
 
@@ -106,7 +104,7 @@ Deletion by Word/Start/end of line, also acts as `cut` command, and to repaste w
 ## Insert argument of last Command
 
 If we run
-```
+```{linenos=false}
 ls -alh
 ```
 
@@ -181,7 +179,7 @@ fg %top
 
 If single background process is running, only using `fg` to bring it to the foreground will suffice. 
 
-> [!CAUTION] BE CAREFUL!
+> [!CAUTION] Be Careful!
 > Unlike `nohup` command, closing the terminal window, will kill all the background running processes.
 
 ## Terminate/Kill Processes

@@ -50,13 +50,13 @@ The quotes operator lets you search for the specific word inside the quotes only
 
 If you add other words beside the quoted word, google search must include quoted word in the results beside the other search terms.
 
-```
+```{linenos=false}
 How to spell "mispell" in American English?
 ```
 
 To get more specific results you quote the whole string, and the individual words inside the string too.
 
-```
+```{linenos=false}
 "How to spell "mispell" in American English?"
 ```
 
@@ -68,7 +68,7 @@ It's a bad example, as it may not return any results, but conveys the point well
 
 The `+` operator returns web pages containing the specified term either in the title or the body of the page.
 
-```
+```{linenos=false}
 The Office +'tv series'
 ```
 
@@ -76,7 +76,7 @@ It will search for pages that feature the term **The Office** referring to the T
 
 To search the term **The Office**, we can exclude the web pages containing `Microsoft` in the title or the body of the page by using `-` operator.
 
-```
+```{linenos=false}
 The Office -microsoft
 ```
 
@@ -86,14 +86,14 @@ Using these operators, we can include or exclude specified words from title or b
 
 It helps you include or exclude searches from specific websites.
 
-```
+```{linenos=false}
 Why iPhones are Sh*t! site:reddit.com
 ```
 
 
 To exclude a site from the results
 
-```
+```{linenos=false}
 Why iPhones are Sh*t! -site:reddit.com
 ```
 
@@ -103,13 +103,13 @@ The `-site:` operator will exclude the website mentioned after it. To include a 
 
 To search on top-level domain only:
 
-```
+```{linenos=false}
 How to boil an egg? site:gov
 ```
 
 To get results from all the subdomains of a particular top-level domain:
 
-```
+```{linenos=false}
 How to file tax returns? site:*.gov.pk
 ```
 
@@ -117,7 +117,7 @@ How to file tax returns? site:*.gov.pk
 
 If you want to search something specifically, inside the URLs of the particular website only. It can be paired with `site:` operator to only include/exclude inURL searches from that particular website.
 
-```
+```{linenos=false}
 site:microsoft.com -inurl:https
 ```
 
@@ -127,7 +127,7 @@ This will look for http pages on microsoft.com including its subdomains.
 
 The `allinurl:` operator search for pages with multiple words in the URL.
 
-```
+```{linenos=false}
 allinurl:microsoft copilot
 ```
 
@@ -137,7 +137,7 @@ It will include results, which contain both Microsoft and copilot in their URL.
 
 To show only the results which have a single specified word in the title of the page and rest of the words anywhere:
 
-```
+```{linenos=false}
 intitle:max hard disk capacity
 ```
 
@@ -145,7 +145,7 @@ It will only look for **max** in the page title, while rest of the terms anywher
 
 To search for multiple terms in the title:
 
-```
+```{linenos=false}
 allintitle:hard disk capacity minimum
 ```
 
@@ -158,14 +158,14 @@ The `allintitle:` operator basically matches the terms like `OR` operator, if an
 
 If you want to search for pages whose titles contain all the searched words use `allintitle:`. If you want pages whose title contains first word only and others anywhere in the search result use `intitle:`.
 
-> [!INFO]
+> [!NOTE] Info
 > There are `inanchor:` and `allinanchor:` operators which generally output the same results as `intitle:` and `allintitle:` combinations.
 
 ### The `*` wildcard operator
 
 Asterisk acts as a wildcard, as a placeholder for one or more word (Accor. to **Thio Joe**[^thio-joe-youtube], It can hold 5 words). If you search for:
 
-```
+```{linenos=false}
 "how to make * at home"
 ```
 
@@ -175,19 +175,19 @@ Here `*` may act as a placeholder for pizza, candles etc.
 
 We can search for specific file types:
 
-```
+```{linenos=false}
 OSINT technique filetype:pdf
 ```
 
 OR
 
-```
+```{linenos=false}
 OSINT technique ext:pdf
 ```
 
 ![](google-dorking-demystified-3.webp)
 
-> [!ERROR]
+> [!CAUTION] Error
 > Using `filetype:`/`ext:` operator with media file types like, **mp4, mp3, m4a, WebM** etc. wouldn't work, due to copyright issues.
 
 ### The `AROUND n` operator
@@ -196,7 +196,7 @@ n = Number of words to look AROUND
 
 This operator returns the results for the left and right terms to specified numbers of words in between.
 
-```
+```{linenos=false}
 "brain" AROUND 20 "first computer virus"
 ```
 
@@ -213,7 +213,7 @@ If you put `AROUND 0`, it means putting the left and right terms together withou
 
 If I search:
 
-```
+```{linenos=false}
 Cat Eggs
 ```
 
@@ -221,7 +221,7 @@ Google will try to look for the results containing both of these terms together.
 
 But If I use `OR` operator between the two words, Google will show separate results for both **Cat** and **Eggs** terms.
 
-```
+```{linenos=false}
 Cat OR Eggs
 
 OR
@@ -233,7 +233,7 @@ Cat | Eggs
 
 If you use `AND` operator:
 
-```
+```{linenos=false}
 Cat AND Eggs
 ```
 
@@ -243,7 +243,7 @@ It pretty much shows the same results if you use both of these words together wi
 
 Search for results from before a specific date:
 
-```
+```{linenos=false}
 Pakistan atomic program before:1998-05-28
 ```
 
@@ -251,7 +251,7 @@ It will show all the results from before 28 may 1998.
 
 To get results after a specific year or date `before:yyyy-mm-dd`:
 
-```
+```{linenos=false}
 Pakistan Privacy laws after:2022
 ```
 
@@ -259,7 +259,7 @@ Pakistan Privacy laws after:2022
 
 Find results from a specified location.
 
-```
+```{linenos=false}
 loc:karachi Taj Mahal Hotel 
 ```
 
@@ -285,7 +285,7 @@ It returns webpages containing the specified term in the body of the page.
 
 Let's search:
 
-```
+```{linenos=false}
 DuckDuckGo inbody:"search operator"
 ```
 
@@ -295,7 +295,7 @@ DuckDuckGo inbody:"search operator"
 
 It outputs webpages containing the specified term either in the title or in the body of the page.
 
-```
+```{linenos=false}
 inpage:"DuckDuckGo search operators"
 ```
 
@@ -305,14 +305,14 @@ It will only show the results where all these words are either present in the ti
 
 If you want to search for pages in the language of your choice. The language code must be in the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), English as `en`, Urdu as `ur` and Arabic as `ar`.
 
-> [!ERROR]
+> [!WARNING] Error
 > This search operator truly depicts why **Brave Search Team** says, this functionality is experimental[^brave-search-help]. Occasionally it shows the results in the specified language, and another time it didn't work at all, and it provides all kind of nonsense hits.
 
 ### The `loc:` or `location:` operator
 
 It returns webpages from the specified country or region. The country code must be in [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) format.
 
-> [!ERROR]
+> [!WARNING] Error
 > The operator is poorly supported. And almost never works as originally intended.
 
 ### The `NOT` operator
@@ -321,7 +321,7 @@ Brave Search support `AND` and `OR` logical operators. But `NOT` operator is a u
 
 According to help page, you can use it like:
 
-```
+```{linenos=false}
 brave search NOT site:brave.com
 ```
 
@@ -338,7 +338,7 @@ It will exclude all the brave.com subdomains too.
 
 You can directly search on websites from your Brave search homepage using `!bangs`[^brave-search-bangs]
 
-```
+```{linenos=false}
 !yt systemd is evil!
 ```
 
@@ -369,7 +369,7 @@ During my test, I got similar hits for `~"cats and dogs"`, `+"cats and dogs"`, `
 
 Using this, DuckDuckGo will directly open the first result for the search term.
 
-```
+```{linenos=false}
 \python
 ```
 
@@ -377,7 +377,7 @@ DDG supports [bangs operators](https://duckduckgo.com/bangs) originally. Brave S
 
 ![](google-dorking-demystified-10.webp)
 
-```
+```{linenos=false}
 !g Hello World!
 ```
 

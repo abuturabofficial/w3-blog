@@ -65,7 +65,7 @@ It allows you to install and run a vast number of open-source models directly on
 
 Run the following command in your terminal to install OLLAMA:
 
-```sh
+```sh{linenos=false}
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
@@ -89,7 +89,7 @@ You will see something like this where:
 
 I will install the `deepseek-r1:1.5b` model:
 
-```console
+```console{linenos=false}
 ollama run deepseek-r1:1.5b
 ```
 
@@ -101,19 +101,19 @@ After installation is complete, you will be directly dropped in the model's chat
 
 To quit the model:
 
-```console
+```console{linenos=false}
 /bye
 ```
 
 Now from the main terminal, you can list the installed models (`ollama -h` will show all the available commands):
 
-```console
+```console{linenos=false}
 ollama list
 ```
 
 To run the model again:
 
-```console
+```console{linenos=false}
 ollama run <model-name>
 ```
 
@@ -123,7 +123,7 @@ Now you have access to your own local LLMs, where you own your data and nobody e
 
 ## Open-WebUI: GUI for Local LLMs
 
-> [!INFO] It's a fairly big install, avoid installation on metered connections.
+> [!NOTE] It's a fairly big install, avoid installation on metered connections. 
 
 Though running LLMs inside a console feels like hacking the mainframe 😇. But for the sake of convenience, we can use Graphical User interface (GUI) too.
 
@@ -136,11 +136,11 @@ There are two ways to install it:
 
 In this tutorial we will use PIP, which is in most cases already available on `UNIX` systems.
 
->[!TIP] Check [reference](#references) section for docker install.
+> [!TIP] Check [reference](#references) section for docker install.
 
 Run the following command:
 
-```sh
+```sh{linenos=false}
 pip install open-webui
 ```
 
@@ -150,7 +150,7 @@ I advise on installing this software inside a Conda environment, which will be s
 
 Run these commands in your terminal:
 
-```sh
+```sh{linenos=false}
 mkdir -p ~/.miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/.miniconda3/miniconda.sh
 bash ~/.miniconda3/miniconda.sh -b -u -p ~/.miniconda3
@@ -159,13 +159,13 @@ rm ~/.miniconda3/miniconda.sh
 
 After installation is complete close and re-open your terminal or run the following command to immediately start using `conda` command in your terminal:
 
-```sh
+```sh{linenos=false}
 source ~/.miniconda3/bin/activate
 ```
 
 To initialize `conda` on all available shells, run this command:
 
-```sh
+```sh{linenos=false}
 conda init --all
 ```
 
@@ -173,7 +173,7 @@ This will add the Conda initialization config to the available shells (zsh/bash)
 
 Run to turn off auto activation of `base` Conda environment in your shell (OPTIONAL):
 
-```sh
+```sh{linenos=false}
 conda config --set auto_activate_base false
 ```
 
@@ -181,7 +181,7 @@ conda config --set auto_activate_base false
 
 First create your `conda` environment:
 
-```conda
+```conda{linenos=false}
 conda create -n <your-environment-name> python=3.11
 ```
 
@@ -189,7 +189,7 @@ Open-WebUI requires Python >= 3.11. So we will create our environment with pytho
 
 Now run this command:
 
-```sh
+```sh{linenos=false}
 pip install open-webui
 ```
 
@@ -200,7 +200,7 @@ It will take few mins depending on your network speed, to install the necessary 
 
 After installation is complete, execute the following command;
 
-```sh
+```sh{linenos=false}
 open-webui serve
 ```
 
@@ -210,7 +210,7 @@ After fetching necessary package, it will provide you a `localhost` address, to 
 
 It will ask to create an account, which will act as an admin.
 
-> [!INFO] 
+> [!NOTE] Info
 > This is a local only account, or if you want to use your local LLMs via internet, when not on your home computer. You will need these credentials to access your LLMs on your computer (You will need to set up port-forwarding/Cloudflare tunnels).
 
 ![](deepseek-local-6.webp)

@@ -29,7 +29,7 @@ Then navigate to:
 
 Or click on `search` 🔎 icon, and put this in the search bar:
 
-```text{linenos=false}
+```{linenos=false}
 /org/gnome/desktop/wm/keybindings/
 ```
 
@@ -39,7 +39,7 @@ Or click on `search` 🔎 icon, and put this in the search bar:
 
 2. Turn off `Use default value`
 3. Add your `Custom value` for key binding, i.e. <kbd>Super</kbd> + <kbd>5</kbd>
-```text{linenos=false}
+```{linenos=false}
 ['<Super><Shift>5']
 ```
 
@@ -59,7 +59,7 @@ The more direct and easy method is using `gsettings` via terminal. This command 
 
 - To assign a shortcut to switch to workspace#6 (Just an example you select any number up-to 12)
 
-```console{linos=false}
+```console{linenos=false}
 gsettings set  org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>6']"
 ```
 
@@ -73,5 +73,4 @@ gsettings set  org.gnome.desktop.wm.keybindings move-to-workspace-6 "['<Super><S
 
 Now you can use <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>6</kbd> key binding to move a focused app to workspace#6.
 
-> [!TIP]''
-> Repeat the same process for assigning shortcuts to more workspaces by substituting workspace numbers.
+> [!TIP] Repeat the same process for assigning shortcuts to more workspaces by substituting workspace numbers.

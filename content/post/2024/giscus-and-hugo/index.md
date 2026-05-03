@@ -134,7 +134,7 @@ params:
 
 This will enable comments on site wide basis including `about.md`, `privacy.md` etc. To disable commenting on those pages, you can just add `comments: false` to your page **frontmatter**.
 
-> [!CONCLUSION]
+> [!NOTE] Conclusion
 > Now comments section is enabled on your website. If you have any questions/suggestions, you can comment down below!
 
 ---

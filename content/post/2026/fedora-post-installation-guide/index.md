@@ -30,7 +30,7 @@ defaultyes=true
 ![](fedora-post-installation-guide-1.webp)
 
 You can also add:
-```
+```ini{linenos=false}
 fastestmirror=true
 ```
 
@@ -45,7 +45,7 @@ The `DNF5` can automatically handle mirrors based on their availability and spee
 Go to `Gnome-Software` and Click on `updates` tab. Then Click <kbd>Downloads</kbd> button.
 
 Or upgrade via `DNF`:
-```
+```{linenos=false}
 sudo dnf update
 ```
 
@@ -167,7 +167,7 @@ sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686
 > [!TIP]
 > For NVIDIA, Broadcom Network Drivers, DVD drivers, [checkout](https://rpmfusion.org/Howto/Multimedia) the official detailed guide.
 
-> [!INFO]
+> [!NOTE] Info
 > [Checkout](https://fedoraproject.org/wiki/Hardware_Video_Acceleration) Official Hardware Video Acceleration Guide for Fedora. Also, Firefox Hardware Video Acceleration [Guide](https://fedoraproject.org/wiki/Firefox_Hardware_acceleration).
 
 ### Brave and Chromium: Hardware Video Acceleration
@@ -222,25 +222,24 @@ The <kbd>Super</kbd> + <kbd>NUM</kbd> can be better use for quickly switching am
 
 I like clean GNOME experience with only my chosen few extensions. Let's remove default Fedora Workstation Extensions:
 
-```
+```{linenos=false}
 sudo dnf remove gnome-shell-extension-window-list gnome-shell-extension-window-list
 ```
 
 I had these two installed by default. To check whether there are more:
-```
+```{linenos=false}
 dnf list --installed | grep gnome-shell-extension
 ```
 It will list all the installed packages and then using `grep` will only print packages with `gnome-shell-extension` pattern in their name.
 
-> [!INFO] ''
-> These default extensions can only be uninstalled via `DNF`, **Extension Manager** will have no uninstall option for them.
+> [!NOTE] These default extensions can only be uninstalled via `DNF`, **Extension Manager** will have no uninstall option for them.
 
 ### GNOME: Extension Manager
 
 It allows you to manage and install gnome extensions in a single application.
 
 Let's install:
-```
+```{linenos=false}
 flatpak install com.mattjakeman.ExtensionManager
 ```
 
@@ -264,7 +263,7 @@ There are many more extensions available. You can choose whatever you like. I'm 
 Fedora uses `btrfs` file system. Backups can be extremely fast.
 
 Let's install:
-```
+```{linenos=false}
 sudo dnf in btrfs-assistant
 ```
 
@@ -291,7 +290,7 @@ sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-releas
 sudo dnf install brave-browser
 ```
 
-> [!INFO]- To install Chrome. Click here...
+> [!TIP] To install Chrome
 > You can go to **Software Center**. Click **three dots** buttons, then **Software Repositories** and enable **Google Chrome** repo. Hit the refresh button, then search and install Chrome Browser.
 >
 > Alternatively, you can install it from Flathub, but it will need extra steps to enable hardware video acceleration.
@@ -301,8 +300,7 @@ Chromium is available through Fedora repos:
 sudo dnf in chromium
 ```
 
-> [!TIP] ''
-> Firefox comes pre-installed on Fedora.
+> [!NOTE] Firefox comes pre-installed on Fedora.
 
 ### Visual Studio Code
 

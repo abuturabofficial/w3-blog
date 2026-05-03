@@ -21,7 +21,7 @@ A second major benefit is enhanced privacy. Since your traffic is routed through
 
 There are two major popular types of Linux distros, we will see, how to install Cloudflare Warp on both of them one-by-one.
 
-> [!task]
+> [!NOTE] Task
 > This blog has the following goals for installation of Cloudflare Warp client and general troubleshooting.
 > - [x] Installation on Traditional/Mutable Linux Distributions
 > - [x] Installation on Immutable Linux Distributions
@@ -122,7 +122,7 @@ sudo systemctl enable --now warp-svc.service
 
 This will enable and start the systemd service, you will normally able to use `warp-cli` command.
 
-> [!INFO]
+> [!NOTE] Info
 > Here is the **[Official Guide](https://developers.cloudflare.com/warp-client/get-started/linux/)** for `warp-cli` usage and initial setup.
 
 > [!WARNING]
@@ -250,9 +250,9 @@ Please try cloudflare's new developed `MASQUE` protocol which might let you conn
 warp-cli tunnel protocol set MASQUE
 ```
 
-> [!CAUTION] ""
+> [!CAUTION]
 > Please use TOR Onion services for extreme privacy and anonymity, especially those who are Journalists/Whistleblowers.
 
 ## Final Thoughts
-> [!CONCLUSION]
+> [!NOTE] Conclusion
 > I hope you're now connected to your **Cloudflare Warp tunnel** successfully. If you need further clarification or help at any step you can comment down below. **Warp on!**

@@ -17,7 +17,7 @@ But the story doesn't start from Fedora, it rather goes way back in time, when I
 
 {{< figure src="2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-1.webp" attr="My Circle of Life" align="center">}}
 
-> [!DISCLAIMER]
+> [!WARNING] Disclaimer
 > I honestly don't exactly even remember how much I have hopped to and from different distros, I haven't added vanilla Debian which I have used for a week. Neither, I have added immutable distros like **SilverBlue** and **OpenSUSE Aeon** which I have used for months combined. At the end of the day, use whatever distro you want and make it yours. Most of the Distros are fundamentally similar, and you can ideally do anything and everything on each and every distro.
 
 **So let's jump back to the start, where it all began:**
@@ -64,8 +64,8 @@ For me, almost every other distro, just never breaks (some Ubuntu exceptions, th
 
 The best thing about OpenSUSE is its **KDE Plasma** experience. Though I have started on **GNOME**, and then shortly after **Cinnamon**, but **openSUSE Tumbleweed** is the reason, I fell in love with Plasma DE. Honestly, I never tried KDE before, and even I don't like it after watching YouTube reviews. But the experience you get on Tumbleweed is quite remarkable. The openSUSE tools are built in QT, so they look superb there.
 
-> [!INFO]
-> As of November 2023, I use GNOME. I broke up with KDE after extensively using it for several months. Now, I even can't live without GNOME. A couple of months back, I tried to use KDE, but I was immediately lost, so many customization and settings made me not to use it. GNOME's simplicity is just wonderful. I use it with only 4 extensions which are just essentials nothing fancy (pano — clipboard, vitals — temp/memory/network monitor and more, Kstatus and AppIndicator, Caffeine - System Sleep timer).
+> [!NOTE] Info
+> As of November 2023, I use GNOME. I broke up with KDE after extensively using it for several months. Now, I even can't live without GNOME. A couple of months back, I tried to use KDE, but I was immediately lost, so many customization and settings made me not to use it. GNOME's simplicity is just wonderful. I use it with only 4 extensions which are just essentials nothing fancy (pano — clipboard, vitals — temp/memory/network monitor and more, Kstatus and AppIndicator, Caffeine --- System Sleep timer).
 
 I jumped ships to OpenSUSE quite early in my Linux journey. The Linux packaging formats and how they worked, I was unaware of. Soon, in this lack of expertise, I started to miss Arch and even Ubuntu (as almost every software is available as `.deb`). The concept of openSUSE build was not known to me. Quite frankly, I still don't know it either, how to build packages via OBS (openSUSE Build Service).
 
@@ -83,7 +83,7 @@ Then I fell in love with Fedora's semi-rolling release model. Unlike Ubuntu/Mint
 
 Now I have used Fedora Workstation, longer than any other distro (almost more than a year straight), It feels like a home. After the recent Red Hat's drama[^9], I tried to jump ships to openSUSE, and then even Ubuntu (sorry again folks), but I failed. I felt lost there. I know navigating through Fedora Workstation to the extent that I feel confident enough to manage it for my needs.
 
-![My Fedora Workstation Desktop](2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-2.web)
+![My Fedora Workstation Desktop](2023-11-20-Tango-with-Tux-Dancing-on-the-Edge-with-Fedora-2.webp)
 
 ## **Immutable Distros: A Paradigm Shift in System Management**
 
@@ -122,7 +122,7 @@ The biggest regrets are, how much I have wasted time by not taking backups, tryi
 3. **How would I approach these four years differently if given the chance to relive them?**
 First and the most important of all, I wouldn't install each and every shinny distro on my main machine, instead will try them in a VM. I would stick to more main stream distros like vanilla Fedora, Debian and Arch (Linux Mint would still be an exception). I would not decide the distro based on the political reasons, rather in which, I'll be more comfortable.
 
-> [!DISCLAIMER]
+> [!WARNING] Disclaimer
 > I do care about freedom of choice and open source. Not only that, I was attracted towards Linux because of the growing privacy concerns and malpractices of Microsoft. I try to use open source and privacy respecting applications and pieces of software on my PC and phone. I have extensively used Custom ROMs for similar reasons.
 
 In the end, use the distro you like and customize it to your liking, and don't get carried away by shinny new Distros or DEs (some people call it Distro or DE syndrome). If you want to use them, spin a virtual machine and try them there.

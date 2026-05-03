@@ -14,8 +14,7 @@ lastmod: '2026-04-28T17:03:04+05:00'
 
 If you disable your firewall (UFW) and the Internet inside your QEMU/KVM virtual machine starts working again, then you're at the right place to fix it.
 
-> [!NOTIFY] ''
-> If your internet doesn't work even after disabling the Firewall, there might be something else wrong with your VM's network connection, and research online for specific answers.
+> [!NOTE] If your internet doesn't work even after disabling the Firewall, there might be something else wrong with your VM's network connection, and research online for specific answers.
 
 Let's allow **forwarding** for the virtual bridge by editing `/etc/ufw/systcl.conf`:
 ```console{linenos=false}

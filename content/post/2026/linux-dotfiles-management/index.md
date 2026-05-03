@@ -52,8 +52,7 @@ git init
 Now `mydots` will be initialized as a git repository. You can use `git`, to version control your dotfiles.
 
 #### Basic Directory Structure
-> [!TIP] ''
-> You can keep your dotfiles repo inside your `git`/`github` repos directory too, later I'll explain how to do that, instead of keeping your dotfiles in the $HOME directory.
+> [!TIP] You can keep your dotfiles repo inside your `git`/`github` repos directory too, later I'll explain how to do that, instead of keeping your dotfiles in the $HOME directory.
 
 To save `alacritty` config inside the `mydots` directory, you need to make sure:
 - Name the parent directory as `alacritty`
@@ -98,8 +97,7 @@ stow --adopt alacritty
 - It replaces your ~/.config/alacritty` directory with the symlink to the stow directory.
 ![](linux-dotfiles-management-4.webp)
 
-> [!INFO] ''
-> When you reinstall, or `$HOME/.config/alacritty/` directory doesn't exist, running `stow alacritty` will take care of creating a `$HOME/.config/alacritty` directory and symlinking the `alacritty` config directory to the stow directory.
+> [!NOTE] When you reinstall, or `$HOME/.config/alacritty/` directory doesn't exist, running `stow alacritty` will take care of creating a `$HOME/.config/alacritty` directory and symlinking the `alacritty` config directory to the stow directory.
 
 Let's understand stowing with another example of a config file present in `$HOME` directory.
 
@@ -141,8 +139,7 @@ You can now upload `mydots` REPO to your GitHub/GitLab.(Out of the scope of this
 
 If you don't want to follow the standard directory structure, `stow` offers advance flags to allow using your own directory structure.
 
-> [!IDEA] ''
-> In my opinion, deviating from [standard stow directory structure](#basic-directory-structure), defeats the purpose of `stow`, you can use it, but why not use [ln -s](#ln--s-symlinks) at this point if your only need is to manage dotfiles.
+> [!TIP] In my opinion, deviating from [standard stow directory structure](#basic-directory-structure), defeats the purpose of `stow`, you can use it, but why not use [ln -s](#ln--s-symlinks) at this point if your only need is to manage dotfiles.
 
 Let's transfer `mydots` directory to my `git` directory:
 ```console{linenos=false}
@@ -211,11 +208,9 @@ stow -t $HOME/.config alacritty
 It will link the alacritty directory normally to `$HOME/.config`.
 ![](linux-dotfiles-management-11.webp)
 
-> [!DANGER] ''
-> You have to use one or the other `directories` structure for configuration files, you cannot just put them directly inside `mydots` directory when using `stow`.
+> [!CAUTION] You have to use one or the other `directories` structure for configuration files, you cannot just put them directly inside `mydots` directory when using `stow`.
 
-> [!EXPERIMENT] ''
-> As you can see, advanced method got quickly out of hand and only suitable for Pro users. If you already a Pro user why not use [ln -s](#ln--s-symlinks), available on the system. But, it's your choice at the end of the day.
+> [!NOTE] As you can see, advanced method got quickly out of hand and only suitable for Pro users. If you already a Pro user why not use [ln -s](#ln--s-symlinks), available on the system. But, it's your choice at the end of the day.
 
 ### Useful Commands
 
@@ -356,7 +351,7 @@ OR
 unlink /path/to/link/file
 ```
 
-> [!TIP] Git Bare Repository
+> [!NOTE] Git Bare Repository
 > Another method of managing dotfiles using `git` via bare git repo. The pro is you don't need anything but only `git` itself. Check the [References Section](#references) for step-by-step guide.
 
 ## References

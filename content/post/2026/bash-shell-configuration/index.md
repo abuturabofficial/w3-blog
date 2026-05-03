@@ -14,7 +14,7 @@ lastmod: '2026-02-17T18:31:49+05:00'
 
 Bash is a default shell on all almost every major Linux distro. Let's see how we can make our life easier by modifying `bashrc`, while working in the terminal.
 
-> [!CODE]- Click here to view my `.bashrc`
+> [!NOTE] My `.bashrc` Configuration
 > You can just add it to your `.bashrc` and start using, if you know what you are doing.
 > ```bash
 > ## Bash History
@@ -93,8 +93,8 @@ Bash is a default shell on all almost every major Linux distro. Let's see how we
 > ## Starship Prompt
 > eval "$(starship init bash)"
 > ```
-> > [!CAUTION] ''
-> > This bashrc might break your shell, as some configurations need extra packages to be first installed on the system. I have commented out all those settings/aliases which require extra packages. 
+>
+> This bashrc might break your shell, as some configurations need extra packages to be first installed on the system. I have commented out all those settings/aliases which require extra packages. 
 
 Now, let's explain the configuration:
 
@@ -173,8 +173,7 @@ fi
 - <kbd>Enter</kbd> Add highlighted command to input shell, hit <kbd>Enter</kbd> again to run the command
 ![](bash-shell-configuration-5.webp)
 
-> [!CAUTION] ''
-> I have tested this only on Fedora
+> [!CAUTION] I have tested this only on Fedora
 
 
 ## <kbd>TAB</kbd> Completion
@@ -273,7 +272,7 @@ alias cat='less -N'
 - `less` Interactively show contents of the files
 - `-N`/`--LINE-NUMBERS` Causes a line number to be displayed at the beginning of each line.
 
-> [!INFO] ''
+> [!TIP]
 > The `less` command doesn't support concatenation of outputs. If you rely on the feature use:
 > 
 > ```bash{linenos=false}

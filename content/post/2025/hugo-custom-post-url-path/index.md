@@ -44,7 +44,7 @@ Just kidding, it's a simple configuration change.
 
 According to Hugo docs[^hugo-url-management] [^hugo-ugly-urls], you can modify and change your individual post URL via the frontmatter:
 
-```yaml
+```yaml{linenos=false}
 URL: /my-beautiful-url
 ```
 
@@ -57,7 +57,7 @@ The post URL will look like this `https://example.com/my-beautiful-url`
 
 Earlier, my website `hugo.yaml` file looked liked this:
 
-```yaml
+```yaml{linenos=false}
 permalinks:
     post: /p/:slug/
     page: /:slug/
@@ -67,7 +67,7 @@ I'm using page bundles ([Stack Theme](https://demo.stack.jimmycai.com/)), and I 
 
 So, I changed the config to:
 
-```yaml
+```yaml{linenos=false}
 permalinks:
     post: /:filename/
     page: /:slug/
@@ -75,7 +75,7 @@ permalinks:
 
 This will only show folder name as a URL path, and slice the `/p` part too. If you want to keep it:
 
-```yaml
+```yaml{linenos=false}
 permalinks:
     post: /p/:filename/
     page: /:slug/
@@ -94,7 +94,7 @@ To make sure, people from Social Media using older URLs of your posts can still 
 
 Add aliases of your older permalinks to the frontmatter of each blog:
 
-```yaml
+```yaml{linenos=false}
 aliases:
     - /post/example-article-1
 ```

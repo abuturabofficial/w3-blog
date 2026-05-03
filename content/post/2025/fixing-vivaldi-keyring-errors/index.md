@@ -17,7 +17,7 @@ lastmod: ''
 When you download the `.deb` package from [Vivaldi's website](https://vivaldi.com/download/), and manually install it. The installation process will also add the Vivaldi repo to the apt-sources list in the `/etc/apt/sources.list.d/` directory.
 
 Sometimes this repo doesn't normally populate the GPG keying for the Vivaldi Browser repository, and you will get errors like below, whenever you do a system update like this:
-```terminal
+```bash{linenos=false}
 sudo apt update
 ```
 
@@ -32,24 +32,24 @@ You can either ignore the error completely, and you don't immediately lose anyth
 This `[repo-name].list` is the old method for storing repo files.
 
 First we will add the GPG Keyring for Vivaldi repo, in the `/usr/share/keyrings/` directory.
-```terminal
+```bash{linenos=false}
 wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | gpg --dearmor | sudo dd of=/usr/share/keyrings/vivaldi-browser.gpg
 ```
 
 Before adding the key, your `vivaldi.list` repo looks like this:
-```term
+```bash{linenos=false}
 ### THIS FILE IS AUTOMATICALLY CONFIGURED ###
 # You may comment out this entry, but any other modifications may be lost.
 deb [arch=amd64] https://repo.vivaldi.com/stable/deb/ stable main
 ```
 
 To fix the error, modify the `vivaldi.list` file like this:
-```term
+```bash{linenos=false}
 deb [arch=amd64 signed-by=/usr/share/keyrings/vivaldi-browser.gpg] https://repo.vivaldi.com/stable/deb/ stable main
 ```
 
 After that, just run the regular system update command:
-```term
+```bash{linenos=false}
 sudo apt update
 ```
 
@@ -62,7 +62,7 @@ Ubuntu is in the process of transitioning from `.list` files to `.sources` files
 After adding the GPG keyring (as described earlier), we can now fix the `vivaldi.sources` file.
 
 Before doing anything, `vivaldi.sources` file looks like this:
-```yaml
+```yaml{linenos=false}
 Types: deb
 URIs: https://repo.vivaldi.com/stable/deb/
 Suites: stable
@@ -79,7 +79,7 @@ Signed-By: /usr/share/keyrings/vivaldi-browser.gpg
 ```
 
 Then, update your system like before:
-```terminal
+```bash{linenos=false}
 sudo apt update
 ```
 

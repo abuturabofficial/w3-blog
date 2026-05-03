@@ -14,8 +14,7 @@ lastmod: '2026-02-14T12:07:39+05:00'
 
 There is a bug affecting Fedora and Archlinux systems, where system cursor gets frozen in a place when your PC wakes up from the sleep.
 
-> [!INFO] ''
-> I have tested this fix on my ThinkPad only, both on Archlinux and Fedora.
+> [!NOTE] I have tested this fix on my ThinkPad only, both on Archlinux and Fedora.
 
 ## Archlinux
 
