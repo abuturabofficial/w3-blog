@@ -36,7 +36,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: /favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: img/favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
         since: 2022
@@ -49,10 +49,7 @@ params:
     sidebar:
         emoji: 🇵🇰
         subtitle: "Plug In. Geek Out."
-        avatar:
-            enabled: true
-            local: true
-            src: img/avatar.webp
+        avatar: "img/avatar.webp"
 
     article:
         math: false
@@ -113,7 +110,7 @@ params:
         default: auto
 
     imageProcessing:
-        cover:
+        thumbnail:
             enabled: true
         content:
             enabled: true
