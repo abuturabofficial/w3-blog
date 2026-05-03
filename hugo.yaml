@@ -1,6 +1,6 @@
 baseurl: https://sajidmahmood.com/
 languageCode: en-us
-theme: ["hugo-admonitions", "hugo-theme-stack"]
+theme: ["hugo-theme-stack"]
 title: Sajid Mahmood
 copyright: Sajid Mahmood
 
@@ -22,7 +22,7 @@ languages:
         weight: 800
 
 pagination:
-    pagerSize: 10
+    pagerSize: 8
 
 permalinks:
     post: /:contentbasename/
@@ -43,7 +43,7 @@ params:
         customText: Licensed under CC BY-SA 4.0
 
     dateFormat:
-        published: Jan 02, 2006
+        published: Jan 02, 2006 15:04 PKT
         lastUpdated: Jan 02, 2006 15:04 PKT
 
     sidebar:
