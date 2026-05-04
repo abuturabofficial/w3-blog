@@ -1,0 +1,7 @@
+.site-avatar img {
+  content: url('/assets/avatar-light.webp');
+}
+
+[data-scheme="dark"] .site-avatar img {
+  content: url('/assets/avatar-dark.webp');
+}

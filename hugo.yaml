@@ -49,7 +49,7 @@ params:
     sidebar:
         emoji: 🇵🇰
         subtitle: "Plug In. Geek Out."
-        avatar: "img/avatar.webp"
+        avatar: "img/avatar-dark.webp"
 
     article:
         math: false
