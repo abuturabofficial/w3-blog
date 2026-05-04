@@ -3,7 +3,7 @@ draft: false
 title: 'Hugo Theme Stack: Make Avatar Image Respond With Light and Dark Theme'
 imageNameKey: "hugo-avatar-change-with-theme"
 date: '2026-05-04T17:20:08+05:00'
-description: "The main avatar/hero image can be made to respond with theme changes by using separate image for each theme and using custom css to detect the theme change and use the correct image for that particular theme."
+description: "The main avatar image can show responsiveness by showing separate images for dark and light themes. You can achieve this by using custom CSS rules."
 author: "AbuTurab"
 image: "hugo-avatar-change-with-theme-cover.webp"
 tags: ["Hugo", "Tips & Tricks"]
