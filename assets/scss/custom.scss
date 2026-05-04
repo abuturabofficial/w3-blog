@@ -1,7 +1,7 @@
 .site-avatar img {
-  content: url('/assets/avatar-light.webp');
+  content: url('/avatar/avatar-light.webp');
 }
 
 [data-scheme="dark"] .site-avatar img {
-  content: url('/assets/avatar-dark.webp');
+  content: url('/avatar/avatar-dark.webp');
 }
