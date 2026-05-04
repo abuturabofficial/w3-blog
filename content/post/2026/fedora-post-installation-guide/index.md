@@ -327,7 +327,7 @@ sudo dnf install lnav
 
 Unlike Nautilus, Thunar supports session restore on opening. To install Thunar and optional dependencies:
 ```console{linenos=false}
-sudo dnf install thunar catfish thunar-volman tumbler thunar-archive-plugin thunar-media-tags-plugin thunar-sendto-clamtk
+sudo dnf install thunar catfish thunar-volman tumbler thunar-archive-plugin thunar-media-tags-plugin thunar-sendto-clamtk xarchiver
 ```
 - `thunar` Main File Manager
 - `catfish` A file search tool (optional)
@@ -336,6 +336,7 @@ sudo dnf install thunar catfish thunar-volman tumbler thunar-archive-plugin thun
 - `thunar-archive-plugin` Archive manager for Thunar (optional)
 - `thunar-media-tags-plugin` Adds special features for media files to the Thunar (optional)
 - `thunar-sendto-clamtk` Simple plugin to allow a right-click, context menu scans of files and folder inside Thunar (optional)
+- `xarchiver` To create and extract different archives
 
 ### Screenshots: Gradia and Flameshot
 
