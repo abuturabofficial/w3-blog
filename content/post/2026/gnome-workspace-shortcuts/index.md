@@ -7,7 +7,7 @@ description: "GNOME Settings app only allows assigning shortcuts to four workspa
 author: "AbuTurab"
 image: 'gnome-workspace-shortcuts-cover.webp'
 tags: ['GNOME', 'Linux']
-categories: ['Blog']
+categories: 
 keywords: ['extending gnome workspaces shortcuts past 4', 'overcoming gnome 4 workspaces shortcut limit', 'gnome tips and tricks', 'how to add shortcut for gnome workspaces, for more than 4 workspaces', 'how to add shortcut for gnome workspace 5 or 6 or 7']
 lastmod: '2026-02-13T16:01:23+05:00'
 ---

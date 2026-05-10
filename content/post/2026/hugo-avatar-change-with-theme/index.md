@@ -7,7 +7,7 @@ description: "The main avatar image can show responsiveness by showing separate 
 author: "AbuTurab"
 image: "hugo-avatar-change-with-theme-cover.webp"
 tags: ["Hugo", "Tips & Tricks"]
-categories: ["Blog"]
+categories: 
 keywords: ["how to change avatar of hugo theme stack with light/dark theme", "set different images for light and dark themes of an avatar image for hugo-theme-stack"]
 lastmod: '2026-05-04T18:45:30+05:00'
 ---

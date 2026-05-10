@@ -8,7 +8,7 @@ aliases:
     - /p/protect-your-inbox-email-encryption-for-gmail-outlook-other-platforms/
 author: "AbuTurab"
 tags: ["Email Privacy", "Privacy", "Linux", "Windows", "Android", "macOS"]
-categories: ["Blog"]
+categories: 
 description: "Secure your email communication with PGP encryption to ensure that no one—be it Google, Microsoft, or even government agencies like the NSA and CIA—can access your messages."
 image: "email-encryption-cover.webp"
 keywords: ["email encryption", "protect your email from spying", "enable pgp encryption for your emails", "email privacy and security"]

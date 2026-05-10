@@ -9,7 +9,7 @@ aliases:
     - /p/deepseek-local-setup-take-control-of-your-data-and-privacy/
 image: 'deepseek-local-cover.webp'
 tags: ['LLMs','AI', 'Selfhosted']
-categories: ['Blog']
+categories: 
 keywords: ['Running LLMs locally', 'Self hosting a large language model', 'How to securely run deepseek ai', 'Selfhosted llms and your privacy']
 lastmod: '2025-02-03T16:41:06+05:00'
 ---

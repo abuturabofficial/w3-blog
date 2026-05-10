@@ -9,7 +9,7 @@ aliases:
     - /p/sysrq-the-secret-key-to-safely-shutting-down-a-frozen-linux-system/
 image: linux-sysrq-key-cover.webp
 tags: ["Linux", "Troubleshooting Guide"]
-categories: ["Blog"]
+categories: 
 keywords: ["system rescue", "magic sysrq key on linux", "emergency system rescue", "how to rescue/shutdown frozen linux system", "what to do when my linux system freezes", "troubleshooting a frozen system"]
 latmod:
 ---

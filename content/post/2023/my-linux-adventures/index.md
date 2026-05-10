@@ -6,7 +6,7 @@ title: "Tango with Tux: My Linux Journey and Fedora Adventures"
 description: "How my linux Journey started and how I went through using different Distros, DEs, and Window managers."
 date: 2023-11-20 10:00:00 +0500
 tags: ["Operating Systems", "Linux"]
-categories: ["Blog"]
+categories: 
 keywords: ["my linux adventures", "linux distro hopping", "fedora my love", "experiencing different distros"]
 image: "fedora.webp"
 ---

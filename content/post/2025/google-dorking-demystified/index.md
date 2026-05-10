@@ -9,7 +9,7 @@ aliases:
     - /p/search-engine-hacking-the-hackers-guide-to-advance-google-search/
 image: 'google-dorking-demystified-cover.webp'
 tags: ['OSINT']
-categories: ['Blog']
+categories: 
 keywords: ['google dorking techniques', 'google power searching', 'google like a hacker' , 'beyond search box', 'google search like a pro', 'google dorking for good', 'advance google search for researcher and hackers', 'how to google like a power user', 'you are using google wrong', 'how to properly use power of google search']
 lastmod: '2025-07-06T10:39:10+0500'
 ---

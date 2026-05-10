@@ -7,7 +7,7 @@ description: "When you install KVM/QEMU based Virtual Machine on your Arch Linux
 author: "AbuTurab"
 image: "fix-virt-manager-internet-issue-cover.webp"
 tags: ['Linux', 'Tips & Tricks']
-categories: [Blog]
+categories:
 keywords: ['how to fix internet not working inside virt-manager windows vm', 'fixing kvm/qemu internet not working inside virtual machine', 'omarchy/cachyos internet not working inside the virtual machine']
 lastmod: '2026-04-28T17:03:04+05:00'
 ---

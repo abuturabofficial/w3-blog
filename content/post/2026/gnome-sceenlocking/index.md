@@ -7,7 +7,7 @@ description: "If you want to control GNOME screen turn off, and screen lock sepa
 author: "AbuTurab"
 image: 'gnome-screenlocking-cover.webp'
 tags: ['Linux', 'Tips & Tricks']
-categories: ['Blog']
+categories: 
 keywords: ['GNOME power customization', 'How to turn off only screen when idle on GNOME','gnome controlling screen idle and screen lock separately']
 lastmod: '2026-02-19T15:37:31+05:00'
 ---

@@ -7,7 +7,7 @@ description: "How, social media and internet in general have invaded our privacy
 keywords: ["digital privacy", "privacy in the age of social media", "dangers of social media", "privacy is dead"]
 date: 2023-12-05 10:27:00 +0500
 tags: ["Privacy", "Digital Freedom"]
-categories: ["Blog"]
+categories: 
 image: "2023-12-05-digital-privacy-a-horror-story.webp"
 comments: true
 ---

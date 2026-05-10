@@ -7,7 +7,7 @@ description: 'A multipurpose set of CLI tools to convert and edit over 200 image
 author: "AbuTurab"
 image: 'imagemagick-tips-and-tricks-cover.webp'
 tags: ['Tips & Tricks']
-categories: ['Blog']
+categories: 
 keywords: ['how to use imagemagick', 'tips and tricks for using imagemagick', 'CLI tools for quick single and batch images editing', 'imagemagick an excellent terminal based tools image editing']
 lastmod: '2026-04-15T10:51:25+05:00'
 ---

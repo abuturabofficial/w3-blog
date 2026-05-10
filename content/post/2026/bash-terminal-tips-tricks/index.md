@@ -7,7 +7,7 @@ description: "There are numerous terminal commands and keyboard shortcuts which 
 author: "AbuTurab"
 image: 'bash-terminal-tips-tricks-cover.webp'
 tags: ['Linux', 'Tips & Tricks']
-categories: ['Blog']
+categories: 
 keywords: ['linux terminal shortcuts', 'linux terminal hacks', 'bash shell tips and tricks', 'bash terminal shortcuts and useful commands']
 lastmod: '2026-02-21T17:09:34+05:00'
 ---

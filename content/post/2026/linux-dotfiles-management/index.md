@@ -7,7 +7,7 @@ description: 'Even if you are a Linux novice or a Pro, you are always experiment
 author: "AbuTurab"
 image: 'linux-dotfiles-management.webp'
 tags: ['Linux', 'Tips & Tricks']
-categories: ['Blog']
+categories: 
 keywords: ['gnu stow vs ln -s, which is better for dotfiles', 'how manage dotfiles on linux', 'dealing with configuration files on linux', 'the unix way of managing dotfiles/configs', 'a guide to dotfiles management on linux']
 lastmod: '2026-02-20T15:51:46+05:00'
 ---

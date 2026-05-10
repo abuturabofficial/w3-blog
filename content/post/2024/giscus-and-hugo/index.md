@@ -7,7 +7,7 @@ aliases:
     - /p/setting-up-giscus-a-simple-guide-for-hugo-papermode-theme/
 image: "giscus-and-hugo.webp"
 tags: ["Hugo", "Giscus"]
-categories: ["Blog"]
+categories: 
 keywords: ["giscus setup on hugo website", "giscus setup on hugo papermod theme", "giscus and papermod theme", "how to setup giscus on papermod theme"]
 description: "How to setup Giscus commenting system on Hugo, is quite easy and straightforward, so let's dive in."
 ---

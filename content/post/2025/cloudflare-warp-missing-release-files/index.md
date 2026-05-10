@@ -9,7 +9,7 @@ aliases:
     - /p/bypassing-missing-release-file-errors-when-installing-cloudflare-warp-on-newer-ubuntu/debian-systems/
 image: 'cloudflare-warp-install-on-ubuntu-debian-cover.webp'
 tags: ['Linux', 'Security', 'VPN']
-categories: ['Blog']
+categories: 
 keywords: ['Fix Missing Release file error for Cloudflare Warp', 'Cloudflare Warp missing release file on Ubuntu Plucky Puffin', 'Cloudflare Warp installation on unsupported newer Debian and Ubuntu based systems']
 lastmod: '2025-04-23T17:56:20+05:00'
 ---

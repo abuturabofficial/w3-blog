@@ -7,7 +7,7 @@ description: "If you don’t properly set permalinks for your Hugo blog, they wi
 author: "AbuTurab"
 image: "hugo-custom-post-url-path-cover.webp"
 tags: ["Hugo"]
-categories: ["Blog"]
+categories: 
 keywords: ["how to beautify hugo post urls", "beautify post urls on hugo", "simplify blog urls in hugo", "blog posts friendly urls in hugo", "easy to read urls in hugo blog"]
 lastmod: '2025-07-13T09:27:43+0500'
 ---

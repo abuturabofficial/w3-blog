@@ -7,7 +7,7 @@ description: 'If you want to make your Fedora install feel faster in package ins
 author: "AbuTurab"
 image: 'fedora-post-installation-guide-cover.webp'
 tags: ['Linux', 'Tips & Tricks']
-categories: ['Blog']
+categories: 
 keywords: ['fedora post installation guide', 'Necessary tweaks to make fedora better after installation', 'Fedora post installation maximum productivity guide']
 lastmod: '2026-04-25T11:05:12+05:00'
 ---
