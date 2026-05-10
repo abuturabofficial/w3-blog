@@ -7,7 +7,7 @@ description: 'RSYNC is an amazing tool to transfer large amounts of data between
 author: "AbuTurab"
 image: 'rsync-made-easy-cover.webp'
 tags: ['Linux', 'Tips & Tricks']
-categories: 
+categories: ["SysAdmin"]
 keywords: ['How to use rsync', 'Rsync cheatsheet', 'how to transfer large amount of data efficiently', 'Linux tool to transfer incremental data between devices']
 lastmod: '2026-02-16T17:17:00+05:00'
 ---

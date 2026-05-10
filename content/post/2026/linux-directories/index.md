@@ -11,7 +11,6 @@ categories: ["SysAdmin"]
 keywords: ["linux directories explained", "what are those strange directories on my linux system", "linux directories simplified", "linux directory structure explained"]
 lastmod: ''
 ---
-![](linux-directories-5.webp)
 
 Everything on the Linux system is a file, yes even the directories we are going to discuss here. Let's learn some basics of the Linux Filesystem before moving forward.
 

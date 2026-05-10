@@ -7,7 +7,7 @@ description: "Some services lock up a boot process, and make the system startup 
 author: "AbuTurab"
 image: 'investigating-long-startup-time-on-linux-cover.webp'
 tags: ['Linux', 'Troubleshooting Guide']
-categories: 
+categories: ["IT Support"]
 keywords: ['how to make my linux system boot faster', 'why my linux machine boots so slow', 'fixing a slower boot process on linux', 'distro boot up improvement']
 lastmod: '2026-02-14T20:13:58+05:00'
 ---

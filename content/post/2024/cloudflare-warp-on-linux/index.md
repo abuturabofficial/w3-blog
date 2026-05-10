@@ -7,7 +7,7 @@ author: "AbuTurab"
 aliases:
     - /p/cloudflare-warp-on-linux-setup-and-troubleshooting-guide/
 tags: ["Linux", "Security", "VPN"]
-categories: 
+categories: ["IT Support"]
 description: To setup cloudflare warp on linux and fix issues due to systemd-resolved on linux. How to setup and install Warp on Immutable Distros like SilverBlue, OpenSuse Aeon etc.
 image: "cloudflare-warp-cover.webp"
 lastmod: "2025-01-26T17:10:00+05:00"

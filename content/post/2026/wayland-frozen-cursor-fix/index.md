@@ -7,7 +7,7 @@ description: "Sometimes, when you put your computer to sleep/standby, on wakeup,
 author: "AbuTurab"
 image: 'wayland-frozen-cursor-fix-cover.webp'
 tags: ['Linux', 'Troubleshooting Guide']
-categories: 
+categories: ["IT Support"]
 keywords: ['how to unfreeze cursor on linux', 'frozen cursor issue on linux when waking up from sleep', 'toucpad froze on wake up from sleep', 'cursor disappeared after waking up from sleep']
 lastmod: '2026-02-14T12:07:39+05:00'
 ---

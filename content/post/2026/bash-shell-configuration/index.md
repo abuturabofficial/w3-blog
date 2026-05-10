@@ -7,7 +7,7 @@ description: "Journey from a Noob to a Linux Geek, starts with facing the fear o
 author: "AbuTurab"
 image: 'bash-shell-configuration-cover.webp'
 tags: ['Linux', 'Tips & Tricks']
-categories: 
+categories: ["SysAdmin"]
 keywords: ['Linux terminal workflow improvements', 'Lets make terminal Work for us', 'Level yp your linux shell with power bashrc enhancements', 'Practical .bashrc tweaks to master the terminal']
 lastmod: '2026-02-17T18:31:49+05:00'
 ---

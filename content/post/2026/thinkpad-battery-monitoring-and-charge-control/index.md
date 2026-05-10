@@ -7,7 +7,7 @@ description: "How to monitor your Thinkpad battery health on your Linux system, 
 author: "AbuTurab"
 image: "thinkpad-battery-monitoring-and-charge-control-cover.webp"
 tags: ["Linux", "Tips & Tricks"]
-categories: 
+categories: ["IT Support"]
 keywords: ["how to stop battery charging of my thinkpad at 80%", "linux how to see thinkpad battry total charge  cycles", "how to protect thinkpad battery for degrading on linux", "how to see battery health on linux", "how to see laptop battery health on linux", "how to set charge threshold for thinkpads on linux"]
 lastmod: '2026-04-30T11:39:21+05:00'
 ---

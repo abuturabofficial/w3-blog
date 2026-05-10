@@ -9,7 +9,7 @@ aliases:
     - /p/fix-missing-signed-by-error-for-vivaldi-browser-repo-on-debian/ubuntu-based-systems/
 image: 'vivaldi-errors-on-linux-cover.webp'
 tags: ['Linux', 'Security']
-categories: 
+categories: ["IT Support"]
 keywords: ['Vivalid GPG Signing Error', 'apt signing errors', 'vivaldi missing signing keys', 'linux missing keys for vivaldi repo', 'apt repository missing signing and gpg keys']
 lastmod: ''
 ---

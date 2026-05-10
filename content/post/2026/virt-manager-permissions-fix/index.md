@@ -7,7 +7,7 @@ description: 'Whenever you open a new instance of virt-manager, it asks for root
 author: "AbuTurab"
 image: 'virt-manager-permissions-fix-cover.webp'
 tags: ['Linux', 'Virtualization']
-categories: 
+categories: ["SysAdmin"]
 keywords: ['How fix virt-manager asking for password every time I open it', 'why virt-manager asks for password everytime', 'fixing password prompt on opening virtual machine manager']
 lastmod: '2026-02-13T11:31:59+05:00'
 ---

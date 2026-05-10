@@ -9,7 +9,7 @@ aliases:
     - /p/unfollow-the-machine-escaping-the-algorithmic-loop/
 image: 'escaping-the-algorithmic-loop-cover.webp'
 tags: ['Digital Freedom']
-categories: 
+categories: ["Digital Privacy"]
 keywords: ['Escaping the machines', 'The machine trap: Seeking your attention', 'Unfollow the machine: escaping the algorithmic loop', 'Use RSS to get back your online control', 'Fleeing the brain-rot online', 'how to de-clutter your digital life', 'stop spooning yourself with non-sense']
 lastmod: '2025-04-27T08:56:08+0500'
 ---
