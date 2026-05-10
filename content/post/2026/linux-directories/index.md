@@ -7,7 +7,7 @@ description:
 author: "AbuTurab"
 image: "linux-directories-cover.webp"
 tags: ["Linux", "Operating Systems", "SysAdmin"]
-categories: ["SysAdmin", "IT Support", "CTF"]
+categories: ["SysAdmin"]
 keywords: ["linux directories explained", "what are those strange directories on my linux system", "linux directories simplified", "linux directory structure explained"]
 lastmod: ''
 ---
