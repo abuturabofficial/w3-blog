@@ -33,7 +33,7 @@ A Root Directory `/` sits at the top of a Linux Filesystem hierarchy. It contain
 
 ## Binaries `/bin`
 
-The `/bin` directory contains essential user accessible command binaries like `ls`, `cat`, `rm`, `grep`, `rfkill` etc. This directory is usually symlinked to `/usr/bin`. These commands are available to all the users on the system.
+The `/bin` directory contains essential user accessible command binaries like `ls`, `cat`, `rm`, `grep`, `rfkill` etc. This directory is usually symlinked to `/usr/bin`. These commands are available to all the users on the system. These binaries are needed for basic system operations like remove, copy, move, listing directories, killing radio device etc.
 
 ## Boot Directory `/boot`
 
@@ -43,34 +43,40 @@ It contains all the files necessary for system boot up including Linux Kernel an
 
 ## Devices `/dev`
 
-## System Configurations `/etc`
+The `/dev` directory contains device driver as ordinary files. The drivers allow an application to interact with a device by using standard Input/Output system calls.
+
+It also has `/dev/null` to discard standard output from programs and scripts and report back the operation is successfully completed. There is also `/dev/random` and `/dev/urandom`, which generate cryptographically secure random numbers. The programs like [**shred**](https://wiki.archlinux.org/title/Securely_wipe_disk#shred) use this to write random data, to securely delete files and wipe storage devices and make them hard to recover even for the modern hardware.
+
+## Editable Text Configuration `/etc`
 
 All the configuration files for operating system, programs, applications, and services live in the `/etc` directory. These configuration files are only editable via root. They apply system-wide for all users.
 
+The `/etc` directory itself used to be called **etcetera directory** in the early Bell Labs documentation. It holds everything that doesn't fit in any other directory, that's why the name. But Filesystem Hierarchy Standards (FHS) limits its scope to static configuration files, and may not contain binaries.
+
 ## User Home `/home`
 
-The `/home/<username>` is the home to all the local users available on the system. Every local user has its home directory under `/home` which further contains XDG user directories. 
+The `/home/<username>` is the home to all the local users available on the system. Every local user has its home directory under `/home/$USER` which further contains XDG user directories. It contains user's personal data as well as configuration files limited to that user only.
 
 ![My Home](linux-directories-5.webp)
 
 There are also hidden directories like `.local`, `.config`, `.cache` etc. The applications running as user, also store their configuration files in the `XDG_CONFIG_HOME` or in a hidden directory at `/home/<username>/.`. The `XDG_CONFIG_HOME` is located at `~/.config`.
 
-Like many others, lib directories are also symlinked to `/usr/lib` and `/usr/lib64` directories to consolidate directory structure on the modern Linux Systems.
-
 ## Shared Libraries `/lib`
 
 It contains shared libraries of the binaries present in the `/bin` `/sbin` directories. Depending on the system, `lib` and `lib64` for 32-bit and 64-bit respectively for shared libraries may also be present.
 
+Like many others, lib directories are also symlinked to `/usr/lib` and `/usr/lib64` directories to consolidate directory structure on the modern Linux Systems.
+
 ## Removable Media `/media`
 
-When you plugged in a USB device, if it's autoconfigured to mount, it will mount at `/media`. 
+When you plugged in a USB device, if it's autoconfigured to mount, it will mount at `/media`.  It also acts as a mount point for CD/DVD ROMs.
 
 > [!NOTE] Info
-> The USB devices on Arch Linux, are mounted to `/run/media/$USER` by `udisk`.
+> The USB devices on Arch Linux, are mounted to `/run/media/$USER` by `udiskctl`.
 
 ## Manual Mount `/mnt`
 
-You can manually mount Hard Disk Drives, Partitions and other media to `/mnt`. It's mostly a temporary mount point, which maybe used during Linux chroot and other filesystem operations. 
+You can manually mount Hard Disk Drives, Partitions and other media to `/mnt`. It's mostly a temporary mount point, which maybe used during Linux chroot and other filesystem operations. For a permanent mount, you will need to add your mount points to the `fstab` file present in the `/etc` directory.
 
 Let's manually mount a USB stick, to `/mnt`, first create a mount point:
 ```bash{linenos=false}
@@ -82,7 +88,7 @@ Identity the device name for our USB:
 lsblk
 ```
 
-Our USB is called `sda` and my USB has two partitions, the usable one with 29 GB of size is `sda1`
+Our USB is called `sda` and my USB has two partitions, the usable one with 29 GB of size is `sda1`:
 ```bash{linenos=false}
 sudo mount /dev/sda1 /mnt/usb_stick
 ```
@@ -94,11 +100,21 @@ sudo umount /mnt/usb_stick
 
 ## Optional Software `/opt`
 
-The software which doesn't fit in the `/bin` or `/sbin` directories resides here, like proprietary applications, or applications downloaded from sources other than the OS repos.
+The add-on software applications which don't fit in the `/bin` or `/sbin` directories or not part of standard OS distribution reside here, like proprietary applications, or applications downloaded from sources other than the OS repos.
 
-In the Enterprise environment, there are many custom programs are used, which are installed inside the `/opt` directory.
+In the Enterprise environment, many custom applications and programs are used, which are installed inside the `/opt` directory.
+
+![Arch Linux --- Mainly contains applications from AUR](linux-directories-7.webp)
 
 ## Processes `/proc`
+
+The `/proc` directory contains information about running processes and Kernel parameters as files. It contains dynamically generated data, and doesn't store anything on the disk. It's a virtual filesystem.
+
+> [!TIP] Virtual Filesystem (VFS)
+> A VFS is an abstraction layer in the kernel that provides unified standard interface for userspace programs to interact with different types of file systems i.e., NTFS, FAT32, XFS etc. It's what makes it possible, the UNIX philosophy of everything is a file.
+> To list all the VFS on your Linux system `mount | grep -v sd | grep -v :/`.
+
+![Brave Browser Running Process](linux-directories-8.webp)
 
 ## Root Home Directory `/root`
 
@@ -107,6 +123,8 @@ The `/root` is a home for root user, a superuser with administrative privileges.
 ![Omarchy (Arch Linux) /root](linux-directories-2.webp)
 
 ## Runtime Data `/run`
+
+It contains volatile runtime data, which wipes out on the reboot. It gives information about the running system since last boot i.e., currently logged-in users, running daemons and services.
 
 ## System Binaries `/sbin`
 
@@ -117,11 +135,19 @@ The `/sbin` directory contains all the necessary programs needed for system admi
 
 ## Services `/srv`
 
+The `/srv` directory is more common on the servers. It contains data for the services provided by the system, such HTTP server content, or File Transfer Protocol (FTP) server data.
+
+![Arch Linux --- Empty directories with no FTP/HTTP servers running](linux-directories-9.webp)
+
 ## System `/sys`
+
+A virtual filesystem that provides interface to the Kernel data structures and device information. The `/sys` directory holds information about your low level hardware devices. In the [ThinkPad: Linux Battery Monitoring and Charge Control](/thinkpad-battery-monitoring-and-charge-control/) blog, we interacted with our ThinkPad battery to control its charging state via the low level access I/O battery file in this directory.
+
+![Arch Linux /sys](linux-directories-10.webp)
 
 ## Temporary Files `/tmp`
 
-All the temporary system files reside in the `/tmp` directory. It usually wipes out on system reboot. System services and programs might write data to this directory on temporary bases which they may need later.
+All the temporary system and user files reside in the `/tmp` directory. It usually wipes out on system reboot. System services and programs might write data to this directory on temporary bases which they may need later.
 
 You can also save your temporary data in there as well. I usually use it for cloning git repos, which I need to quickly refer something, and won't mind it being deleted on the reboot.
 
@@ -141,7 +167,10 @@ There is also a `/var/tmp` directory which contains temporary data which needs t
 
 ## References
 
+- [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard) --- Wikipedia
 - [Linux Directories Explained in 100 Seconds](https://www.youtube.com/watch?v=42iQKuQodW4) --- Fireship
 - [Learning The Linux File System 2025](https://www.youtube.com/watch?v=p9lCbFq8IPo) --- Joe Collins (EzeeLinux)
 - [The Linux File System explained in 1,233 seconds // Linux for Hackers // EP 2](https://www.youtube.com/watch?v=A3G-3hp88mo) --- NetworkChuck
 - [Linux File System Structure Explained: From / to /usr | Linux Basics](https://www.youtube.com/watch?v=ISJ44S5sZu8) --- WhiteboardDoodles
+- [Linux Internals: Virtual File System (VFS)](https://www.youtube.com/watch?v=J4qWNNISdJk) --- DJ Ware
+- [Securely wipe disk](https://wiki.archlinux.org/title/Securely_wipe_disk) --- ArchWiki
