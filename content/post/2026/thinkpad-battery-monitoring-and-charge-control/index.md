@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Thinkpad: Linux Battery Monitoring and Charge Control"
+title: "ThinkPad: Linux Battery Monitoring and Charge Control"
 imageNameKey: "thinkpad-battery-monitoring-and-charge-control"
 date: '2026-04-30T09:45:10+05:00'
 description: "How to monitor your Thinkpad battery health on your Linux system, and limit how much charge it will take to protect your battery from degrading rapidly over time."
