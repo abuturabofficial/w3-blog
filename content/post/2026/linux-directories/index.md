@@ -3,7 +3,7 @@ draft: false
 title: 'Linux Directories Simplified'
 imageNameKey: "linux-directories"
 date: '2026-05-05T09:30:50+05:00'
-description: "Let's demystify / directory on your Linux System. Now you won't feel overwhelmed when you look at the different directories and what purpose they serve on the system."
+description: "Let's demystify / directory on your Linux System. Now you won't feel overwhelmed when you look at the different directories and what purpose they serve on your system."
 author: "AbuTurab"
 image: "linux-directories-cover.webp"
 tags: ["Linux", "Operating Systems"]
