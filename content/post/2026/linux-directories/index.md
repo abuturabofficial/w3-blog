@@ -1,9 +1,9 @@
 ---
-draft: true
+draft: false
 title: 'Linux Directories Simplified'
 imageNameKey: "linux-directories"
 date: '2026-05-05T09:30:50+05:00'
-description:
+description: "Let's demystify / directory on your Linux System. Now you won't feel overwhelmed when you look at the different directories and what purpose they serve on the system."
 author: "AbuTurab"
 image: "linux-directories-cover.webp"
 tags: ["Linux", "Operating Systems"]
@@ -29,7 +29,9 @@ Everything on the Linux system is a file, yes even the directories we are going 
 
 ## Root Directory `/`
 
-A Root Directory `/` sits at the top of a Linux Filesystem hierarchy. It contains boot, configuration files, system binaries and users' home directories etc.
+A Root Directory `/` sits at the top of a Linux Filesystem hierarchy. It contains boot, configuration files, system binaries and users' home directories etc. It serves as a parent directory to all other directories and files.
+
+![/ on Arch Linux](linux-directories-12.webp)
 
 ## Binaries `/bin`
 
@@ -69,7 +71,7 @@ Like many others, lib directories are also symlinked to `/usr/lib` and `/usr/lib
 
 ## Removable Media `/media`
 
-When you plugged in a USB device, if it's autoconfigured to mount, it will mount at `/media`.  It also acts as a mount point for CD/DVD ROMs.
+When you plugged in a USB storage device, if it's autoconfigured to mount, it will mount at `/media`.  It also acts as a mount point for CD/DVD ROMs.
 
 > [!NOTE] Info
 > The USB devices on Arch Linux, are mounted to `/run/media/$USER` by `udiskctl`.
@@ -100,7 +102,7 @@ sudo umount /mnt/usb_stick
 
 ## Optional Software `/opt`
 
-The add-on software applications which don't fit in the `/bin` or `/sbin` directories or not part of standard OS distribution reside here, like proprietary applications, or applications downloaded from sources other than the OS repos.
+The add-on software applications which don't fit in the `/bin` or `/sbin` directories or not part of standard OS distribution reside here, like proprietary applications, or applications downloaded from sources other than the OS repos. It also contains software which you compile yourself from the source (AUR packages on Arch). Applications will be present in the `/opt/bin` directory, while their libraries in the `/opt/lib` directory.
 
 In the Enterprise environment, many custom applications and programs are used, which are installed inside the `/opt` directory.
 
@@ -108,7 +110,7 @@ In the Enterprise environment, many custom applications and programs are used, w
 
 ## Processes `/proc`
 
-The `/proc` directory contains information about running processes and Kernel parameters as files. It contains dynamically generated data, and doesn't store anything on the disk. It's a virtual filesystem.
+The `/proc` directory contains information about running processes and Kernel parameters as files. It contains dynamically generated data, and doesn't store anything on the disk. It's a virtual directory.
 
 > [!TIP] Virtual Filesystem (VFS)
 > A VFS is an abstraction layer in the kernel that provides unified standard interface for userspace programs to interact with different types of file systems i.e., NTFS, FAT32, XFS etc. It's what makes it possible, the UNIX philosophy of everything is a file.
@@ -128,32 +130,41 @@ It contains volatile runtime data, which wipes out on the reboot. It gives infor
 
 ## System Binaries `/sbin`
 
-The `/sbin` directory contains all the necessary programs needed for system administration. It contains programs like `fsck`, `ip`, `traceroute` etc. The `/sbin` directory on modern Linux systems is symlinked to `/usr/sbin`
+The `/sbin` directory contains all the necessary programs needed for system administration. It contains programs like `fsck`, `ip`, `traceroute` etc. The `/sbin` directory on modern Linux systems is symlinked to `/usr/sbin`. You can use tools with the `sudo` command that temporary grants you superuser rights, so caution is advised.
 
 > [!NOTE] Info
 > On Arch Linux, both `/bin` and `/sbin` are symlinked to the `/usr/bin` which essentially means, they contain exactly the same binaries.
+> ![](linux-directories-11.webp)
 
 ## Services `/srv`
 
-The `/srv` directory is more common on the servers. It contains data for the services provided by the system, such HTTP server content, or File Transfer Protocol (FTP) server data.
+The `/srv` directory is more common on the servers. It contains data for the services provided by the system, such HTTP server content, or File Transfer Protocol (FTP) server data. These directories would contain data, if you run server on your home box.
 
 ![Arch Linux --- Empty directories with no FTP/HTTP servers running](linux-directories-9.webp)
 
 ## System `/sys`
 
-A virtual filesystem that provides interface to the Kernel data structures and device information. The `/sys` directory holds information about your low level hardware devices. In the [ThinkPad: Linux Battery Monitoring and Charge Control](/thinkpad-battery-monitoring-and-charge-control/) blog, we interacted with our ThinkPad battery to control its charging state via the low level access I/O battery file in this directory.
+A virtual filesystem that provides interface to the Kernel data structures and devices information. The `/sys` directory holds information about your low level hardware devices.
+
+Basically, `/sys` directory contain information from the devices connected to your computer. In some cases, you can manipulate those devices' files stored in the `/sys` directory.
+
+In the [ThinkPad: Linux Battery Monitoring and Charge Control](/thinkpad-battery-monitoring-and-charge-control/) blog, we interacted with our ThinkPad battery to control its charging state via the low level access to the I/O battery files in the `/sys/class/power_supply/BAT0` directory.
 
 ![Arch Linux /sys](linux-directories-10.webp)
 
 ## Temporary Files `/tmp`
 
-All the temporary system and user files reside in the `/tmp` directory. It usually wipes out on system reboot. System services and programs might write data to this directory on temporary bases which they may need later.
+All the temporary system and user files reside in the `/tmp` directory. It usually wipes out on system reboot. System services and running applications might write data to this directory on temporary bases which they may need later.
 
 You can also save your temporary data in there as well. I usually use it for cloning git repos, which I need to quickly refer something, and won't mind it being deleted on the reboot.
 
+The `/tmp` directory is one of the few directories in the `/` that you can interact with without superuser privileges.
+
 ## Unix System Resources `/usr`
 
-It contains the majority of system files, libraries, and binaries. It also contains the documentation for applications installed on the system, as well as the pre-installed system binaries and programs. Furthermore, it contains subdirectories too.
+It contains the majority of system files, libraries, and binaries. It also contains the documentation for applications installed on the system, as well as the pre-installed system binaries and programs. Furthermore, it is organized into the subdirectories.
+
+In the early days of Linux, the `/usr` directory used to contain users' home directories.
 
 ![/usr Sub-directories](linux-directories-1.webp)
 
@@ -165,8 +176,12 @@ There is also a `/var/tmp` directory which contains temporary data which needs t
 
 ![Arch Linux /var](linux-directories-6.webp)
 
+> [!NOTE] End Note!
+> Your system might not have some directories mentioned above. For example, `/srv` directory is generally present on the servers, or the home boxes which run some kind of web/file server. The filesystem on Linux distributions are similar in nature. The best way to know it, is by exploring it yourself. So, just go and explore.
+
 ## References
 
+- [Classic SysAdmin: The Linux Filesystem Explained](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained) --- The Linux Foundation
 - [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard) --- Wikipedia
 - [Linux Directories Explained in 100 Seconds](https://www.youtube.com/watch?v=42iQKuQodW4) --- Fireship
 - [Learning The Linux File System 2025](https://www.youtube.com/watch?v=p9lCbFq8IPo) --- Joe Collins (EzeeLinux)
@@ -174,3 +189,4 @@ There is also a `/var/tmp` directory which contains temporary data which needs t
 - [Linux File System Structure Explained: From / to /usr | Linux Basics](https://www.youtube.com/watch?v=ISJ44S5sZu8) --- WhiteboardDoodles
 - [Linux Internals: Virtual File System (VFS)](https://www.youtube.com/watch?v=J4qWNNISdJk) --- DJ Ware
 - [Securely wipe disk](https://wiki.archlinux.org/title/Securely_wipe_disk) --- ArchWiki
+- [Linux Directory Structure Simplified: A Comprehensive Guide](https://dev.to/softwaresennin/linux-directory-structure-simplified-a-comprehensive-guide-3012) --- DEV.to
