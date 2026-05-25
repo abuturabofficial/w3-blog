@@ -9,7 +9,7 @@ image: 'imagemagick-tips-and-tricks-cover.webp'
 tags: ['Tips & Tricks']
 categories: ["IT Support"]
 keywords: ['how to use imagemagick', 'tips and tricks for using imagemagick', 'CLI tools for quick single and batch images editing', 'imagemagick an excellent terminal based tools image editing']
-lastmod: '2026-04-15T10:51:25+05:00'
+lastmod: '2026-05-25T08:33:19+05:00'
 ---
 
 ImageMagick is a free and open-source set of tools for displaying, converting, editing raster image (grid of pixels, resolution dependent) and vector image (mathematical curves and shapes, resolution independent) files. It's a Swiss army knife of image manipulation and editing via command-line interface.
@@ -93,6 +93,21 @@ You can also use percentage as a parameter:
 magick input_image -resize 70% output_image
 ```
 It will resize the image to 70% of its original size.
+
+## Compress an Image
+
+To compress a JPEG/JPG image:
+```term{linenos=false}
+magick input.jpg -define jpeg:extent=[SIZE] compressed.jpg
+```
+- The `=[size]` could be in bytes, bits, kb, KB, KiB etc.
+- The size would not be exactly as the given value. It could vary a bit lower or higher from the defined value.
+- The specific `:exten=[SIZE]` is only available for JPEG/JPG image format.
+
+Example usage:
+```term{linenos=false}
+magick input.jpg -define jpeg:extent=2MiB compressed.jpg
+```
 
 ## Create a GIF
 
