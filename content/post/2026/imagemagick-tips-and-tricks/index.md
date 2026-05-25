@@ -109,6 +109,15 @@ Example usage:
 magick input.jpg -define jpeg:extent=2MiB compressed.jpg
 ```
 
+To compress a WebP, we need to manually adjust the `-quality` from 0 to 100 where is no compression, and 100 is the highest compression possible.
+```term{linenos=false}
+magick input.webp -quality 75 output.webp
+```
+- It will compress the WebP by 75%.
+
+> [!NOTE] INFO
+> Standard PNG is a lossless format, which do support `-quality` flag with values from `0` to `9`, due to the nature of compression, you may even get higher sized PNGs after compression. The best mode of action is to convert your PNG into JPEG/WebP first, if you need to compress it using IM.
+
 ## Create a GIF
 
 Create a `.gif` from all the PNGs in the current directory:
