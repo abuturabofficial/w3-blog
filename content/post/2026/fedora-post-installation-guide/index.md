@@ -9,7 +9,7 @@ image: 'fedora-post-installation-guide-cover.webp'
 tags: ['Linux', 'Tips & Tricks']
 categories: ["SysAdmin"]
 keywords: ['fedora post installation guide', 'Necessary tweaks to make fedora better after installation', 'Fedora post installation maximum productivity guide']
-lastmod: '2026-04-25T11:05:12+05:00'
+lastmod: '2026-06-05T19:48:35+05:00'
 ---
 
 ## DNF5 Configuration `dnf.conf`
@@ -497,6 +497,24 @@ And install `distrobox`:
 ```console{linenos=false}
 sudo dnf install distrobox
 ```
+
+### `f3` --- Fake USB Detector
+
+The `f3` (Fight Flash Fraud) is a program that helps in the detection of fake Flash storage (USB, Memory Cards) and their performance to check if they live up to claimed specifications.
+
+Install the [f3 CLI](https://github.com/AltraMayor/f3):
+```console{linenos=false}
+sudo dnf install f3
+```
+
+If you want the [GUI version](https://github.com/dantavares/f3-gui) (as shown in screenshot below), you will need to first [download](https://dantavares.github.io/f3-gui/f3-gui.flatpakref) the `.flatpakref` file, then <u>open the terminal in the directory where the file is downloaded</u> and run:
+```console{linenos=false}
+flatpak install ./f3-gui.flatpakref
+```
+
+[Check here](https://dantavares.github.io/f3-gui/#-recommended-workflow) the recommended workflow for `f3-gui`
+
+![f3 GUI](fedora-post-installation-guide-12.webp)
 
 ### Misc.
 
