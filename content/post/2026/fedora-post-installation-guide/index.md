@@ -512,7 +512,7 @@ If you want the [GUI version](https://github.com/dantavares/f3-gui) (as shown in
 flatpak install ./f3-gui.flatpakref
 ```
 
-[Check here](https://dantavares.github.io/f3-gui/#-recommended-workflow) the recommended workflow for `f3-gui`
+[Check here](https://dantavares.github.io/f3-gui/#-recommended-workflow) for the recommended workflow for `f3-gui`
 
 ![f3 GUI](fedora-post-installation-guide-12.webp)
 
