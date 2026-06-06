@@ -6,10 +6,10 @@ date: '2026-06-04T06:40:37+05:00'
 description:
 author: "AbuTurab"
 image: 'gnu-core-utils-part1-cover.webp'
-tags: ['COREUTILS SERIES', Linux]
+tags: ['Coreutils Series', Linux]
 categories: ['SysAdmin']
-keywords: ['how to use mkdir, rmdir, ls, touch', 'tutorial for gnue core utilities', 'tutorial for gnu core file utilities', 'how gnu core utilities work']
-lastmod: ''
+keywords: ['how to use ls, vdir, realpath', 'tutorial for gnue core utilities', 'tutorial for gnu core file utilities', 'how gnu core utilities work', 'ls - in-depth tutorial']
+lastmod: '2026-06-06T09:58:20+05:00'
 ---
 
 It's a part of multi blogs [series](/tags/coreutils-series/), which will explain how to use GNU Core Utilities, useful for novice and professionals alike. GNU Coreutils are file, shell, and text manipulation commands/tools which are available on every GNU based Linux system.
@@ -33,6 +33,23 @@ ls -R
 ```
 - `--recursive`/`-R` Useful for investigation of unknown directories and their content
 
+List entries by column (default):
+```console{linenos=false}
+ls -C
+```
+![ls --- Default column view](gnu-core-utils-part1-1.webp)
+
+List entries by rows instead of default columns:
+```console{linenos=false}
+ls -x
+```
+![ls --- Row view](gnu-core-utils-part1-2.webp)
+
+List one file per line:
+```console{linenos=false}
+ls -1
+```
+
 ### Show Hidden Entries
 
 To list entries started with `.` (hidden):
@@ -55,7 +72,9 @@ ls -l
 ```
 - `-l` Shows permissions, owner, group, size and timestamps, along with the entries
 
-To omit group information from long listing format rest is same as `-l` flag:
+![ls --- Long listing format](gnu-core-utils-part1-3.webp)
+
+To omit group information from long listing format, rest is the same as `-l` flag listing:
 ```console{linenos=false}
 ls -o
 ```
@@ -66,9 +85,38 @@ Owner can be omitted as:
 ls -g
 ```
 
-### Timestamp Listing
+Prints the author information of each file, when used with `-l`:
+```console{linenos=false}
+ls -l --author
+```
+- It's useful on multi-user systems to find out of who is the owner of the particular file lingering around.
 
 ### Print Size Information
+
+Print allocated size of each file in blocks:
+```console{linenos=false}
+ls -s
+```
+- `--size`/`-s` shows the file size in bytes (blocks) which are 1024 bytes (1 KiB) by default.
+
+You can mention the specific unit yourself:
+```console{linenos=false}
+ls -s --block-size=M
+```
+- K, M, G etc. are the powers of 1024(binary) or prefixes like KiB=K, MiB=M, GiB=G and so on.
+- KB, MB, GB etc. are the multiples of 1000 (decimal)
+
+To show human-readable size (binary) with flags like `-s` and `-l`:
+```console{linenos=false}
+ls -sh
+```
+- `--human-readable`/`-h` are the same
+
+The flag `--si` prints the size information like `-h` but in decimal (powers of 1000):
+```console{linenos=false}
+ls --si -l
+```
+- The `--si` flag should be used with either `-s` or `-l` flag
 
 ### Sorting Order
 
@@ -94,8 +142,134 @@ To sort by time:
 ```console{linenos=false}
 ls -t
 ```
-- `-t` Sort the newest file first
+- `-t` Sort the newest modified file first
+> [!TIP] Tip
+> The sort by `-t` and `-t` with `--time=mtime` give the same results. The `-t` alone defaults to the last modification time.
 
+Sort by time, based on birth time (creation time):
+```console{linenos=false}
+ls -t --time=birth
+```
+- Combining with `-l` shows the creation/birth time
+- It will print newly created item first, flag `-r` can show the oldest birth first by reversing the order.
+
+![Showing oldest created entry first](gnu-core-utils-part1-4.webp)
+
+Sorting based on when a file is last accessed(no modification or write):
+```console{linenos=false}
+ls -lt --time=atime
+```
+- `-u` The shorter version of `--time=atime`
+
+![Last accessed entries with timestamp](gnu-core-utils-part1-5.webp)
+
+> [!CAUTION] INFO
+> On modern Linux systems, `noatime` mount option reduces the disk I/O operation by cutting down the access time updates. While `relatime` mount option only update access metadata under certain conditions.
+
+Sort by last metadata change time:
+```console{linenos=false}
+ls -lt --time=ctime
+```
+- The flag`--time=ctime` can be substituted to `-c`
+
+> [!TIP]
+> It records changes to ownership and permissions along with creation and edit timestamps. While `--time=mtime` only records creation and edit timestamps.
+
+![Showing ownership change appears first](gnu-core-utils-part1-6.webp)
+
+### Timestamps Long Listing
+
+> [!NOTE]
+> Timestamp information is only shown when using the long listing format with the flag `-l`, so all the below commands must be run with `-l` flag to actually see what's happening with timestamp information.
+
+#### Timestamp Versions
+
+You can see a different timestamp when listing with `-l` flag, which by-default shows the last modification time. You can achieve this without `-t` command which by-default sorts entries based on `--time=WORD` command. 
+
+Let's list a last access time stamp which the files are last accessed by an editor, `cat`, or commands without modifying the content:
+```console{linenos=false}
+ls -l --time=atime
+```
+- The short version is `-u`
+
+Print the last metadata change timestamp:
+```console{linenos=false}
+ls -l --time=ctime
+```
+- The flags `--time=ctime` and `-c` serve the same purpose
+
+
+#### Timestamp Display Properties
+
+By default, long listing shows the `locale` timestamp:
+```console{linenos=false}
+ls -l --time-style=locale
+```
+![locale timestamps](gnu-core-utils-part1-8.webp)
+
+To show full date and time with minutes precision:
+```console{linenos=false}
+ls -l --time-style=long-iso
+```
+![long-iso timestamps](gnu-core-utils-part1-9.webp)
+
+To list timestamps with nanosecond precision and time zone
+```console{linenos=false}
+ls -l --time-style=full-iso
+```
+![full-iso timestamps](gnu-core-utils-part1-10.webp)
+
+### `ls` --- Exit Codes
+
+Following are some useful exit codes:
+
+<kbd>0</kbd> OK
+
+<kbd>1</kbd> There is some minor problem, like subdirectory is not accessible etc.
+
+<kbd>2</kbd> Serious issue, i.e., cannot access CLI argument
+
+> [!NOTE]
+> Modern Linux systems might just show the issue descriptively instead of an error code to simplify the troubleshooting process. To show an error code:
+> `ls [argument] ; echo $?`
+
+### Useful Tips
+
+Show colored output:
+```console{linenos=false}
+ls --color=auto
+```
+- Shows different color for different entry types
+- Can be combined with other commands
+
+Show version information and exit:
+```console{linenos=false}
+ls --version
+```
+
+Distinguish between directories and files:
+```console{linenos=false}
+ls -F
+```
+- Shows `/` with DIRs
+
+![Directories listing with /](gnu-core-utils-part1-7.webp)
+
+Show help information:
+```console{linenos=false}
+ls --help
+```
+
+See manual pages:
+```console{linenos=false}
+man ls
+```
+
+Print index number of each file
+```console{linenos=false}
+ls -i
+```
+- `--inode`/`-i` print the index number
 
 ## References
 
