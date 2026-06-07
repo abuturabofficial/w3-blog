@@ -112,6 +112,17 @@ If we type only `ls` in the CLI, and hit <kbd>Alt</kbd> + <kbd>.</kbd>, it will 
 
 Keep pressing the key bind, to cycle through all last arguments of the previous commands.
 
+## Insert a Newline Argument `\n`
+
+To insert a newline argument to command-line:
+
+Press <kbd>Ctrl</kbd> + <kbd>V</kbd> and <kbd>Ctrl</kbd> + <kbd>J</kbd> in a sequence, it will add the newline character.
+
+You can also use semicolon `;` to separate the commands on the CLI, similar to the newline character:
+```console{linenos=false}
+<command-1> ; <command-2>
+```
+
 ## Edit and Execute Command
 
 You're working with some large CLI commands, and want to easily edit them.
