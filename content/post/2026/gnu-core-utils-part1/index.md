@@ -9,7 +9,7 @@ image: 'gnu-core-utils-part1-cover.webp'
 tags: ['Coreutils Series', Linux]
 categories: ['SysAdmin']
 keywords: ['how to use ls, vdir, realpath', 'tutorial for gnue core utilities', 'tutorial for gnu core file utilities', 'how gnu core utilities work', 'ls - in-depth tutorial']
-lastmod: '2026-06-06T09:58:20+05:00'
+lastmod: '2026-06-08T09:09:10+05:00'
 ---
 
 It's a part of multi blogs [series](/tags/coreutils-series/), which will explain how to use GNU Core Utilities, useful for novice and professionals alike. GNU Coreutils are file, shell, and text manipulation commands/tools which are available on every GNU based Linux system.
@@ -90,6 +90,47 @@ Prints the author information of each file, when used with `-l`:
 ls -l --author
 ```
 - It's useful on multi-user systems to find out of who is the owner of the particular file lingering around.
+
+Print C-Style backslash character (\n, \t, \r etc.) for non-printable and special characters.
+```console{linenos=false}
+ls -l -b
+```
+- `--escape`/`-b` flag prints C-Style backslash characters
+
+![ls -l -b](gnu-core-utils-part1-11.webp)
+![ls -l | Without Escape Characters](gnu-core-utils-part1-12.webp)
+
+C-Style character map:
+
+| Escape |      Meaning      |
+|:------:|:-----------------:|
+|   \n   |      Newline      |
+|   \t   |        Tab        |
+|   \r   |  Carriage Return  |
+|  \\\   | Literal Backslash |
+|   \0   |  Null character   |
+|  \040  |       Space       |
+
+### Symbolic Links Listing
+
+Follow the symbolic link listed on the command line:
+```console{linenos=false}
+ls -l -H <SYMLINK>
+```
+- The flags `--dereference-command-line` and `-H` serve the same purpose.
+- Only follow the symbolic links if file/DIR is given in CLI argument
+
+![-H flag require CLI argument](gnu-core-utils-part1-13.webp)
+
+
+Follow the link and show information for the file itself not the symbolic link. This means `ls` will follow the link and display information about the target file or directory, not the link itself.
+```console{linenos=false}
+ls -l -L
+```
+- The flags `--dereference` and `-L` are the same.
+
+![](gnu-core-utils-part1-13.webp)
+![Target File Info | Remaining are DIRs](gnu-core-utils-part1-14.webp)
 
 ### Print Size Information
 
@@ -217,7 +258,54 @@ To list timestamps with nanosecond precision and time zone
 ```console{linenos=false}
 ls -l --time-style=full-iso
 ```
+-  The flags `--time-style=full-iso` and`--full-time` serve the same purpose
+
 ![full-iso timestamps](gnu-core-utils-part1-10.webp)
+
+### IGNORE Entries via Pattern Matching
+
+Basic ignore via `-B` flag:
+```console{linenos=false}
+ls -B
+```
+- `--ignore-backups`/`-B` don't list implied entries ending with `~`
+- The `~` at the end of the file is used by different text editors and other programs to store backups of files.
+
+Advance pattern matching:
+```console{linenos=false}
+ls --ignore=PATTERN
+```
+- `-I PATTERN`/`--ignore=PATTERN` are the same
+
+Basic Glob Patterns:
+
+| Pattern |        Matches        |
+|:-------:|:---------------------:|
+|   \*    | Anything (any length) |
+|    ?    | Any single character  |
+| \[abc]  |     One of these      |
+| \*.txt  |    Any `.txt` file    |
+
+Hide all `.text` files:
+```console{linenos=false}
+ls -I "*.txt"
+```
+
+Hide all JSON backup files:
+```console{linenos=false}
+ls --ignore="*.json~"
+```
+
+Hide all file1.txt, file2.txt and so on:
+```console{linenos=false}
+ls --ignore="file?.txt"
+```
+
+Hide anything that has `oct` in their name anywhere:
+```console{linenos=false}
+ls --ignore="*oct*"
+```
+- It's case-sensitive
 
 ### `ls` --- Exit Codes
 
