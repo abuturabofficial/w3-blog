@@ -1,15 +1,15 @@
 ---
-draft: true
+draft: false
 title: ' GNU Coreutils: ls, vdir, realpath'
 imageNameKey: 'gnu-core-utils-part1'
 date: '2026-06-04T06:40:37+05:00'
-description:
+description: "Let's understands the working of ls, vdir, and realpath, Coreutilites. GNU Coreutilties are the collection of numerous unix-based shell commands developed by GNU Project that provide essential file, text and shell based manipulation techniques and features."
 author: "AbuTurab"
 image: 'gnu-core-utils-part1-cover.webp'
 tags: ['Coreutils Series', Linux]
 categories: ['SysAdmin']
 keywords: ['how to use ls, vdir, realpath', 'tutorial for gnue core utilities', 'tutorial for gnu core file utilities', 'how gnu core utilities work', 'ls - in-depth tutorial']
-lastmod: '2026-06-08T09:09:10+05:00'
+lastmod: '2026-06-08T18:45:17+05:00'
 ---
 
 It's a part of multi blogs [series](/tags/coreutils-series/), which will explain how to use GNU Core Utilities, useful for novice and professionals alike. GNU Coreutils are file, shell, and text manipulation commands/tools which are available on every GNU based Linux system.
@@ -39,7 +39,7 @@ ls -C
 ```
 ![ls --- Default column view](gnu-core-utils-part1-1.webp)
 
-List entries by rows instead of default columns:
+List entries by rows instead of default column view:
 ```console{linenos=false}
 ls -x
 ```
@@ -85,7 +85,7 @@ Owner can be omitted as:
 ls -g
 ```
 
-Prints the author information of each file, when used with `-l`:
+Print the author information of each file, when used with `-l`:
 ```console{linenos=false}
 ls -l --author
 ```
@@ -111,7 +111,7 @@ C-Style character map:
 |   \0   |  Null character   |
 |  \040  |       Space       |
 
-### Symbolic Links Listing
+### Symbolic Link Listings
 
 Follow the symbolic link listed on the command line:
 ```console{linenos=false}
@@ -129,7 +129,7 @@ ls -l -L
 ```
 - The flags `--dereference` and `-L` are the same.
 
-![](gnu-core-utils-part1-13.webp)
+![Original files info when given as CLI argument](gnu-core-utils-part1-13.webp)
 ![Target File Info | Remaining are DIRs](gnu-core-utils-part1-14.webp)
 
 ### Print Size Information
@@ -153,7 +153,7 @@ ls -sh
 ```
 - `--human-readable`/`-h` are the same
 
-The flag `--si` prints the size information like `-h` but in decimal (powers of 1000):
+The flag `--si` prints the size information like `-h` but in decimals (powers of 1000):
 ```console{linenos=false}
 ls --si -l
 ```
@@ -216,18 +216,18 @@ ls -lt --time=ctime
 > [!TIP]
 > It records changes to ownership and permissions along with creation and edit timestamps. While `--time=mtime` only records creation and edit timestamps.
 
-![Showing ownership change appears first](gnu-core-utils-part1-6.webp)
+![Showing ownership change listed first](gnu-core-utils-part1-6.webp)
 
 ### Timestamps Long Listing
 
 > [!NOTE]
-> Timestamp information is only shown when using the long listing format with the flag `-l`, so all the below commands must be run with `-l` flag to actually see what's happening with timestamp information.
+> Timestamp information is only shown when using the long listing format with the flag `-l`, so all the below commands must be run with `-l` flag to actually see what's happening with the timestamp information.
 
 #### Timestamp Versions
 
-You can see a different timestamp when listing with `-l` flag, which by-default shows the last modification time. You can achieve this without `-t` command which by-default sorts entries based on `--time=WORD` command. 
+You can see a different timestamp when listing with `-l` flag, which by-default shows the last modification times. You can achieve this without `-t` command which by-default sorts entries based on `--time=WORD` command. 
 
-Let's list a last access time stamp which the files are last accessed by an editor, `cat`, or commands without modifying the content:
+Let's list a last access time stamp which the files are last accessed by an editor, `cat`, or commands without modifying the entries order:
 ```console{linenos=false}
 ls -l --time=atime
 ```
@@ -288,22 +288,22 @@ Basic Glob Patterns:
 
 Hide all `.text` files:
 ```console{linenos=false}
-ls -I "*.txt"
+ls -I *.txt
 ```
 
 Hide all JSON backup files:
 ```console{linenos=false}
-ls --ignore="*.json~"
+ls --ignore=*.json~
 ```
 
 Hide all file1.txt, file2.txt and so on:
 ```console{linenos=false}
-ls --ignore="file?.txt"
+ls --ignore=file?.txt
 ```
 
 Hide anything that has `oct` in their name anywhere:
 ```console{linenos=false}
-ls --ignore="*oct*"
+ls --ignore=*oct*
 ```
 - It's case-sensitive
 
@@ -329,6 +329,8 @@ ls --color=auto
 ```
 - Shows different color for different entry types
 - Can be combined with other commands
+
+![Colored ls output](gnu-core-utils-part1-22.webp)
 
 Show version information and exit:
 ```console{linenos=false}
@@ -359,8 +361,76 @@ ls -i
 ```
 - `--inode`/`-i` print the index number
 
+## `vdir` --- List Directory Contents
+
+The command `vdir` is equivalent to `ls -l -b`; that is, by default files are listed in the long format and special characters are represented by C-Style backslash escape sequences.
+
+![vdir](gnu-core-utils-part1-15.webp)
+
+The advantage over `ls -l -b` is, `vdir` acts as a shorthand and chaining more flags becomes rather easy.
+
+The size information (in powers of 1000):
+```console{linenos=false}
+vdir --si
+```
+
+Instead of writing:
+```console{linenos=false}
+ls -l -b --si
+```
+
+> [!TIP]
+> You can chain other `ls` flags with `vdir`, i.e., `--time`, `--block-size`, `--full-time`, `--reverse`, `--ignore=PATTERN` and so on. The `vdir` command has basically all the same flags and options as `ls`.
+
+## `realpath` --- Resolve Symlink Paths
+
+The command `realpath` prints the resolved symbolic link paths.
+
+Resolve symlinks as encountered (default):
+```console{linenos=false}
+realpath /path/to/file
+```
+- The flag `-P`/`--physical` prints the same information as `realpath` alone. It defaults to this, so we don't need to write the whole flag.
+
+The flag `-E`, all but the last component must exist (default):
+```console{linenos=false}
+realpath -E /path/to/file
+```
+- `--canonicalize`/`-E`
+- If parent directory exists, it will show the path as is, doesn't matter if symlink file exists or not
+- That's the default flag for `realpath`
+
+![ghost.txt doesn't exists but still prints the path](gnu-core-utils-part1-16.webp)
+![Default behavior is same as flag -E](gnu-core-utils-part1-17.webp)
+
+It will only throw error if parent directory for the given file doesn't exist
+- In our examples' ghost.txt doesn't exist but the parent directory `/tmp`exist, so no error
+- In the following picture, parent directory `../ghost/` doesn't exist, so `-E` flag throws an error.
+
+![](gnu-core-utils-part1-20.webp)
+
+Shows an error when the file/link doesn't exist:
+```console{linenos=false}
+realpath -e /path/to/file
+```
+- Only prints the path, if symbolic link exists for the given path.
+- The flags `-e`/`--canonicalize-existing` are the same.
+
+![All components of the path must exist](gnu-core-utils-part1-18.webp)
+![The whole path is valid](gnu-core-utils-part1-19.webp)
+
+The `-m`/`--canonicalize-missing` flag doesn't resolve anything, so no path or file existence is needed.
+```console{linenos=false}
+realpath -m /path/to/file
+```
+
+![The whole path doesn't exist](gnu-core-utils-part1-21.webp)
+
+> [!NOTE]
+> There is a `readlink` command, which has almost similar functionality. It might be useful in shell scripts. [Check out](https://man.archlinux.org/man/readlink.1.en) the docs.
+
 ## References
 
 - [GNU Coreutils](https://www.gnu.org/software/coreutils/manual/coreutils.html#ls-invocation) --- GNU Official Manual
 - [GNU Core Utilities](https://en.wikipedia.org/wiki/GNU_Core_Utilities) --- Wikipedia
-- `man <command name>` --- The source for commands and the most flags used here taken for manual pages bundled with the COREUTILS package installed on Linux
+- `man` PAGES
