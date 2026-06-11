@@ -114,7 +114,8 @@ params:
             enabled: true
         content:
             enabled: true
-    SortBy: "lastmod"
+# Accepted values: "default", "lastmod"
+    SortBy: "default"
 
 ### Custom menu
 ### See https://stack.jimmycai.com/config/menu
